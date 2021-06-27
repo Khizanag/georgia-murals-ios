@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h1Z-Ev-Mby">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="gilroy.otf">
+            <string>Gilroy-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="I7D-gQ-I5T">
+            <objects>
+                <navigationController id="h1Z-Ev-Mby" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hkP-St-hM8">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FIK-ny-xpp" kind="relationship" relationship="rootViewController" id="4Lk-RE-vf6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Loi-Ap-PnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-591" y="133"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="FlR-fQ-OaR">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="FIK-ny-xpp" customClass="MenuViewController" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3m3-7k-BMf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVM-so-xTn">
+                                <rect key="frame" x="37.666666666666657" y="176" width="300" height="41.333333333333343"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="17"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Jck-vF-93o" kind="show" id="XaL-xo-DHT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcT-Of-BN5">
+                                <rect key="frame" x="37.666666666666657" y="245.33333333333334" width="300" height="41.333333333333343"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="17"/>
+                                <state key="normal" title="Artists">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Y9U-nF-tCm" kind="show" id="r05-KY-tCB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujQ-Ay-P4S">
+                                <rect key="frame" x="37.666666666666629" y="541.33333333333337" width="300" height="41.333333333333371"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="17"/>
+                                <state key="normal" title="Contact Us">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BTP-hG-uiI" kind="show" id="7qF-K7-n4R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEY-y4-rjU">
+                                <rect key="frame" x="37.666666666666657" y="314.66666666666669" width="300" height="41.666666666666686"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="17"/>
+                                <state key="normal" title="Gallery">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DTz-Cn-aK7" kind="show" id="FP4-yh-MnM"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NX2-qE-WGZ">
+                                <rect key="frame" x="37.666666666666657" y="643" width="300" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="WPD-hW-Pj7"/>
+                                    <constraint firstAttribute="height" constant="85" id="h1c-Fd-QZf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="L4O-FA-ade"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="MenuViewController"/>
+                        <constraints>
+                            <constraint firstItem="ujQ-Ay-P4S" firstAttribute="width" secondItem="L4O-FA-ade" secondAttribute="width" multiplier="0.8" id="7aw-Td-Hye"/>
+                            <constraint firstItem="ujQ-Ay-P4S" firstAttribute="centerX" secondItem="3m3-7k-BMf" secondAttribute="centerX" id="9Ps-qL-lei"/>
+                            <constraint firstItem="gcT-Of-BN5" firstAttribute="top" secondItem="sVM-so-xTn" secondAttribute="bottom" constant="28" id="ERj-RY-hi2"/>
+                            <constraint firstItem="ujQ-Ay-P4S" firstAttribute="centerY" secondItem="L4O-FA-ade" secondAttribute="centerY" multiplier="1.3" id="Esn-6A-eSj"/>
+                            <constraint firstItem="sVM-so-xTn" firstAttribute="centerX" secondItem="L4O-FA-ade" secondAttribute="centerX" id="GTW-dq-lX2"/>
+                            <constraint firstItem="sVM-so-xTn" firstAttribute="top" secondItem="L4O-FA-ade" secondAttribute="top" multiplier="2" id="JfZ-Eb-aRZ"/>
+                            <constraint firstItem="sVM-so-xTn" firstAttribute="leading" secondItem="gcT-Of-BN5" secondAttribute="leading" id="MwY-5X-joV"/>
+                            <constraint firstItem="YEY-y4-rjU" firstAttribute="top" secondItem="gcT-Of-BN5" secondAttribute="bottom" constant="28" id="OAl-8A-gde"/>
+                            <constraint firstItem="sVM-so-xTn" firstAttribute="height" secondItem="L4O-FA-ade" secondAttribute="height" multiplier="0.06" id="OZJ-4p-7xZ"/>
+                            <constraint firstItem="YEY-y4-rjU" firstAttribute="centerX" secondItem="L4O-FA-ade" secondAttribute="centerX" id="PSE-ka-vMk"/>
+                            <constraint firstItem="NX2-qE-WGZ" firstAttribute="centerX" secondItem="L4O-FA-ade" secondAttribute="centerX" id="Qoz-EK-yY4"/>
+                            <constraint firstItem="L4O-FA-ade" firstAttribute="bottom" secondItem="NX2-qE-WGZ" secondAttribute="bottom" constant="50" id="Suf-7M-W2G"/>
+                            <constraint firstItem="gcT-Of-BN5" firstAttribute="leading" secondItem="YEY-y4-rjU" secondAttribute="leading" id="aIF-SC-WH2"/>
+                            <constraint firstItem="ujQ-Ay-P4S" firstAttribute="height" secondItem="sVM-so-xTn" secondAttribute="height" id="awE-63-Ufn"/>
+                            <constraint firstItem="sVM-so-xTn" firstAttribute="width" secondItem="L4O-FA-ade" secondAttribute="width" multiplier="0.8" id="iHK-rc-5Wc"/>
+                            <constraint firstItem="YEY-y4-rjU" firstAttribute="width" secondItem="L4O-FA-ade" secondAttribute="width" multiplier="0.8" id="jzG-E4-TfQ"/>
+                            <constraint firstItem="gcT-Of-BN5" firstAttribute="height" secondItem="sVM-so-xTn" secondAttribute="height" id="kjF-2L-8Ie"/>
+                            <constraint firstItem="gcT-Of-BN5" firstAttribute="width" secondItem="L4O-FA-ade" secondAttribute="width" multiplier="0.8" id="qJu-ht-khy"/>
+                            <constraint firstItem="gcT-Of-BN5" firstAttribute="centerX" secondItem="L4O-FA-ade" secondAttribute="centerX" id="xxP-D0-Ypo"/>
+                            <constraint firstItem="YEY-y4-rjU" firstAttribute="height" secondItem="sVM-so-xTn" secondAttribute="height" id="ze2-ci-w5O"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Menu" id="pC4-CB-DnA"/>
+                    <connections>
+                        <outlet property="artistsButton" destination="gcT-Of-BN5" id="hiV-0h-oFc"/>
+                        <outlet property="contactsButton" destination="ujQ-Ay-P4S" id="cax-z2-NfO"/>
+                        <outlet property="galleryButton" destination="YEY-y4-rjU" id="snJ-ko-Y2y"/>
+                        <outlet property="mapButton" destination="sVM-so-xTn" id="tbZ-F7-Qg6"/>
+                        <outlet property="sponsorsImage" destination="NX2-qE-WGZ" id="KC6-CP-Tzp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdj-St-ixS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821.60000000000002" y="129.98500749625188"/>
+        </scene>
+        <!--Artists-->
+        <scene sceneID="23h-Oh-Iah">
+            <objects>
+                <viewController title="Artists" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y9U-nF-tCm" customClass="ArtistsViewController" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rvz-c7-mdE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ea9-rH-vne">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="TU9-Be-46U" customClass="ArtistsTableViewCell" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="375" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TU9-Be-46U" id="31q-b1-06u">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y9U-nF-tCm" id="cB7-Uo-5st"/>
+                                    <outlet property="delegate" destination="Y9U-nF-tCm" id="ROT-W3-sRa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5ye-ns-ICE"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ea9-rH-vne" firstAttribute="leading" secondItem="5ye-ns-ICE" secondAttribute="leading" id="6K7-Ba-UhC"/>
+                            <constraint firstItem="5ye-ns-ICE" firstAttribute="trailing" secondItem="Ea9-rH-vne" secondAttribute="trailing" id="9Vj-i5-eFn"/>
+                            <constraint firstItem="Ea9-rH-vne" firstAttribute="top" secondItem="5ye-ns-ICE" secondAttribute="top" id="HYX-1o-jqB"/>
+                            <constraint firstItem="5ye-ns-ICE" firstAttribute="bottom" secondItem="Ea9-rH-vne" secondAttribute="bottom" id="jOD-mz-dBR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Artists" id="eu2-vl-52P"/>
+                    <connections>
+                        <outlet property="tableView" destination="Ea9-rH-vne" id="iqw-lD-myB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Exc-FE-Quq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889" y="500"/>
+        </scene>
+        <!--Artist Page View Controller-->
+        <scene sceneID="RvK-3g-MbS">
+            <objects>
+                <viewController storyboardIdentifier="ArtistPageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bbe-oB-yzn" customClass="ArtistPageViewController" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3w3-JB-0lr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a08-hK-iwA">
+                                <rect key="frame" x="0.0" y="44" width="375" height="1022"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2o-iO-WdO">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="915"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjz-if-icl" userLabel="ArtistName">
+                                                <rect key="frame" x="37.666666666666657" y="168.66666666666666" width="300" height="23.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" minimumZoomScale="4" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="914-qU-21W">
+                                                <rect key="frame" x="37.666666666666657" y="212" width="300" height="248.66666666666663"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DeM-31-F5O">
+                                                <rect key="frame" x="125.66666666666666" y="20.000000000000007" width="123.66666666666666" height="123.66666666666669"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="DeM-31-F5O" secondAttribute="height" multiplier="1:1" id="7Cl-K5-pyP"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVC-9c-PE1">
+                                                <rect key="frame" x="16.000000000000004" y="842.66666666666663" width="56.333333333333343" height="56.333333333333371"/>
+                                                <state key="normal" title="FB" image="facebook-icon"/>
+                                                <connections>
+                                                    <action selector="openFacebook:" destination="Bbe-oB-yzn" eventType="touchUpInside" id="00W-zh-XFy"/>
+                                                </connections>
+                                            </button>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hmo-P8-AcO">
+                                                <rect key="frame" x="0.0" y="476.66666666666663" width="375" height="350"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="350" id="fkE-Ct-HrO"/>
+                                                </constraints>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="uId-Nl-9JP" customClass="GalleryTableViewCell" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="24.333333969116211" width="375" height="43.666667938232422"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uId-Nl-9JP" id="obD-up-lR8">
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </tableViewCellContentView>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                            </tableView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKP-jj-teU">
+                                                <rect key="frame" x="88.333333333333329" y="842.66666666666663" width="56.333333333333329" height="56.333333333333371"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="tKP-jj-teU" secondAttribute="height" multiplier="1:1" id="TS0-Ut-cVI"/>
+                                                </constraints>
+                                                <state key="normal" title="instagram" image="instagram-black-icon"/>
+                                                <connections>
+                                                    <action selector="openInstagram:" destination="Bbe-oB-yzn" eventType="touchUpInside" id="vfE-kC-PSC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstItem="DeM-31-F5O" firstAttribute="top" secondItem="m2o-iO-WdO" secondAttribute="top" constant="20" id="4Ea-MR-6OQ"/>
+                                            <constraint firstItem="DeM-31-F5O" firstAttribute="width" secondItem="m2o-iO-WdO" secondAttribute="width" multiplier="0.33" id="6Qf-j6-WGL"/>
+                                            <constraint firstItem="tKP-jj-teU" firstAttribute="leading" secondItem="UVC-9c-PE1" secondAttribute="trailing" constant="16" id="DxV-Zu-Qth"/>
+                                            <constraint firstAttribute="bottom" secondItem="UVC-9c-PE1" secondAttribute="bottom" constant="16" id="EVR-9I-B0T"/>
+                                            <constraint firstItem="Hmo-P8-AcO" firstAttribute="top" secondItem="914-qU-21W" secondAttribute="bottom" constant="16" id="G4D-Qw-ffq"/>
+                                            <constraint firstItem="914-qU-21W" firstAttribute="width" secondItem="m2o-iO-WdO" secondAttribute="width" multiplier="0.8" id="MMS-jM-FiI"/>
+                                            <constraint firstItem="jjz-if-icl" firstAttribute="top" secondItem="DeM-31-F5O" secondAttribute="bottom" constant="25" id="Mjm-Y3-IPZ"/>
+                                            <constraint firstItem="tKP-jj-teU" firstAttribute="width" secondItem="m2o-iO-WdO" secondAttribute="width" multiplier="0.15" id="NXu-y5-Rt5"/>
+                                            <constraint firstItem="UVC-9c-PE1" firstAttribute="width" secondItem="tKP-jj-teU" secondAttribute="width" id="P7h-FY-elK"/>
+                                            <constraint firstItem="DeM-31-F5O" firstAttribute="centerX" secondItem="m2o-iO-WdO" secondAttribute="centerX" id="QLh-dL-Zeo"/>
+                                            <constraint firstAttribute="bottom" secondItem="tKP-jj-teU" secondAttribute="bottom" constant="16" id="Rvr-A6-ele"/>
+                                            <constraint firstItem="tKP-jj-teU" firstAttribute="top" secondItem="Hmo-P8-AcO" secondAttribute="bottom" constant="16" id="Vav-Xk-tpw"/>
+                                            <constraint firstItem="Hmo-P8-AcO" firstAttribute="width" secondItem="m2o-iO-WdO" secondAttribute="width" id="Wa6-dC-9vB"/>
+                                            <constraint firstItem="jjz-if-icl" firstAttribute="centerX" secondItem="m2o-iO-WdO" secondAttribute="centerX" id="a9c-v9-hbP"/>
+                                            <constraint firstItem="jjz-if-icl" firstAttribute="width" secondItem="m2o-iO-WdO" secondAttribute="width" multiplier="0.8" id="fFO-v8-z4R"/>
+                                            <constraint firstItem="914-qU-21W" firstAttribute="centerX" secondItem="m2o-iO-WdO" secondAttribute="centerX" id="fdi-2j-qKr"/>
+                                            <constraint firstItem="UVC-9c-PE1" firstAttribute="leading" secondItem="m2o-iO-WdO" secondAttribute="leading" constant="16" id="fkr-kN-E0T"/>
+                                            <constraint firstItem="914-qU-21W" firstAttribute="top" secondItem="jjz-if-icl" secondAttribute="bottom" constant="20" id="hYw-7c-C1q"/>
+                                            <constraint firstItem="Hmo-P8-AcO" firstAttribute="centerX" secondItem="m2o-iO-WdO" secondAttribute="centerX" id="lnV-mU-a5F"/>
+                                            <constraint firstItem="UVC-9c-PE1" firstAttribute="top" secondItem="Hmo-P8-AcO" secondAttribute="bottom" constant="16" id="rx7-e4-qCF"/>
+                                            <constraint firstItem="UVC-9c-PE1" firstAttribute="height" secondItem="tKP-jj-teU" secondAttribute="height" id="xnw-Vq-BhA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="m2o-iO-WdO" secondAttribute="trailing" id="5UT-dx-SrH"/>
+                                    <constraint firstItem="m2o-iO-WdO" firstAttribute="width" secondItem="a08-hK-iwA" secondAttribute="width" id="GR2-89-0yD"/>
+                                    <constraint firstAttribute="bottom" secondItem="m2o-iO-WdO" secondAttribute="bottom" id="PYb-BT-cgL"/>
+                                    <constraint firstItem="m2o-iO-WdO" firstAttribute="leading" secondItem="a08-hK-iwA" secondAttribute="leading" id="mer-4U-qIa"/>
+                                    <constraint firstItem="m2o-iO-WdO" firstAttribute="top" secondItem="a08-hK-iwA" secondAttribute="top" id="rDm-1H-2Xg"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="Bbe-oB-yzn" id="Mig-bU-B52"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N0i-1x-nrP"/>
+                        <constraints>
+                            <constraint firstItem="a08-hK-iwA" firstAttribute="top" secondItem="N0i-1x-nrP" secondAttribute="top" id="4H4-dn-w7i"/>
+                            <constraint firstItem="a08-hK-iwA" firstAttribute="trailing" secondItem="N0i-1x-nrP" secondAttribute="trailing" id="5nj-AH-n6K"/>
+                            <constraint firstItem="a08-hK-iwA" firstAttribute="leading" secondItem="N0i-1x-nrP" secondAttribute="leading" id="9FP-ob-xPs"/>
+                            <constraint firstItem="a08-hK-iwA" firstAttribute="bottom" secondItem="N0i-1x-nrP" secondAttribute="bottom" id="9tm-LL-vNG"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="375" height="1100"/>
+                    <connections>
+                        <outlet property="artistNameLabel" destination="jjz-if-icl" id="ru7-wY-cx9"/>
+                        <outlet property="bioText" destination="914-qU-21W" id="8Tq-tk-qkm"/>
+                        <outlet property="circulaImage" destination="DeM-31-F5O" id="MTu-2o-rnj"/>
+                        <outlet property="facebookButton" destination="UVC-9c-PE1" id="RxX-U5-eEd"/>
+                        <outlet property="instagramButton" destination="tKP-jj-teU" id="wt7-EB-3O1"/>
+                        <outlet property="scrollView" destination="a08-hK-iwA" id="ORc-AJ-7aD"/>
+                        <outlet property="tableView" destination="Hmo-P8-AcO" id="kDj-Cx-oFP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r8i-Sv-Sfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2637.6923076923076" y="589.33649289099526"/>
+        </scene>
+        <!--Mural-->
+        <scene sceneID="7nX-DZ-CKe">
+            <objects>
+                <viewController title="Mural" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mhd-xf-U7Z" customClass="MuralViewController" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yfk-Ds-43q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEy-l0-Vn1">
+                                <rect key="frame" x="37.666666666666657" y="718" width="300" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cne-f3-PQV"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Go to artist's page"/>
+                                <connections>
+                                    <action selector="goToArtistsPageHandler:" destination="mhd-xf-U7Z" eventType="touchUpInside" id="8qb-PU-x5P"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spu-jC-Fr7" userLabel="MuralView" customClass="MuralView" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="375" height="606"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9L-0Q-nA2" userLabel="Get Directions">
+                                <rect key="frame" x="37.666666666666657" y="666" width="300" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Get Directions"/>
+                                <connections>
+                                    <action selector="getDirectionsHandler:" destination="mhd-xf-U7Z" eventType="touchUpInside" id="bpP-6G-3lK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Od-gV-eF4"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="spu-jC-Fr7" firstAttribute="top" secondItem="1Od-gV-eF4" secondAttribute="top" id="1zn-WX-8hm"/>
+                            <constraint firstItem="g9L-0Q-nA2" firstAttribute="centerX" secondItem="1Od-gV-eF4" secondAttribute="centerX" id="Gg8-Id-mF8"/>
+                            <constraint firstItem="cEy-l0-Vn1" firstAttribute="centerX" secondItem="1Od-gV-eF4" secondAttribute="centerX" id="Mff-il-7Pr"/>
+                            <constraint firstItem="cEy-l0-Vn1" firstAttribute="width" secondItem="1Od-gV-eF4" secondAttribute="width" multiplier="0.8" id="REm-qy-lLO"/>
+                            <constraint firstItem="spu-jC-Fr7" firstAttribute="centerX" secondItem="1Od-gV-eF4" secondAttribute="centerX" id="Wyt-h8-Hn3"/>
+                            <constraint firstItem="cEy-l0-Vn1" firstAttribute="top" secondItem="g9L-0Q-nA2" secondAttribute="bottom" constant="8" id="afl-Nh-hTq"/>
+                            <constraint firstItem="1Od-gV-eF4" firstAttribute="bottom" secondItem="cEy-l0-Vn1" secondAttribute="bottom" constant="16" id="eED-7k-cx8"/>
+                            <constraint firstItem="spu-jC-Fr7" firstAttribute="width" secondItem="1Od-gV-eF4" secondAttribute="width" id="kgX-fs-yz6"/>
+                            <constraint firstItem="g9L-0Q-nA2" firstAttribute="height" secondItem="cEy-l0-Vn1" secondAttribute="height" id="mt3-Ux-eE5"/>
+                            <constraint firstItem="g9L-0Q-nA2" firstAttribute="width" secondItem="cEy-l0-Vn1" secondAttribute="width" id="oqF-mn-xK4"/>
+                            <constraint firstItem="g9L-0Q-nA2" firstAttribute="top" secondItem="spu-jC-Fr7" secondAttribute="bottom" constant="16" id="ruB-pC-UAD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="getDirectionsButton" destination="g9L-0Q-nA2" id="zwd-N0-mt3"/>
+                        <outlet property="goToArtistPageButton" destination="cEy-l0-Vn1" id="MA4-z5-jgX"/>
+                        <outlet property="muralView" destination="spu-jC-Fr7" id="zCZ-n3-utd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QhR-Tj-BSo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-468" y="970"/>
+        </scene>
+        <!--Mural Locations-->
+        <scene sceneID="bx7-1K-yVN">
+            <objects>
+                <viewController title="Mural Locations" id="Jck-vF-93o" customClass="MapViewController" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ljj-uD-aMB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="haU-Ev-Rc3">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Jck-vF-93o" id="u2q-3v-3vB"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AnS-Uq-KLy"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="haU-Ev-Rc3" firstAttribute="leading" secondItem="AnS-Uq-KLy" secondAttribute="leading" id="DZ9-hZ-k7V"/>
+                            <constraint firstItem="haU-Ev-Rc3" firstAttribute="top" secondItem="AnS-Uq-KLy" secondAttribute="top" id="VZe-A2-gu7"/>
+                            <constraint firstItem="AnS-Uq-KLy" firstAttribute="bottom" secondItem="haU-Ev-Rc3" secondAttribute="bottom" id="irf-Od-uaT"/>
+                            <constraint firstItem="AnS-Uq-KLy" firstAttribute="trailing" secondItem="haU-Ev-Rc3" secondAttribute="trailing" id="p9x-h0-P8y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Map" id="Cxb-Rc-5iD"/>
+                    <connections>
+                        <outlet property="mapView" destination="haU-Ev-Rc3" id="Hpt-sL-bxe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C9p-z1-Zxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888" y="-183"/>
+        </scene>
+        <!--Contact Us-->
+        <scene sceneID="NfC-3U-I1X">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="BTP-hG-uiI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ysG-jI-7G2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Our Support Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXV-5y-8bZ">
+                                <rect key="frame" x="55" y="132" width="265" height="25.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need to get in touch with the team? We're all ears." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLN-6o-VTH">
+                                <rect key="frame" x="0.0" y="198" width="375" height="16.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nKh-EZ-Mk2">
+                                <rect key="frame" x="0.0" y="321.66666666666669" width="375" height="95"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hnv-X3-S2N">
+                                        <rect key="frame" x="51.333333333333343" y="0.0" width="272.33333333333326" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXR-S0-u3e">
+                                                <rect key="frame" x="0.0" y="0.0" width="49.333333333333336" height="21"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="office@tbilisimuralfest.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzM-5B-39p">
+                                                <rect key="frame" x="57.333333333333343" y="0.0" width="215.00000000000003" height="21"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iqP-eE-LbS">
+                                        <rect key="frame" x="45.666666666666657" y="37" width="283.66666666666674" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0U-9h-tbI">
+                                                <rect key="frame" x="0.0" y="0.0" width="27" height="21"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+49 176 729 49 709 (Germany)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yt-Vu-PAp">
+                                                <rect key="frame" x="35.000000000000014" y="0.0" width="248.66666666666669" height="21"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pHM-9G-bTE">
+                                        <rect key="frame" x="58.333333333333343" y="74" width="258.66666666666663" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFK-cb-WFq">
+                                                <rect key="frame" x="0.0" y="0.0" width="27" height="21"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+995 599 432 082 (Georgia)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnA-tP-emW">
+                                                <rect key="frame" x="34.999999999999986" y="0.0" width="223.66666666666663" height="21"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="1bm-9z-6Nw" userLabel="icon">
+                                <rect key="frame" x="59.666666666666657" y="618" width="255.99999999999997" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="KHX-oS-MO0"/>
+                                    <constraint firstAttribute="height" constant="128" id="aC6-YT-z3w"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hR8-f0-zlN"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hR8-f0-zlN" firstAttribute="bottom" secondItem="1bm-9z-6Nw" secondAttribute="bottom" constant="32" id="1XE-Tk-NbC"/>
+                            <constraint firstItem="nKh-EZ-Mk2" firstAttribute="top" secondItem="eLN-6o-VTH" secondAttribute="bottom" multiplier="1.5" id="TFC-Nj-em8"/>
+                            <constraint firstItem="hR8-f0-zlN" firstAttribute="trailing" secondItem="nKh-EZ-Mk2" secondAttribute="trailing" id="Utu-fn-KMO"/>
+                            <constraint firstItem="eLN-6o-VTH" firstAttribute="centerX" secondItem="hR8-f0-zlN" secondAttribute="centerX" id="bFT-1J-0EM"/>
+                            <constraint firstItem="qXV-5y-8bZ" firstAttribute="centerX" secondItem="hR8-f0-zlN" secondAttribute="centerX" id="e2s-mV-zz0"/>
+                            <constraint firstItem="eLN-6o-VTH" firstAttribute="width" secondItem="hR8-f0-zlN" secondAttribute="width" id="gAz-Zf-1ro"/>
+                            <constraint firstItem="qXV-5y-8bZ" firstAttribute="top" secondItem="hR8-f0-zlN" secondAttribute="top" multiplier="1.5" id="kHt-Ib-jHM"/>
+                            <constraint firstItem="1bm-9z-6Nw" firstAttribute="centerX" secondItem="hR8-f0-zlN" secondAttribute="centerX" id="mMh-YS-4ra"/>
+                            <constraint firstItem="eLN-6o-VTH" firstAttribute="top" secondItem="qXV-5y-8bZ" secondAttribute="top" multiplier="1.5" id="oYR-3s-IsQ"/>
+                            <constraint firstItem="nKh-EZ-Mk2" firstAttribute="leading" secondItem="hR8-f0-zlN" secondAttribute="leading" id="uG9-bw-8lm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contact Us" id="cVF-S3-Hev"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mpe-CJ-Lmo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1162.4000000000001" y="970.93596059113304"/>
+        </scene>
+        <!--Vertical Gallery-->
+        <scene sceneID="PMt-9N-rAt">
+            <objects>
+                <viewController title="Vertical Gallery" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DTz-Cn-aK7" customClass="GalleryViewController" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gjY-6q-5Tq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6dR-9T-omn">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="m1u-WP-MkG" customClass="GalleryTableViewCell" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="375" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m1u-WP-MkG" id="Ln2-sP-kN3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GM1-UL-mSp"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GM1-UL-mSp" firstAttribute="trailing" secondItem="6dR-9T-omn" secondAttribute="trailing" id="AfV-tO-Xsh"/>
+                            <constraint firstItem="GM1-UL-mSp" firstAttribute="bottom" secondItem="6dR-9T-omn" secondAttribute="bottom" id="ZVk-Dh-MC8"/>
+                            <constraint firstItem="6dR-9T-omn" firstAttribute="top" secondItem="GM1-UL-mSp" secondAttribute="top" id="rwc-Me-hcR"/>
+                            <constraint firstItem="6dR-9T-omn" firstAttribute="leading" secondItem="GM1-UL-mSp" secondAttribute="leading" id="zTq-Or-uSa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gallery" id="fgy-fk-XiF"/>
+                    <connections>
+                        <outlet property="tableView" destination="6dR-9T-omn" id="tiI-vS-sm4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ed0-8T-3C4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="389" y="970"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facebook-icon" width="256" height="256"/>
+        <image name="instagram-black-icon" width="200" height="200"/>
+        <image name="logo" width="679.5" height="679.5"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rR3-5c-uZ4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="naf-S8-F1e">
+            <objects>
+                <viewController id="rR3-5c-uZ4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NpL-Oh-VrR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oys-oB-QI3">
+                                <rect key="frame" x="145" y="262.5" width="124" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oys-oB-QI3" secondAttribute="height" multiplier="550:886" id="dWE-rd-RAB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QvR-96-NXM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oys-oB-QI3" firstAttribute="centerX" secondItem="QvR-96-NXM" secondAttribute="centerX" id="MbH-AI-yPB"/>
+                            <constraint firstItem="oys-oB-QI3" firstAttribute="width" secondItem="QvR-96-NXM" secondAttribute="width" multiplier="0.3" id="ecg-YT-4n5"/>
+                            <constraint firstItem="oys-oB-QI3" firstAttribute="centerY" secondItem="QvR-96-NXM" secondAttribute="centerY" multiplier="0.8" id="qki-K8-kB7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nMI-fD-5cF">
+                        <barButtonItem key="rightBarButtonItem" title="Menu" id="ViC-Bm-SvU"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="gifView" destination="oys-oB-QI3" id="Kmi-pl-kV6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDZ-8P-qFx" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="784" y="366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

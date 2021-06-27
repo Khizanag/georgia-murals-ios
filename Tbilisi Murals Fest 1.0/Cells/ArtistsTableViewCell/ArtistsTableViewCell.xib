@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="647" id="KGk-i7-Jjw" customClass="ArtistsTableViewCell" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="605" height="647"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="605" height="647"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f7Q-h2-Sak">
+                        <rect key="frame" x="60.5" y="16" width="484" height="484"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="f7Q-h2-Sak" secondAttribute="height" multiplier="1:1" id="YXW-sq-IoO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OiD-Jc-WNs">
+                        <rect key="frame" x="16" y="516" width="573" height="115"/>
+                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="36"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OiD-Jc-WNs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="4Lq-FN-GrE"/>
+                    <constraint firstAttribute="bottom" secondItem="OiD-Jc-WNs" secondAttribute="bottom" constant="16" id="5Ym-wp-4jr"/>
+                    <constraint firstItem="f7Q-h2-Sak" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.8" id="dDs-N4-biG"/>
+                    <constraint firstItem="f7Q-h2-Sak" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="dFk-Pf-CuF"/>
+                    <constraint firstAttribute="trailing" secondItem="OiD-Jc-WNs" secondAttribute="trailing" constant="16" id="ije-6M-VxD"/>
+                    <constraint firstItem="OiD-Jc-WNs" firstAttribute="top" secondItem="f7Q-h2-Sak" secondAttribute="bottom" constant="16" id="mug-dN-mQH"/>
+                    <constraint firstItem="f7Q-h2-Sak" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="na5-D7-Tov"/>
+                    <constraint firstItem="OiD-Jc-WNs" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="r6M-UI-CmN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="name" destination="OiD-Jc-WNs" id="6m7-Zt-OlY"/>
+                <outlet property="profilePhoto" destination="f7Q-h2-Sak" id="X4W-ro-xrs"/>
+            </connections>
+            <point key="canvasLocation" x="344.20289855072468" y="350.55803571428572"/>
+        </tableViewCell>
+    </objects>
+</document>

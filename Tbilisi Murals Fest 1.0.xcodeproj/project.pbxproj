@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC54BE622687F252006A2493 /* SponsorsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54BE612687F252006A2493 /* SponsorsManager.swift */; };
+		DC54BE65268804E5006A2493 /* SocialMediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54BE64268804E5006A2493 /* SocialMediaManager.swift */; };
+		DC54BE6B26880B90006A2493 /* GalleryConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54BE6A26880B90006A2493 /* GalleryConstants.swift */; };
+		DCEBFA162688591D00B05CFC /* ArtistPageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFA152688591D00B05CFC /* ArtistPageConstants.swift */; };
+		DCEBFA1826885A2E00B05CFC /* MapConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFA1726885A2E00B05CFC /* MapConstants.swift */; };
+		DCEBFA1A26885CEA00B05CFC /* ArtistsConstrants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFA1926885CEA00B05CFC /* ArtistsConstrants.swift */; };
+		DCEBFA22268860F500B05CFC /* ArtistsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFA20268860F500B05CFC /* ArtistsTableViewCell.swift */; };
+		DCEBFA23268860F500B05CFC /* ArtistsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCEBFA21268860F500B05CFC /* ArtistsTableViewCell.xib */; };
+		DCEBFA2726886E8000B05CFC /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFA2526886E8000B05CFC /* GalleryTableViewCell.swift */; };
+		DCEBFA2826886E8000B05CFC /* GalleryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCEBFA2626886E8000B05CFC /* GalleryTableViewCell.xib */; };
+		DCEBFA2A268873D800B05CFC /* MenuConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFA29268873D800B05CFC /* MenuConstants.swift */; };
+		FB0D0D8B25277F440074C3ED /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D0D8A25277F440074C3ED /* Artist.swift */; };
+		FB0D0D8F2527B9C90074C3ED /* ArtistsDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D0D8E2527B9C90074C3ED /* ArtistsDataBase.swift */; };
+		FB15C64525871AA2009EEA69 /* MuralImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15C64325871AA2009EEA69 /* MuralImageCollectionViewCell.swift */; };
+		FB15C64625871AA2009EEA69 /* MuralImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB15C64425871AA2009EEA69 /* MuralImageCollectionViewCell.xib */; };
+		FB4CB93D258D5D16000A126A /* Matthias Mross.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4CB93C258D5D16000A126A /* Matthias Mross.swift */; };
+		FB4CB940258D5DF4000A126A /* Irakli Qadeishvili & Zviad Esartia.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4CB93F258D5DF4000A126A /* Irakli Qadeishvili & Zviad Esartia.swift */; };
+		FB54AFB325229AFF00B37B58 /* intro3.gif in Resources */ = {isa = PBXBuildFile; fileRef = FB54AFA425229AFE00B37B58 /* intro3.gif */; };
+		FB54AFBB25229AFF00B37B58 /* bg.gif in Resources */ = {isa = PBXBuildFile; fileRef = FB54AFAC25229AFF00B37B58 /* bg.gif */; };
+		FB54AFC125229B2100B37B58 /* swift=gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB54AFC025229B2100B37B58 /* swift=gif.swift */; };
+		FB54AFCE25229C6F00B37B58 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB54AFC425229C6E00B37B58 /* MapViewController.swift */; };
+		FB54AFD125229C6F00B37B58 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB54AFC725229C6E00B37B58 /* MenuViewController.swift */; };
+		FB54AFD225229C6F00B37B58 /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB54AFC825229C6E00B37B58 /* ArtistsViewController.swift */; };
+		FB54AFDC25229D5D00B37B58 /* ArtistPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB54AFDB25229D5D00B37B58 /* ArtistPageViewController.swift */; };
+		FB5E29CB2538A9AB009E33CE /* IntroGifResoluted.gif in Resources */ = {isa = PBXBuildFile; fileRef = FB5E29CA2538A9AB009E33CE /* IntroGifResoluted.gif */; };
+		FB6615162578072E00AFACCB /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6615152578072E00AFACCB /* GalleryViewController.swift */; };
+		FB83B6CB25D4A1CF00F67922 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB83B6CA25D4A1CF00F67922 /* Constants.swift */; };
+		FB8556BE2577080400D5570D /* MuralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8556BD2577080400D5570D /* MuralViewController.swift */; };
+		FB8556C225770D7700D5570D /* MuralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8556C125770D7700D5570D /* MuralView.swift */; };
+		FB8556C725770E7E00D5570D /* MuralView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB8556C625770E7E00D5570D /* MuralView.xib */; };
+		FB8556CA257710D500D5570D /* Innerfields.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8556C9257710D500D5570D /* Innerfields.swift */; };
+		FB98FF792577313700C3F7D6 /* BaseReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98FF782577313700C3F7D6 /* BaseReusableView.swift */; };
+		FBC86A4E2576BF7800FBCAAC /* Mural.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A4D2576BF7800FBCAAC /* Mural.swift */; };
+		FBC86A572576C18400FBCAAC /* MuralsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A562576C18400FBCAAC /* MuralsDatabase.swift */; };
+		FBC86A5D2576E70300FBCAAC /* Snyder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A5C2576E70300FBCAAC /* Snyder.swift */; };
+		FBC86A602576E9B300FBCAAC /* CollinVanderSlujis.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A5F2576E9B300FBCAAC /* CollinVanderSlujis.swift */; };
+		FBC86A632576E9C700FBCAAC /* CaseMaclaim.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A622576E9C700FBCAAC /* CaseMaclaim.swift */; };
+		FBC86A662576E9D800FBCAAC /* Musya.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A652576E9D800FBCAAC /* Musya.swift */; };
+		FBC86A692576E9EC00FBCAAC /* QUINTE55ENZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A682576E9EC00FBCAAC /* QUINTE55ENZ.swift */; };
+		FBC86A6C2576E9FD00FBCAAC /* HRVB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A6B2576E9FD00FBCAAC /* HRVB.swift */; };
+		FBC86A6F2576EA0900FBCAAC /* Kera.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A6E2576EA0900FBCAAC /* Kera.swift */; };
+		FBC86A722576EA2000FBCAAC /* ElBocho.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A712576EA2000FBCAAC /* ElBocho.swift */; };
+		FBC86A752576EA3000FBCAAC /* LukaJaparidzeAndV45.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A742576EA3000FBCAAC /* LukaJaparidzeAndV45.swift */; };
+		FBC86A782576EA3D00FBCAAC /* NoahAndAphe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A772576EA3D00FBCAAC /* NoahAndAphe.swift */; };
+		FBC86A7B2576EA4B00FBCAAC /* GiorgiMaskharashvili.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A7A2576EA4B00FBCAAC /* GiorgiMaskharashvili.swift */; };
+		FBC86A7E2576EA5E00FBCAAC /* Ino.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A7D2576EA5E00FBCAAC /* Ino.swift */; };
+		FBC86A812576EA6D00FBCAAC /* Dante.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A802576EA6D00FBCAAC /* Dante.swift */; };
+		FBC86A842576EA7800FBCAAC /* Artez.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A832576EA7800FBCAAC /* Artez.swift */; };
+		FBF1782325788C1700D9D647 /* TODO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF1782225788C1700D9D647 /* TODO.swift */; };
+		FBF72998252299DA00E12D44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF72997252299DA00E12D44 /* AppDelegate.swift */; };
+		FBF7299A252299DA00E12D44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF72999252299DA00E12D44 /* SceneDelegate.swift */; };
+		FBF7299C252299DA00E12D44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF7299B252299DA00E12D44 /* ViewController.swift */; };
+		FBF7299F252299DA00E12D44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF7299D252299DA00E12D44 /* Main.storyboard */; };
+		FBF729A4252299DD00E12D44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF729A3252299DD00E12D44 /* Assets.xcassets */; };
+		FBF729A7252299DD00E12D44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF729A5252299DD00E12D44 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC54BE612687F252006A2493 /* SponsorsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorsManager.swift; sourceTree = "<group>"; };
+		DC54BE64268804E5006A2493 /* SocialMediaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaManager.swift; sourceTree = "<group>"; };
+		DC54BE6A26880B90006A2493 /* GalleryConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryConstants.swift; sourceTree = "<group>"; };
+		DCEBFA152688591D00B05CFC /* ArtistPageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistPageConstants.swift; sourceTree = "<group>"; };
+		DCEBFA1726885A2E00B05CFC /* MapConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapConstants.swift; sourceTree = "<group>"; };
+		DCEBFA1926885CEA00B05CFC /* ArtistsConstrants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsConstrants.swift; sourceTree = "<group>"; };
+		DCEBFA20268860F500B05CFC /* ArtistsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsTableViewCell.swift; sourceTree = "<group>"; };
+		DCEBFA21268860F500B05CFC /* ArtistsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistsTableViewCell.xib; sourceTree = "<group>"; };
+		DCEBFA2526886E8000B05CFC /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewCell.swift; sourceTree = "<group>"; };
+		DCEBFA2626886E8000B05CFC /* GalleryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryTableViewCell.xib; sourceTree = "<group>"; };
+		DCEBFA29268873D800B05CFC /* MenuConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuConstants.swift; sourceTree = "<group>"; };
+		FB0D0D8A25277F440074C3ED /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		FB0D0D8E2527B9C90074C3ED /* ArtistsDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsDataBase.swift; sourceTree = "<group>"; };
+		FB15C64325871AA2009EEA69 /* MuralImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		FB15C64425871AA2009EEA69 /* MuralImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MuralImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		FB4CB93C258D5D16000A126A /* Matthias Mross.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Matthias Mross.swift"; sourceTree = "<group>"; };
+		FB4CB93F258D5DF4000A126A /* Irakli Qadeishvili & Zviad Esartia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Irakli Qadeishvili & Zviad Esartia.swift"; sourceTree = "<group>"; };
+		FB54AFA425229AFE00B37B58 /* intro3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = intro3.gif; sourceTree = "<group>"; };
+		FB54AFAC25229AFF00B37B58 /* bg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bg.gif; sourceTree = "<group>"; };
+		FB54AFC025229B2100B37B58 /* swift=gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "swift=gif.swift"; sourceTree = "<group>"; };
+		FB54AFC425229C6E00B37B58 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FB54AFC725229C6E00B37B58 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FB54AFC825229C6E00B37B58 /* ArtistsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistsViewController.swift; sourceTree = "<group>"; };
+		FB54AFDB25229D5D00B37B58 /* ArtistPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistPageViewController.swift; sourceTree = "<group>"; };
+		FB5E29CA2538A9AB009E33CE /* IntroGifResoluted.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IntroGifResoluted.gif; sourceTree = "<group>"; };
+		FB6615152578072E00AFACCB /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		FB83B6CA25D4A1CF00F67922 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FB8556BD2577080400D5570D /* MuralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralViewController.swift; sourceTree = "<group>"; };
+		FB8556C125770D7700D5570D /* MuralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralView.swift; sourceTree = "<group>"; };
+		FB8556C625770E7E00D5570D /* MuralView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MuralView.xib; sourceTree = "<group>"; };
+		FB8556C9257710D500D5570D /* Innerfields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Innerfields.swift; sourceTree = "<group>"; };
+		FB98FF782577313700C3F7D6 /* BaseReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseReusableView.swift; sourceTree = "<group>"; };
+		FBC86A4D2576BF7800FBCAAC /* Mural.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mural.swift; sourceTree = "<group>"; };
+		FBC86A562576C18400FBCAAC /* MuralsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralsDatabase.swift; sourceTree = "<group>"; };
+		FBC86A5C2576E70300FBCAAC /* Snyder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snyder.swift; sourceTree = "<group>"; };
+		FBC86A5F2576E9B300FBCAAC /* CollinVanderSlujis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollinVanderSlujis.swift; sourceTree = "<group>"; };
+		FBC86A622576E9C700FBCAAC /* CaseMaclaim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseMaclaim.swift; sourceTree = "<group>"; };
+		FBC86A652576E9D800FBCAAC /* Musya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musya.swift; sourceTree = "<group>"; };
+		FBC86A682576E9EC00FBCAAC /* QUINTE55ENZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QUINTE55ENZ.swift; sourceTree = "<group>"; };
+		FBC86A6B2576E9FD00FBCAAC /* HRVB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRVB.swift; sourceTree = "<group>"; };
+		FBC86A6E2576EA0900FBCAAC /* Kera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kera.swift; sourceTree = "<group>"; };
+		FBC86A712576EA2000FBCAAC /* ElBocho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElBocho.swift; sourceTree = "<group>"; };
+		FBC86A742576EA3000FBCAAC /* LukaJaparidzeAndV45.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LukaJaparidzeAndV45.swift; sourceTree = "<group>"; };
+		FBC86A772576EA3D00FBCAAC /* NoahAndAphe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoahAndAphe.swift; sourceTree = "<group>"; };
+		FBC86A7A2576EA4B00FBCAAC /* GiorgiMaskharashvili.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiorgiMaskharashvili.swift; sourceTree = "<group>"; };
+		FBC86A7D2576EA5E00FBCAAC /* Ino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ino.swift; sourceTree = "<group>"; };
+		FBC86A802576EA6D00FBCAAC /* Dante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dante.swift; sourceTree = "<group>"; };
+		FBC86A832576EA7800FBCAAC /* Artez.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artez.swift; sourceTree = "<group>"; };
+		FBF1782225788C1700D9D647 /* TODO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODO.swift; sourceTree = "<group>"; };
+		FBF72994252299DA00E12D44 /* Tbilisi Murals Fest 1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tbilisi Murals Fest 1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF72997252299DA00E12D44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBF72999252299DA00E12D44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FBF7299B252299DA00E12D44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBF7299E252299DA00E12D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBF729A3252299DD00E12D44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBF729A6252299DD00E12D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBF729A8252299DD00E12D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBF72991252299DA00E12D44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC54BE602687F245006A2493 /* Sponsors */ = {
+			isa = PBXGroup;
+			children = (
+				DC54BE612687F252006A2493 /* SponsorsManager.swift */,
+			);
+			path = Sponsors;
+			sourceTree = "<group>";
+		};
+		DC54BE63268804D1006A2493 /* Social Media */ = {
+			isa = PBXGroup;
+			children = (
+				DC54BE64268804E5006A2493 /* SocialMediaManager.swift */,
+			);
+			path = "Social Media";
+			sourceTree = "<group>";
+		};
+		DC54BE6626880869006A2493 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				FB6615152578072E00AFACCB /* GalleryViewController.swift */,
+				DC54BE6A26880B90006A2493 /* GalleryConstants.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		DC54BE6826880896006A2493 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				FB54AFC425229C6E00B37B58 /* MapViewController.swift */,
+				DCEBFA1726885A2E00B05CFC /* MapConstants.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		DC54BE69268808A3006A2493 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				FB54AFC725229C6E00B37B58 /* MenuViewController.swift */,
+				DCEBFA29268873D800B05CFC /* MenuConstants.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		DCEBFA1B26885E8800B05CFC /* ArtistsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DCEBFA20268860F500B05CFC /* ArtistsTableViewCell.swift */,
+				DCEBFA21268860F500B05CFC /* ArtistsTableViewCell.xib */,
+			);
+			path = ArtistsTableViewCell;
+			sourceTree = "<group>";
+		};
+		DCEBFA2426886E6A00B05CFC /* GalleryTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DCEBFA2526886E8000B05CFC /* GalleryTableViewCell.swift */,
+				DCEBFA2626886E8000B05CFC /* GalleryTableViewCell.xib */,
+			);
+			path = GalleryTableViewCell;
+			sourceTree = "<group>";
+		};
+		FB83B6C925D4A1BF00F67922 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FBC86A4B2576B31800FBCAAC /* Additional Files */,
+				FB98FF77257726A400C3F7D6 /* Tools */,
+				DC54BE63268804D1006A2493 /* Social Media */,
+				DC54BE602687F245006A2493 /* Sponsors */,
+				FB83B6CA25D4A1CF00F67922 /* Constants.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FB83B6CE25D4A28800F67922 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FBF729A5252299DD00E12D44 /* LaunchScreen.storyboard */,
+				FBF7299D252299DA00E12D44 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FB8556C025770D6700D5570D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB8556C525770E6800D5570D /* MuralView */,
+				FB98FF782577313700C3F7D6 /* BaseReusableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB8556C525770E6800D5570D /* MuralView */ = {
+			isa = PBXGroup;
+			children = (
+				FB8556C125770D7700D5570D /* MuralView.swift */,
+				FB8556C625770E7E00D5570D /* MuralView.xib */,
+				FB15C64325871AA2009EEA69 /* MuralImageCollectionViewCell.swift */,
+				FB15C64425871AA2009EEA69 /* MuralImageCollectionViewCell.xib */,
+			);
+			path = MuralView;
+			sourceTree = "<group>";
+		};
+		FB98FF75257722DE00C3F7D6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DCEBFA2426886E6A00B05CFC /* GalleryTableViewCell */,
+				DCEBFA1B26885E8800B05CFC /* ArtistsTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FB98FF77257726A400C3F7D6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FB54AFC025229B2100B37B58 /* swift=gif.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		FBC86A4B2576B31800FBCAAC /* Additional Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBF1782625788CBA00D9D647 /* Intros */,
+				FBF1782225788C1700D9D647 /* TODO.swift */,
+			);
+			path = "Additional Files";
+			sourceTree = "<group>";
+		};
+		FBC86A4C2576B33C00FBCAAC /* Artist Page */ = {
+			isa = PBXGroup;
+			children = (
+				FB54AFDB25229D5D00B37B58 /* ArtistPageViewController.swift */,
+				DCEBFA152688591D00B05CFC /* ArtistPageConstants.swift */,
+			);
+			path = "Artist Page";
+			sourceTree = "<group>";
+		};
+		FBC86A512576C03300FBCAAC /* Artists */ = {
+			isa = PBXGroup;
+			children = (
+				FB54AFC825229C6E00B37B58 /* ArtistsViewController.swift */,
+				FB0D0D8A25277F440074C3ED /* Artist.swift */,
+				FB0D0D8E2527B9C90074C3ED /* ArtistsDataBase.swift */,
+				FBC86A862576EA7B00FBCAAC /* Each Artist Info Page */,
+				DCEBFA1926885CEA00B05CFC /* ArtistsConstrants.swift */,
+			);
+			path = Artists;
+			sourceTree = "<group>";
+		};
+		FBC86A542576C15800FBCAAC /* Murals */ = {
+			isa = PBXGroup;
+			children = (
+				FB8556BD2577080400D5570D /* MuralViewController.swift */,
+				FBC86A4D2576BF7800FBCAAC /* Mural.swift */,
+				FBC86A562576C18400FBCAAC /* MuralsDatabase.swift */,
+			);
+			path = Murals;
+			sourceTree = "<group>";
+		};
+		FBC86A862576EA7B00FBCAAC /* Each Artist Info Page */ = {
+			isa = PBXGroup;
+			children = (
+				FBC86A832576EA7800FBCAAC /* Artez.swift */,
+				FBC86A622576E9C700FBCAAC /* CaseMaclaim.swift */,
+				FBC86A5F2576E9B300FBCAAC /* CollinVanderSlujis.swift */,
+				FBC86A802576EA6D00FBCAAC /* Dante.swift */,
+				FBC86A712576EA2000FBCAAC /* ElBocho.swift */,
+				FBC86A7A2576EA4B00FBCAAC /* GiorgiMaskharashvili.swift */,
+				FBC86A6B2576E9FD00FBCAAC /* HRVB.swift */,
+				FB8556C9257710D500D5570D /* Innerfields.swift */,
+				FBC86A7D2576EA5E00FBCAAC /* Ino.swift */,
+				FB4CB93F258D5DF4000A126A /* Irakli Qadeishvili & Zviad Esartia.swift */,
+				FBC86A6E2576EA0900FBCAAC /* Kera.swift */,
+				FBC86A742576EA3000FBCAAC /* LukaJaparidzeAndV45.swift */,
+				FB4CB93C258D5D16000A126A /* Matthias Mross.swift */,
+				FBC86A652576E9D800FBCAAC /* Musya.swift */,
+				FBC86A772576EA3D00FBCAAC /* NoahAndAphe.swift */,
+				FBC86A682576E9EC00FBCAAC /* QUINTE55ENZ.swift */,
+				FBC86A5C2576E70300FBCAAC /* Snyder.swift */,
+			);
+			path = "Each Artist Info Page";
+			sourceTree = "<group>";
+		};
+		FBF1782625788CBA00D9D647 /* Intros */ = {
+			isa = PBXGroup;
+			children = (
+				FB54AFA425229AFE00B37B58 /* intro3.gif */,
+				FB54AFAC25229AFF00B37B58 /* bg.gif */,
+				FB5E29CA2538A9AB009E33CE /* IntroGifResoluted.gif */,
+			);
+			path = Intros;
+			sourceTree = "<group>";
+		};
+		FBF7298B252299DA00E12D44 = {
+			isa = PBXGroup;
+			children = (
+				FBF72996252299DA00E12D44 /* Tbilisi Murals Fest 1.0 */,
+				FBF72995252299DA00E12D44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBF72995252299DA00E12D44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBF72994252299DA00E12D44 /* Tbilisi Murals Fest 1.0.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBF72996252299DA00E12D44 /* Tbilisi Murals Fest 1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				FBC86A4C2576B33C00FBCAAC /* Artist Page */,
+				DC54BE69268808A3006A2493 /* Menu */,
+				DC54BE6826880896006A2493 /* Map */,
+				DC54BE6626880869006A2493 /* Gallery */,
+				FBF72997252299DA00E12D44 /* AppDelegate.swift */,
+				FBF7299B252299DA00E12D44 /* ViewController.swift */,
+				FBF72999252299DA00E12D44 /* SceneDelegate.swift */,
+				FBF729A8252299DD00E12D44 /* Info.plist */,
+				FBF729A3252299DD00E12D44 /* Assets.xcassets */,
+				FBC86A512576C03300FBCAAC /* Artists */,
+				FB98FF75257722DE00C3F7D6 /* Cells */,
+				FBC86A542576C15800FBCAAC /* Murals */,
+				FB83B6C925D4A1BF00F67922 /* Shared */,
+				FB83B6CE25D4A28800F67922 /* Storyboards */,
+				FB8556C025770D6700D5570D /* Views */,
+			);
+			path = "Tbilisi Murals Fest 1.0";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBF72993252299DA00E12D44 /* Tbilisi Murals Fest 1.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF729AB252299DD00E12D44 /* Build configuration list for PBXNativeTarget "Tbilisi Murals Fest 1.0" */;
+			buildPhases = (
+				FBF72990252299DA00E12D44 /* Sources */,
+				FBF72991252299DA00E12D44 /* Frameworks */,
+				FBF72992252299DA00E12D44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tbilisi Murals Fest 1.0";
+			productName = "Tbilisi Murals Fest 1.0";
+			productReference = FBF72994252299DA00E12D44 /* Tbilisi Murals Fest 1.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBF7298C252299DA00E12D44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					FBF72993252299DA00E12D44 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = FBF7298F252299DA00E12D44 /* Build configuration list for PBXProject "Tbilisi Murals Fest 1.0" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBF7298B252299DA00E12D44;
+			productRefGroup = FBF72995252299DA00E12D44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBF72993252299DA00E12D44 /* Tbilisi Murals Fest 1.0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBF72992252299DA00E12D44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF729A7252299DD00E12D44 /* LaunchScreen.storyboard in Resources */,
+				FBF729A4252299DD00E12D44 /* Assets.xcassets in Resources */,
+				DCEBFA2826886E8000B05CFC /* GalleryTableViewCell.xib in Resources */,
+				FB15C64625871AA2009EEA69 /* MuralImageCollectionViewCell.xib in Resources */,
+				DCEBFA23268860F500B05CFC /* ArtistsTableViewCell.xib in Resources */,
+				FB5E29CB2538A9AB009E33CE /* IntroGifResoluted.gif in Resources */,
+				FB8556C725770E7E00D5570D /* MuralView.xib in Resources */,
+				FBF7299F252299DA00E12D44 /* Main.storyboard in Resources */,
+				FB54AFB325229AFF00B37B58 /* intro3.gif in Resources */,
+				FB54AFBB25229AFF00B37B58 /* bg.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBF72990252299DA00E12D44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC86A6C2576E9FD00FBCAAC /* HRVB.swift in Sources */,
+				DC54BE65268804E5006A2493 /* SocialMediaManager.swift in Sources */,
+				FBC86A722576EA2000FBCAAC /* ElBocho.swift in Sources */,
+				FBF7299C252299DA00E12D44 /* ViewController.swift in Sources */,
+				FBC86A752576EA3000FBCAAC /* LukaJaparidzeAndV45.swift in Sources */,
+				FB98FF792577313700C3F7D6 /* BaseReusableView.swift in Sources */,
+				DC54BE622687F252006A2493 /* SponsorsManager.swift in Sources */,
+				FBF72998252299DA00E12D44 /* AppDelegate.swift in Sources */,
+				DCEBFA2726886E8000B05CFC /* GalleryTableViewCell.swift in Sources */,
+				FBC86A782576EA3D00FBCAAC /* NoahAndAphe.swift in Sources */,
+				FB8556C225770D7700D5570D /* MuralView.swift in Sources */,
+				FBF7299A252299DA00E12D44 /* SceneDelegate.swift in Sources */,
+				FBC86A842576EA7800FBCAAC /* Artez.swift in Sources */,
+				DCEBFA2A268873D800B05CFC /* MenuConstants.swift in Sources */,
+				FB83B6CB25D4A1CF00F67922 /* Constants.swift in Sources */,
+				FBC86A662576E9D800FBCAAC /* Musya.swift in Sources */,
+				FB54AFD225229C6F00B37B58 /* ArtistsViewController.swift in Sources */,
+				FBC86A7B2576EA4B00FBCAAC /* GiorgiMaskharashvili.swift in Sources */,
+				FB54AFD125229C6F00B37B58 /* MenuViewController.swift in Sources */,
+				DC54BE6B26880B90006A2493 /* GalleryConstants.swift in Sources */,
+				DCEBFA162688591D00B05CFC /* ArtistPageConstants.swift in Sources */,
+				FB0D0D8F2527B9C90074C3ED /* ArtistsDataBase.swift in Sources */,
+				FBC86A812576EA6D00FBCAAC /* Dante.swift in Sources */,
+				FB15C64525871AA2009EEA69 /* MuralImageCollectionViewCell.swift in Sources */,
+				DCEBFA22268860F500B05CFC /* ArtistsTableViewCell.swift in Sources */,
+				FB54AFC125229B2100B37B58 /* swift=gif.swift in Sources */,
+				FBC86A632576E9C700FBCAAC /* CaseMaclaim.swift in Sources */,
+				FBF1782325788C1700D9D647 /* TODO.swift in Sources */,
+				FB8556CA257710D500D5570D /* Innerfields.swift in Sources */,
+				FB0D0D8B25277F440074C3ED /* Artist.swift in Sources */,
+				FBC86A692576E9EC00FBCAAC /* QUINTE55ENZ.swift in Sources */,
+				FBC86A572576C18400FBCAAC /* MuralsDatabase.swift in Sources */,
+				FB4CB940258D5DF4000A126A /* Irakli Qadeishvili & Zviad Esartia.swift in Sources */,
+				FBC86A6F2576EA0900FBCAAC /* Kera.swift in Sources */,
+				FBC86A7E2576EA5E00FBCAAC /* Ino.swift in Sources */,
+				FBC86A5D2576E70300FBCAAC /* Snyder.swift in Sources */,
+				FB8556BE2577080400D5570D /* MuralViewController.swift in Sources */,
+				DCEBFA1826885A2E00B05CFC /* MapConstants.swift in Sources */,
+				FB54AFCE25229C6F00B37B58 /* MapViewController.swift in Sources */,
+				FB6615162578072E00AFACCB /* GalleryViewController.swift in Sources */,
+				FB54AFDC25229D5D00B37B58 /* ArtistPageViewController.swift in Sources */,
+				DCEBFA1A26885CEA00B05CFC /* ArtistsConstrants.swift in Sources */,
+				FBC86A4E2576BF7800FBCAAC /* Mural.swift in Sources */,
+				FB4CB93D258D5D16000A126A /* Matthias Mross.swift in Sources */,
+				FBC86A602576E9B300FBCAAC /* CollinVanderSlujis.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FBF7299D252299DA00E12D44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBF7299E252299DA00E12D44 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBF729A5252299DD00E12D44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBF729A6252299DD00E12D44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBF729A9252299DD00E12D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBF729AA252299DD00E12D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBF729AC252299DD00E12D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.1.3;
+				DEVELOPMENT_TEAM = U384JB987W;
+				INFOPLIST_FILE = "Tbilisi Murals Fest 1.0/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.3.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "MuralsFestival.Tbilisi-Murals-Fest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Besik Maziashvili Old Murals Profile";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBF729AD252299DD00E12D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.1.3;
+				DEVELOPMENT_TEAM = U384JB987W;
+				INFOPLIST_FILE = "Tbilisi Murals Fest 1.0/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.3.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "MuralsFestival.Tbilisi-Murals-Fest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Besik Maziashvili Old Murals Profile";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBF7298F252299DA00E12D44 /* Build configuration list for PBXProject "Tbilisi Murals Fest 1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF729A9252299DD00E12D44 /* Debug */,
+				FBF729AA252299DD00E12D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBF729AB252299DD00E12D44 /* Build configuration list for PBXNativeTarget "Tbilisi Murals Fest 1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF729AC252299DD00E12D44 /* Debug */,
+				FBF729AD252299DD00E12D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBF7298C252299DA00E12D44 /* Project object */;
+}
