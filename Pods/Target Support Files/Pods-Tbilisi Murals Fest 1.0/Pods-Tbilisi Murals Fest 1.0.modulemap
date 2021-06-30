@@ -1,0 +1,6 @@
+module Pods_Tbilisi_Murals_Fest_1_0 {
+  umbrella header "Pods-Tbilisi Murals Fest 1.0-umbrella.h"
+
+  export *
+  module * { export * }
+}

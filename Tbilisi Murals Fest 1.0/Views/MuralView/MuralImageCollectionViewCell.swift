@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import ScalingCarousel
 
-class MuralImageCollectionViewCell: UICollectionViewCell {
+class MuralImageCollectionViewCell: ScalingCarouselCell {
     public static let reuseId = "MuralImageCollectionViewCell"
 	
     @IBOutlet var imageView: UIImageView!

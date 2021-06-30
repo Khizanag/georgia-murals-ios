@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import ScalingCarousel
+import UPCarouselFlowLayout
 
 protocol MuralDelegate: Any {
 
@@ -15,7 +17,7 @@ class MuralView: BaseReusableView {
 
 	@IBOutlet var stackOfMetaInfo: UIStackView!
 
-	@IBOutlet var collectionView: UICollectionView!
+	@IBOutlet var collectionView: ScalingCarouselView!
 	@IBOutlet var titleLabel: UILabel!
 
 	@IBOutlet var projectLabel: UILabel!
@@ -40,10 +42,11 @@ class MuralView: BaseReusableView {
 
 	var mural: Mural = MuralsDatabase.sharedInstance.defaultMural
 
-	lazy var flowLayout: UICollectionViewFlowLayout = {
-		let flowLayout = UICollectionViewFlowLayout()
-		flowLayout.scrollDirection = .horizontal
-		return flowLayout
+	lazy var layout: SJCenterFlowLayout = {
+        let layout = SJCenterFlowLayout()
+        layout.itemSize = CGSizeMake(200, 200)
+        collectionView.collectionViewLayout = layout
+		return layout
 	}()
 
 	public func setup(showMetaInfo: Bool) {
@@ -116,15 +119,17 @@ class MuralView: BaseReusableView {
 		collectionView.collectionViewLayout = flowLayout
 
 		collectionView.register(
-			UINib(nibName: "MuralImageCollectionViewCell", bundle: nil), // TODO change on .self
-			forCellWithReuseIdentifier: "MuralImageCollectionViewCell"
+            UINib(nibName: MuralImageCollectionViewCell.reuseId, bundle: nil),
+            forCellWithReuseIdentifier: MuralImageCollectionViewCell.reuseId
 		)
 	}
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+    }
 
 }
 
-
-extension MuralView: UICollectionViewDelegate {}
 
 extension MuralView: UICollectionViewDataSource {
 
@@ -138,9 +143,11 @@ extension MuralView: UICollectionViewDataSource {
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MuralImageCollectionViewCell.reuseId, for: indexPath)
-		if let muralCollectionViewCell = cell as? MuralImageCollectionViewCell {
-			muralCollectionViewCell.imageView.image = UIImage(named: mural.imageURLs[indexPath.row])
-			return muralCollectionViewCell
+        if let cell = cell as? MuralImageCollectionViewCell {
+            cell.imageView.image = UIImage(named: mural.imageURLs[indexPath.row])
+            cell.setNeedsLayout()
+            cell.layoutIfNeeded()
+			return cell
 		}
 		return cell
 	}

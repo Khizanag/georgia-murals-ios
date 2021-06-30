@@ -171,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Exc-FE-Quq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1889" y="500"/>
+            <point key="canvasLocation" x="2831.1999999999998" y="499.50738916256159"/>
         </scene>
         <!--Artist Page View Controller-->
         <scene sceneID="RvK-3g-MbS">
@@ -304,12 +304,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r8i-Sv-Sfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2637.6923076923076" y="589.33649289099526"/>
+            <point key="canvasLocation" x="3580" y="588.91625615763553"/>
         </scene>
         <!--Mural-->
         <scene sceneID="7nX-DZ-CKe">
             <objects>
-                <viewController title="Mural" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mhd-xf-U7Z" customClass="MuralViewController" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MuralViewController" title="Mural" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mhd-xf-U7Z" customClass="MuralViewController" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yfk-Ds-43q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -327,7 +327,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spu-jC-Fr7" userLabel="MuralView" customClass="MuralView" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="375" height="606"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="562"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9L-0Q-nA2" userLabel="Get Directions">
                                 <rect key="frame" x="37.666666666666657" y="666" width="300" height="44"/>
@@ -355,6 +355,7 @@
                             <constraint firstItem="g9L-0Q-nA2" firstAttribute="top" secondItem="spu-jC-Fr7" secondAttribute="bottom" constant="16" id="ruB-pC-UAD"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Mural" id="Qze-V8-huB"/>
                     <connections>
                         <outlet property="getDirectionsButton" destination="g9L-0Q-nA2" id="zwd-N0-mt3"/>
                         <outlet property="goToArtistPageButton" destination="cEy-l0-Vn1" id="MA4-z5-jgX"/>
@@ -363,7 +364,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QhR-Tj-BSo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-468" y="970"/>
+            <point key="canvasLocation" x="474.39999999999998" y="969.45812807881782"/>
         </scene>
         <!--Mural Locations-->
         <scene sceneID="bx7-1K-yVN">
@@ -501,7 +502,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mpe-CJ-Lmo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1162.4000000000001" y="970.93596059113304"/>
+            <point key="canvasLocation" x="2104.8000000000002" y="970.93596059113304"/>
         </scene>
         <!--Vertical Gallery-->
         <scene sceneID="PMt-9N-rAt">
@@ -542,7 +543,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ed0-8T-3C4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="389" y="970"/>
+            <point key="canvasLocation" x="1330.4000000000001" y="969.45812807881782"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6oM-Io-htD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cud-is-2ya" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m0P-t3-xox">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mhd-xf-U7Z" kind="relationship" relationship="rootViewController" id="XQr-av-TOg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgp-BD-DwI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-468" y="969.45812807881782"/>
         </scene>
     </scenes>
     <resources>

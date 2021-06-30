@@ -28,9 +28,7 @@ class MapViewController: UIViewController {
     }
 
 	func createAnnotations() {
-
 		let artists = ArtistsDatabase.sharedInstance.getDataBase()
-
 		for (_, artist) in artists {
 			for mural in artist.murals {
 				let location = mural.location
@@ -80,7 +78,15 @@ extension MapViewController: MKMapViewDelegate {
 
 		if let annotationView = annotationView {
 			annotationView.canShowCallout = true
-            annotationView.image = Constants.Images.ping
+            let image = Constants.Images.ping
+            let imageSize = CGSize(width: Constants.Sizes.pingWidth, height: Constants.Sizes.pingHeight)
+
+            let renderer = UIGraphicsImageRenderer(size: imageSize)
+            let scaledImage = renderer.image { _ in
+                image.draw(in: CGRect(origin: .zero, size: imageSize))
+            }
+            
+            annotationView.image = scaledImage
 		}
 
 		return annotationView

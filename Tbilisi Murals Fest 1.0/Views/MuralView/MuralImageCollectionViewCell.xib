@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,23 +17,31 @@
                 <rect key="frame" x="0.0" y="0.0" width="346" height="328"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ap6-aP-hnP">
-                        <rect key="frame" x="0.0" y="0.0" width="346" height="328"/>
-                    </imageView>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UDq-jz-gUy">
+                        <rect key="frame" x="53" y="100" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ap6-aP-hnP">
+                                <rect key="frame" x="-53" y="-100" width="346" height="328"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <constraints>
-                <constraint firstItem="ap6-aP-hnP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6bA-xD-Img"/>
-                <constraint firstAttribute="bottom" secondItem="ap6-aP-hnP" secondAttribute="bottom" id="7J4-zc-wkl"/>
-                <constraint firstItem="ap6-aP-hnP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RV3-Bu-1ci"/>
-                <constraint firstAttribute="trailing" secondItem="ap6-aP-hnP" secondAttribute="trailing" id="cGa-S2-Zhu"/>
-            </constraints>
             <size key="customSize" width="346" height="328"/>
             <connections>
                 <outlet property="imageView" destination="ap6-aP-hnP" id="cQ0-NI-dgh"/>
+                <outlet property="mainView" destination="UDq-jz-gUy" id="6YT-Ff-Qzo"/>
             </connections>
             <point key="canvasLocation" x="143.47826086956522" y="231.69642857142856"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

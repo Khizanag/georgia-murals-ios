@@ -141,7 +141,7 @@
                     <constraints>
                         <constraint firstAttribute="width" secondItem="37J-fi-FtE" secondAttribute="height" multiplier="515:400" id="vze-Da-YaG"/>
                     </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="k0z-Fn-PXu">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="k0z-Fn-PXu" customClass="UPCarouselFlowLayout" customModule="UPCarouselFlowLayout">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>

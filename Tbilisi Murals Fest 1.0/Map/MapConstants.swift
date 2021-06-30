@@ -10,7 +10,11 @@ import UIKit
 extension MapViewController {
     struct Constants {
         struct Images {
-            static let ping = UIImage(named: "pingi")
+            static let ping = UIImage(named: "ping")!
+        }
+        struct Sizes {
+            static let pingWidth: CGFloat = 25
+            static let pingHeight: CGFloat = 40
         }
     }
 }
