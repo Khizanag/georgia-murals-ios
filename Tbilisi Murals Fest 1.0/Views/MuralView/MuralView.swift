@@ -9,10 +9,6 @@ import UIKit
 import ScalingCarousel
 import UPCarouselFlowLayout
 
-protocol MuralDelegate: Any {
-
-}
-
 class MuralView: BaseReusableView {
     
     // MARK: - Outlets
