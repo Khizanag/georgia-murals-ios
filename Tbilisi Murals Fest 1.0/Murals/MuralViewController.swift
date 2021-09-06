@@ -13,24 +13,30 @@ class MuralViewController: UIViewController, CLLocationManagerDelegate {
     
     public static let identifier = "MuralViewController"
 
+    // MARK: - Outlets
 	@IBOutlet var muralView: MuralView!
 	@IBOutlet var getDirectionsButton: UIButton!
 	@IBOutlet var goToArtistPageButton: UIButton!
 
+    // MARK: - Properties
 	private let muralsDB = MuralsDatabase.sharedInstance
 	private let artistsDB = ArtistsDatabase.sharedInstance
-	let locationManager = CLLocationManager()
-
+	private let locationManager = CLLocationManager()
 	public var mural: Mural = MuralsDatabase.sharedInstance.defaultMural
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		initLocationManager()
-		muralView.mural = mural
+		setup()
 	}
+    
+    private func setup() {
+        setupLocationManager()
+        setupMuralView()
+        setupNavigationItem()
+    }
 
-	private func initLocationManager() {
-		self.locationManager.requestAlwaysAuthorization()
+	private func setupLocationManager() {
+		locationManager.requestAlwaysAuthorization()
 
 		if CLLocationManager.locationServicesEnabled() {
 			locationManager.delegate = self
@@ -40,10 +46,19 @@ class MuralViewController: UIViewController, CLLocationManagerDelegate {
 			locationManager.startUpdatingLocation()
 		}
 	}
+    
+    private func setupMuralView() {
+        muralView.configure(with: mural)
+    }
+    
+    private func setupNavigationItem() {
+        if let title = mural.title {
+            navigationItem.title = title
+        }
+    }
 
 	override func viewDidLayoutSubviews() {
 		super.viewDidLayoutSubviews()
-		muralView.setup()
 		initGetDirectionsButton()
 		initGoToArtistPageButton()
 	}

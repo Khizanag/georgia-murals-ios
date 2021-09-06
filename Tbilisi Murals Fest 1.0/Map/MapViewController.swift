@@ -41,7 +41,10 @@ class MapViewController: UIViewController {
 
 		let annotationForRegion = MKPointAnnotation()
         annotationForRegion.coordinate = CLLocationCoordinate2D(latitude: Constants.defaultLatitude, longitude: Constants.defaultLongitude)
-		let region = MKCoordinateRegion(center: annotationForRegion.coordinate, latitudinalMeters: 4500, longitudinalMeters: 4500)
+        let region = MKCoordinateRegion(
+            center: annotationForRegion.coordinate,
+            latitudinalMeters: Constants.latitudinalMeters,
+            longitudinalMeters: Constants.longitudinalMeters)
 		mapView.setRegion(region, animated: true)
 	}
 
@@ -70,11 +73,9 @@ extension MapViewController: MKMapViewDelegate {
 		if let dequeuedAnnotationView = mapView.dequeueReusableAnnotationView(withIdentifier: annotationIdentifier) {
 			annotationView = dequeuedAnnotationView
 			annotationView?.annotation = annotation
-		}
-		else {
+		} else {
 			annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
 			annotationView?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-
 		}
 
 		if let annotationView = annotationView {

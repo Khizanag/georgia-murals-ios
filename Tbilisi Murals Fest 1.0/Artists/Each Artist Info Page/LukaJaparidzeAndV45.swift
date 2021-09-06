@@ -20,7 +20,7 @@ extension ArtistsDatabase {
 			profileImageURL: "Luka Japaridze & V45",
 			bio: "Contemporary painter and street artist Luka japaridze was born December 21 1993 in Tbilisi. From 2012 he studing in “Tbilisi state academy of arts",
 			socialProfiles: [
-                SocialNetwork.facebook: "lukajaparidzeart",
+                .facebook: "lukajaparidzeart",
 			],
 			murals: muralsDB.getMuralsOf(artist: "Luka Japaridze & V45")
 		)

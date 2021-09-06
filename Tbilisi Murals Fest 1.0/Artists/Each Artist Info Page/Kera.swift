@@ -20,8 +20,8 @@ extension ArtistsDatabase {
 			profileImageURL: "Kera",
 			bio: "“Kera“ who was born in Berlin in 1985 occupies himself with colours, printing techniques and facade design over more than 19 years. At the same time Kera always found new impulses through his love for haptic and technically things. Especiall y the interconnection of working with the computer and the realization on the wall attract the artist. When looking at his artwork one sees a reflection of his graphic-design studies, his passion for geometric lines and spaces",
 			socialProfiles: [
-                SocialNetwork.facebook : "kera1kera1",
-                SocialNetwork.instagram: "kera.1",
+                .facebook : "kera1kera1",
+                .instagram: "kera.1",
 			],
 			murals: muralsDB.getMuralsOf(artist: "Kera")
 		)

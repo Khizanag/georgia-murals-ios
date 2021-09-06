@@ -17,20 +17,30 @@
                 <rect key="frame" x="0.0" y="0.0" width="346" height="328"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UDq-jz-gUy">
-                        <rect key="frame" x="53" y="100" width="240" height="128"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDq-jz-gUy">
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="328"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ap6-aP-hnP">
-                                <rect key="frame" x="-53" y="-100" width="346" height="328"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ap6-aP-hnP">
+                                <rect key="frame" x="0.0" y="0.0" width="346" height="328"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ap6-aP-hnP" secondAttribute="bottom" id="Fe3-oc-z6U"/>
+                            <constraint firstAttribute="trailing" secondItem="ap6-aP-hnP" secondAttribute="trailing" id="Owk-h8-4Lh"/>
+                            <constraint firstItem="ap6-aP-hnP" firstAttribute="leading" secondItem="UDq-jz-gUy" secondAttribute="leading" id="nR3-5M-8oy"/>
+                            <constraint firstItem="ap6-aP-hnP" firstAttribute="top" secondItem="UDq-jz-gUy" secondAttribute="top" id="z1o-fg-TTN"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="UDq-jz-gUy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9Qx-Hn-ToK"/>
+                <constraint firstAttribute="trailing" secondItem="UDq-jz-gUy" secondAttribute="trailing" id="lxY-YH-8v7"/>
+                <constraint firstAttribute="bottom" secondItem="UDq-jz-gUy" secondAttribute="bottom" id="qfv-Zj-EAL"/>
+                <constraint firstItem="UDq-jz-gUy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="w4x-AJ-nj9"/>
+            </constraints>
             <size key="customSize" width="346" height="328"/>
             <connections>
                 <outlet property="imageView" destination="ap6-aP-hnP" id="cQ0-NI-dgh"/>

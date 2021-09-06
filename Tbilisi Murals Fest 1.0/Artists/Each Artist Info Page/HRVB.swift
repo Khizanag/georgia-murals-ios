@@ -20,8 +20,8 @@ extension ArtistsDatabase {
 			profileImageURL: "HRVB",
 			bio: "Freelance graphiti artist and illustrator located in Berlin since 2009. member of The Weird - crew of talented artist all over Germany and Austria.",
 			socialProfiles: [
-                SocialNetwork.facebook : "hrvb123",
-                SocialNetwork.instagram: "hrvbtheweird",
+                .facebook : "hrvb123",
+                .instagram: "hrvbtheweird",
 			],
 			murals: muralsDB.getMuralsOf(artist: "HRVB")
 		)

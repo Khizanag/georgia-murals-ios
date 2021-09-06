@@ -20,8 +20,8 @@ extension ArtistsDatabase {
 			profileImageURL: "Case Maclaim",
 			bio: "A German urban artist native to Frankfurt, Andres Von Chrzanowski (a.k.a. CASE or CASE Maclaim) is a graffiti painter who relies on his highly developed talent to create pieces that combine brilliant photorealism with a strong note of surrealism. This artist primarily uses spray paint as this street art technique enables him to get the most out of his visuals and achieve the level of perfection his incredibly life-like graffiti possess. One of Andres Von Chrzanowski’s most common pictorial motifs are the overlaying hands that symbolize unity and power. It should also be noted that CASE is a founding member of the renown East- Germany Maclaim Crew, a group that has been the urban expression’s photorealism pioneer for over two decades now.",
 			socialProfiles: [
-                SocialNetwork.facebook : "case_maclaim-104007173027340",
-                SocialNetwork.instagram: "case_maclaim",
+                .facebook : "case_maclaim-104007173027340",
+                .instagram: "case_maclaim",
 			],
 			murals: muralsDB.getMuralsOf(artist: "Case Maclaim")
 		)

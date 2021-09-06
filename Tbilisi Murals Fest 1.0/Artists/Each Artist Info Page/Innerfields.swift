@@ -20,8 +20,8 @@ extension ArtistsDatabase {
 			profileImageURL: "Innerfields",
 			bio: "Innerfields are the three artists Jakob Tory Bardou, Holger Weißflog and Veit Tempich. Born and based in Berlin, they‘ve been growing up with graffiti and various influences; they formed as a group in 1998. The artists like to reflekt their environment and create mostly figurative motives in a realistic manner, that are mixed with grafical elements and symbols. The human being, bound to being part of the nature and all to often opposed to it, is a major topic in their body of work. They are creating works of art as a proffession and love taking part in festivals and various art related projekts around the world",
 			socialProfiles: [
-                SocialNetwork.facebook : "innerfields",
-                SocialNetwork.instagram: "innerfields",
+                .facebook : "innerfields",
+                .instagram: "innerfields",
 			],
 			murals: muralsDB.getMuralsOf(artist: "Innerfields")
 		)

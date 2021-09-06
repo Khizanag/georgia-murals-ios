@@ -28,7 +28,7 @@ class ArtistPageViewController: UIViewController {
     public var artist: Artist = ArtistsDatabase.defaultArtist
 
     @IBAction func openInstagram(_ sender: Any) {
-        if let igUsername = artist.socialProfiles[SocialNetwork.instagram] {
+        if let igUsername = artist.socialProfiles[.instagram] {
             let igUrl = SocialMediaManager.buildInstagramUrl(username: igUsername)
             let vc = SFSafariViewController(url: URL(string: igUrl)!)
             present(vc, animated: true)
@@ -36,7 +36,7 @@ class ArtistPageViewController: UIViewController {
     }
 
     @IBAction func openFacebook(_ sender: Any) {
-        if let fbUsername = artist.socialProfiles[SocialNetwork.facebook] {
+        if let fbUsername = artist.socialProfiles[.facebook] {
             let fbUrl = SocialMediaManager.buildFacebookUrl(username: fbUsername)
             let vc = SFSafariViewController(url: URL(string: fbUrl)!)
             present(vc, animated: true)
@@ -45,11 +45,20 @@ class ArtistPageViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		initScrollView()
-		initDisplayInfo()
-		initTableView()
-		filterSocialMediaButtons()
+        setup()
+        filterSocialMediaButtons()
 	}
+    
+    private func setup() {
+        setupScrollView()
+        setupDisplayInfo()
+        setupTableView()
+        setupNavigationItem()
+    }
+    
+    private func setupNavigationItem() {
+        navigationItem.title = artist.name
+    }
 
 	override func viewDidLayoutSubviews() {
 		super.viewDidLayoutSubviews()
@@ -61,28 +70,30 @@ class ArtistPageViewController: UIViewController {
 		circulaImage.clipsToBounds = true
 	}
 
-	private func initDisplayInfo() {
+	private func setupDisplayInfo() {
 		artistNameLabel.text = artist.name
 		circulaImage.image = UIImage(named: artist.profileImageURL)
 		bioText.text = artist.bio
 	}
 
-	private func initTableView() {
+	private func setupTableView() {
 		tableView.delegate = self
 		tableView.dataSource = self
-        tableView.register(UINib(nibName: GalleryTableViewCell.reuseId, bundle: nil), forCellReuseIdentifier: GalleryTableViewCell.reuseId)
+        tableView.register(
+            UINib(nibName: GalleryTableViewCell.reuseId, bundle: nil),
+            forCellReuseIdentifier: GalleryTableViewCell.reuseId)
 	}
 
-	private func initScrollView() {
+	private func setupScrollView() {
 		scrollView.delegate = self
 	}
 
 	private func filterSocialMediaButtons() {
-        if artist.socialProfiles[SocialNetwork.facebook] == nil {
-			facebookButton.isHidden = true
+        if artist.socialProfiles[.facebook] == nil {
+			facebookButton.hide()
 		}
-        if artist.socialProfiles[SocialNetwork.instagram] == nil {
-			instagramButton.isHidden = true
+        if artist.socialProfiles[.instagram] == nil {
+			instagramButton.hide()
 		}
 	}
 }

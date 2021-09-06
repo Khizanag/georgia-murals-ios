@@ -9,6 +9,7 @@ import Foundation
 
 class Artist {
 
+    // MARK: - Properties
 	public let ID: Int
 	public let name: String
 	public let profileImageURL: String
@@ -16,6 +17,7 @@ class Artist {
     public let socialProfiles: [SocialNetwork: String]
 	public var murals: [Mural]
 
+    // MARK: - Init
 	init(ID: Int, name: String, profileImageURL: String, bio: String, socialProfiles: [SocialNetwork: String], murals: [Mural]) {
 		self.ID = ID
 		self.name = name

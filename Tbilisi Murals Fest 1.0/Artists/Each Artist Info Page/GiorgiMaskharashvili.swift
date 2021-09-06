@@ -20,7 +20,7 @@ extension ArtistsDatabase {
 			profileImageURL: "Giorgi Maskharashvili",
 			bio: "Giorgi Maskharashvili was born in Tbilisi in 1977. He first studied at the Tbilisi Academy of Arts, Faculty of Easel Graphics, and then at the Film Directing Faculty of the Georgian State University of Theater and Film. Works as a film and television actor, director and artist",
 			socialProfiles: [
-                SocialNetwork.instagram: "maskhari",
+                .instagram: "maskhari",
 			],
 			murals: muralsDB.getMuralsOf(artist: "Giorgi Maskharashvili")
 		)

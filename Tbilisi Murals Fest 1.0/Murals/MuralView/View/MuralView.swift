@@ -29,15 +29,12 @@ class MuralView: BaseReusableView {
 	@IBOutlet weak var yearLabel: UILabel!
 	@IBOutlet weak var yearLabelTitle: UILabel!
 
-	@IBOutlet weak var locationLabel: UILabel!		// TODO
-	@IBOutlet weak var locationLabelTitle: UILabel!	// TODO
-
 	@IBOutlet weak var locationTitleLabel: UILabel!
 	@IBOutlet weak var locationTitleLabelTitle: UILabel!
 
     // MARK: - Properties
 	private var imageIndex: Int = 0
-	var mural: Mural = MuralsDatabase.sharedInstance.defaultMural
+	private var mural: Mural = MuralsDatabase.sharedInstance.defaultMural
 
     // MARK: - Setup
     
@@ -74,8 +71,8 @@ class MuralView: BaseReusableView {
         }()
 
         collectionView.register(
-            UINib(nibName: MuralImageCollectionViewCell.reuseId, bundle: nil),
-            forCellWithReuseIdentifier: MuralImageCollectionViewCell.reuseId)
+            UINib(nibName: MuralImageCollectionViewCell.reuseIdentifier, bundle: nil),
+            forCellWithReuseIdentifier: MuralImageCollectionViewCell.reuseIdentifier)
     }
     
     private func setupTitle() {
@@ -125,6 +122,11 @@ class MuralView: BaseReusableView {
             locationTitleLabelTitle.hide()
         }
     }
+    
+    public func configure(with model: Mural) {
+        self.mural = model
+        setup()
+    }
 
 }
 
@@ -140,11 +142,9 @@ extension MuralView: UICollectionViewDataSource {
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MuralImageCollectionViewCell.reuseId, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MuralImageCollectionViewCell.reuseIdentifier, for: indexPath)
         if let cell = cell as? MuralImageCollectionViewCell {
-            cell.imageView.image = UIImage(named: mural.imageURLs[indexPath.row])
-            cell.setNeedsLayout()
-            cell.layoutIfNeeded()
+            cell.configure(with: .init(image: UIImage(named: mural.imageURLs[indexPath.row])!))
 			return cell
 		}
 		return cell

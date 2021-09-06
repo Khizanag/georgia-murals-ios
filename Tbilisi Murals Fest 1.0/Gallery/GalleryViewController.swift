@@ -55,7 +55,7 @@ extension GalleryViewController: UITableViewDelegate, UITableViewDataSource {
 		let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         if let muralVC = storyBoard.instantiateViewController(withIdentifier: MuralViewController.identifier) as? MuralViewController {
 			muralVC.mural = muralsDB.getMural(ID: indexPath.row)
-			self.navigationController?.pushViewController(muralVC, animated: true)
+			navigationController?.pushViewController(muralVC, animated: true)
 		}
 	}
 

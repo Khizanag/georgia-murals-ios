@@ -9,7 +9,15 @@ import UIKit
 import ScalingCarousel
 
 class MuralImageCollectionViewCell: ScalingCarouselCell {
-    public static let reuseId = "MuralImageCollectionViewCell"
 	
+    // MARK: - Outlets
     @IBOutlet var imageView: UIImageView!
+    
+    // Properties
+    public static let reuseIdentifier = "MuralImageCollectionViewCell"
+    
+    // MARK: - Configure
+    func configure(with model: Model) {
+        imageView.image = model.image
+    }
 }
