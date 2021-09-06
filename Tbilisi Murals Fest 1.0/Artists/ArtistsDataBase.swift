@@ -20,24 +20,28 @@ class ArtistsDatabase {
 		data = [String : Artist]()
 		dataByID = [Int : Artist]()
 		nextArtistID = 0
-		loadArtezInfo()
-		loadCaseMaclaimInfo()
-		loadCollinVanderSlujisInfo()
-		loadDanteInfo()
-		loadElBochoInfo()
-		loadGiorgiMaskharashviliInfo()
-		loadHRVBInfo()
-		loadInnerfieldsInfo()
-		loadInoInfo()
-		loadIrakliQadeishviliAndZviadEsartia()
-		loadKeraInfo()
-		loadLukaJaparidzeAndV45Info()
-		loadMatthiasMross()
-		loadMusyaInfo()
-		loadNoahAndApheInfo()
-		loadQUINTE55ENZInfo()
-		loadSnyderInfo()
+		loadArtistsInfo()
 	}
+    
+    private func loadArtistsInfo() {
+        loadArtezInfo()
+        loadCaseMaclaimInfo()
+        loadCollinVanderSlujisInfo()
+        loadDanteInfo()
+        loadElBochoInfo()
+        loadGiorgiMaskharashviliInfo()
+        loadHRVBInfo()
+        loadInnerfieldsInfo()
+        loadInoInfo()
+        loadIrakliQadeishviliAndZviadEsartia()
+        loadKeraInfo()
+        loadLukaJaparidzeAndV45Info()
+        loadMatthiasMross()
+        loadMusyaInfo()
+        loadNoahAndApheInfo()
+        loadQUINTE55ENZInfo()
+        loadSnyderInfo()
+    }
 
 	public func addArtist(_ artist: Artist) {
 		data[artist.name] = artist

@@ -9,9 +9,8 @@
 import UIKit
 
 class MenuViewController: UIViewController {
-    
-    public static let identifier = "MenuViewController"
 
+    // MARK: - Outlets
 	@IBOutlet weak var sponsorsImage: UIImageView!
 	@IBOutlet weak var navigationBar: UINavigationItem!
     
@@ -19,6 +18,9 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var artistsButton: UIButton!
     @IBOutlet weak var galleryButton: UIButton!
     @IBOutlet weak var contactsButton: UIButton!
+    
+    // MARK: - Properties
+    public static let identifier = "MenuViewController"
     
     private lazy var menuButtons: [UIButton] = [
         mapButton,
@@ -29,6 +31,8 @@ class MenuViewController: UIViewController {
     
     private var sponsorsImages = SponsorsManager.getSponsorImageNames().map{ UIImage(named: $0) }
 	private var sponsorIndex = 0
+    
+    // MARK: Lifecycle
 
 	override func viewDidLoad() {
 		super.viewDidLoad()

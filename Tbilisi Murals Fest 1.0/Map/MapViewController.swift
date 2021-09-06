@@ -14,6 +14,8 @@ class MapViewController: UIViewController {
     public static let identifier = "MapViewController"
 
 	@IBOutlet weak var mapView: MKMapView!
+    
+    // MARK: - Lifecycle
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -22,7 +24,7 @@ class MapViewController: UIViewController {
 		createAnnotations()
 	}
     
-    // MARK: Setup
+    // MARK: - Setup
     private func setupMap() {
         mapView.delegate = self
     }
@@ -48,6 +50,7 @@ class MapViewController: UIViewController {
 }
 
 // MARK: - MKMapViewDelegate
+
 extension MapViewController: MKMapViewDelegate {
 
 	func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
@@ -62,7 +65,7 @@ extension MapViewController: MKMapViewDelegate {
 	}
 
 	func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-		// Better to make this class property
+		// TODO: Better to make this class property
 		let annotationIdentifier = "AnnotationIdentifier"
 
 		var annotationView: MKAnnotationView?

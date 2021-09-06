@@ -9,10 +9,11 @@ import UIKit
 
 class GalleryViewController: UIViewController {
     
+    // MARK: - Outlets
+    @IBOutlet weak var tableView: UITableView!
+    
+    // MARK: Properties
     public static let identifier = "GalleryViewController"
-
-	@IBOutlet weak var tableView: UITableView!
-
 	private let muralsDB = MuralsDatabase.sharedInstance
 
 	override func viewDidLoad() {
@@ -20,7 +21,7 @@ class GalleryViewController: UIViewController {
         setupTableView()
 	}
     
-    // MARK: Setup
+    // MARK: - Setup
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
@@ -29,6 +30,7 @@ class GalleryViewController: UIViewController {
 
 }
 
+// MARK: - UITableVIew
 extension GalleryViewController: UITableViewDelegate, UITableViewDataSource {
 
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
