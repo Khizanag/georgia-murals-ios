@@ -42,7 +42,7 @@ class MuralView: BaseReusableView {
 
     // MARK: - Properties
 	private var imageIndex: Int = 0
-	private var mural: Mural = MuralsDatabase.sharedInstance.defaultMural
+	var mural: Mural = MuralsDatabase.sharedInstance.defaultMural
 
     // MARK: - Setup
     
