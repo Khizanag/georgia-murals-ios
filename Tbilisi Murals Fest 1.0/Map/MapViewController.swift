@@ -16,12 +16,10 @@ class MapViewController: UIViewController {
 	@IBOutlet weak var mapView: MKMapView!
     
     // MARK: - Lifecycle
-
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view.
 		setupMap()
-		createAnnotations()
+		setupAnnotations()
 	}
     
     // MARK: - Setup
@@ -29,7 +27,7 @@ class MapViewController: UIViewController {
         mapView.delegate = self
     }
 
-	func createAnnotations() {
+	func setupAnnotations() {
 		let artists = ArtistsDatabase.sharedInstance.getDataBase()
 		for (_, artist) in artists {
 			for mural in artist.murals {
@@ -42,7 +40,7 @@ class MapViewController: UIViewController {
 		}
 
 		let annotationForRegion = MKPointAnnotation()
-		annotationForRegion.coordinate = CLLocationCoordinate2D(latitude: 42.3154, longitude: 43.3569)
+        annotationForRegion.coordinate = CLLocationCoordinate2D(latitude: Constants.defaultLatitude, longitude: Constants.defaultLongitude)
 		let region = MKCoordinateRegion(center: annotationForRegion.coordinate, latitudinalMeters: 4500, longitudinalMeters: 4500)
 		mapView.setRegion(region, animated: true)
 	}

@@ -35,6 +35,7 @@
 		FB5E29CB2538A9AB009E33CE /* IntroGifResoluted.gif in Resources */ = {isa = PBXBuildFile; fileRef = FB5E29CA2538A9AB009E33CE /* IntroGifResoluted.gif */; };
 		FB6615162578072E00AFACCB /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6615152578072E00AFACCB /* GalleryViewController.swift */; };
 		FB8116C826E67E4E009D9AE5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8116C726E67E4E009D9AE5 /* UIView+Extensions.swift */; };
+		FB8116CA26E68505009D9AE5 /* ArtistsTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8116C926E68505009D9AE5 /* ArtistsTableViewCellModel.swift */; };
 		FB83B6CB25D4A1CF00F67922 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB83B6CA25D4A1CF00F67922 /* Constants.swift */; };
 		FB8556BE2577080400D5570D /* MuralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8556BD2577080400D5570D /* MuralViewController.swift */; };
 		FB8556C225770D7700D5570D /* MuralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8556C125770D7700D5570D /* MuralView.swift */; };
@@ -97,6 +98,7 @@
 		FB5E29CA2538A9AB009E33CE /* IntroGifResoluted.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IntroGifResoluted.gif; sourceTree = "<group>"; };
 		FB6615152578072E00AFACCB /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		FB8116C726E67E4E009D9AE5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		FB8116C926E68505009D9AE5 /* ArtistsTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsTableViewCellModel.swift; sourceTree = "<group>"; };
 		FB83B6CA25D4A1CF00F67922 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FB8556BD2577080400D5570D /* MuralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralViewController.swift; sourceTree = "<group>"; };
 		FB8556C125770D7700D5570D /* MuralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralView.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		DC54BE6626880869006A2493 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				DCEBFA2426886E6A00B05CFC /* GalleryTableViewCell */,
 				FB6615152578072E00AFACCB /* GalleryViewController.swift */,
 				DC54BE6A26880B90006A2493 /* GalleryConstants.swift */,
 			);
@@ -207,6 +210,7 @@
 			children = (
 				DCEBFA20268860F500B05CFC /* ArtistsTableViewCell.swift */,
 				DCEBFA21268860F500B05CFC /* ArtistsTableViewCell.xib */,
+				FB8116C926E68505009D9AE5 /* ArtistsTableViewCellModel.swift */,
 			);
 			path = ArtistsTableViewCell;
 			sourceTree = "<group>";
@@ -270,15 +274,6 @@
 			path = MuralView;
 			sourceTree = "<group>";
 		};
-		FB98FF75257722DE00C3F7D6 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				DCEBFA2426886E6A00B05CFC /* GalleryTableViewCell */,
-				DCEBFA1B26885E8800B05CFC /* ArtistsTableViewCell */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		FB98FF77257726A400C3F7D6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +303,7 @@
 		FBC86A512576C03300FBCAAC /* Artists */ = {
 			isa = PBXGroup;
 			children = (
+				DCEBFA1B26885E8800B05CFC /* ArtistsTableViewCell */,
 				FBC86A4C2576B33C00FBCAAC /* Artist Page */,
 				FB54AFC825229C6E00B37B58 /* ArtistsViewController.swift */,
 				DCEBFA1926885CEA00B05CFC /* ArtistsConstrants.swift */,
@@ -392,7 +388,6 @@
 				FBF729A8252299DD00E12D44 /* Info.plist */,
 				FBF729A3252299DD00E12D44 /* Assets.xcassets */,
 				FBC86A512576C03300FBCAAC /* Artists */,
-				FB98FF75257722DE00C3F7D6 /* Cells */,
 				FBC86A542576C15800FBCAAC /* Murals */,
 				FB83B6C925D4A1BF00F67922 /* Shared */,
 				FB83B6CE25D4A28800F67922 /* Storyboards */,
@@ -546,6 +541,7 @@
 				FB54AFCE25229C6F00B37B58 /* MapViewController.swift in Sources */,
 				FB6615162578072E00AFACCB /* GalleryViewController.swift in Sources */,
 				FB54AFDC25229D5D00B37B58 /* ArtistPageViewController.swift in Sources */,
+				FB8116CA26E68505009D9AE5 /* ArtistsTableViewCellModel.swift in Sources */,
 				DCEBFA1A26885CEA00B05CFC /* ArtistsConstrants.swift in Sources */,
 				FBC86A4E2576BF7800FBCAAC /* Mural.swift in Sources */,
 				FB4CB93D258D5D16000A126A /* Matthias Mross.swift in Sources */,
@@ -699,7 +695,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.1.3;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = U384JB987W;
 				INFOPLIST_FILE = "Tbilisi Murals Fest 1.0/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -723,7 +719,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.1.3;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = U384JB987W;
 				INFOPLIST_FILE = "Tbilisi Murals Fest 1.0/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

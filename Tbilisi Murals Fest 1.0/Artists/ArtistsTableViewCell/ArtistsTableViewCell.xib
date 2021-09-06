@@ -29,6 +29,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="OiD-Jc-WNs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="4Lq-FN-GrE"/>
                     <constraint firstAttribute="bottom" secondItem="OiD-Jc-WNs" secondAttribute="bottom" constant="16" id="5Ym-wp-4jr"/>
@@ -37,13 +38,13 @@
                     <constraint firstAttribute="trailing" secondItem="OiD-Jc-WNs" secondAttribute="trailing" constant="16" id="ije-6M-VxD"/>
                     <constraint firstItem="OiD-Jc-WNs" firstAttribute="top" secondItem="f7Q-h2-Sak" secondAttribute="bottom" constant="16" id="mug-dN-mQH"/>
                     <constraint firstItem="f7Q-h2-Sak" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="na5-D7-Tov"/>
-                    <constraint firstItem="OiD-Jc-WNs" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="r6M-UI-CmN"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="name" destination="OiD-Jc-WNs" id="6m7-Zt-OlY"/>
-                <outlet property="profilePhoto" destination="f7Q-h2-Sak" id="X4W-ro-xrs"/>
+                <outlet property="nameLabel" destination="OiD-Jc-WNs" id="6m7-Zt-OlY"/>
+                <outlet property="profilePhotoView" destination="f7Q-h2-Sak" id="X4W-ro-xrs"/>
             </connections>
             <point key="canvasLocation" x="344.20289855072468" y="350.55803571428572"/>
         </tableViewCell>

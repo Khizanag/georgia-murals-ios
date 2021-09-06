@@ -7,7 +7,6 @@
 
 import UIKit
 import ScalingCarousel
-import UPCarouselFlowLayout
 
 class MuralView: BaseReusableView {
     

@@ -16,5 +16,8 @@ extension MapViewController {
             static let pingWidth: CGFloat = 25
             static let pingHeight: CGFloat = 40
         }
+        
+        static let defaultLatitude = 42.3154
+        static let defaultLongitude = 43.3569
     }
 }
