@@ -14,118 +14,121 @@ protocol MuralDelegate: Any {
 }
 
 class MuralView: BaseReusableView {
+    
+    // MARK: - Outlets
 
-	@IBOutlet var stackOfMetaInfo: UIStackView!
+	@IBOutlet weak var stackOfMetaInfo: UIStackView!
 
-	@IBOutlet var collectionView: ScalingCarouselView!
-	@IBOutlet var titleLabel: UILabel!
+	@IBOutlet weak var collectionView: ScalingCarouselView!
+	@IBOutlet weak var titleLabel: UILabel!
 
-	@IBOutlet var projectLabel: UILabel!
-	@IBOutlet var projectLabelTitle: UILabel!
+	@IBOutlet weak var projectLabel: UILabel!
+	@IBOutlet weak var projectLabelTitle: UILabel!
 
-	@IBOutlet var artistLabel: UILabel!
-	@IBOutlet var artistLabelTitle: UILabel!
+	@IBOutlet weak var artistLabel: UILabel!
+	@IBOutlet weak var artistLabelTitle: UILabel!
 
-	@IBOutlet var descriptionLabel: UILabel!
-	@IBOutlet var descriptionLabelTitle: UILabel!
+	@IBOutlet weak var descriptionLabel: UILabel!
+	@IBOutlet weak var descriptionLabelTitle: UILabel!
 
-	@IBOutlet var yearLabel: UILabel!
-	@IBOutlet var yearLabelTitle: UILabel!
+	@IBOutlet weak var yearLabel: UILabel!
+	@IBOutlet weak var yearLabelTitle: UILabel!
 
-	@IBOutlet var locationLabel: UILabel?		// TODO
-	@IBOutlet var locationLabelTitle: UILabel!	// TODO
+	@IBOutlet weak var locationLabel: UILabel!		// TODO
+	@IBOutlet weak var locationLabelTitle: UILabel!	// TODO
 
-	@IBOutlet var locationTitleLabel: UILabel!
-	@IBOutlet var locationTitleLabelTitle: UILabel!
+	@IBOutlet weak var locationTitleLabel: UILabel!
+	@IBOutlet weak var locationTitleLabelTitle: UILabel!
 
+    // MARK: - Properties
 	private var imageIndex: Int = 0
+	private var mural: Mural = MuralsDatabase.sharedInstance.defaultMural
 
-	var mural: Mural = MuralsDatabase.sharedInstance.defaultMural
-
-	lazy var layout: SJCenterFlowLayout = {
-        let layout = SJCenterFlowLayout()
-        layout.itemSize = CGSizeMake(200, 200)
-        collectionView.collectionViewLayout = layout
-		return layout
-	}()
-
+    // MARK: - Setup
+    
 	public func setup(showMetaInfo: Bool) {
-		if mural.ID == MuralsDatabase.sharedInstance.defaultMural.ID { return }
+		guard mural.ID != MuralsDatabase.sharedInstance.defaultMural.ID else { return }
 
 		if showMetaInfo {
 			setup()
 		} else {
-//			imageView.image = UIImage(named: mural.imageURLs[0])
-			titleLabel.isHidden = true
-			stackOfMetaInfo.isHidden = true
+			titleLabel.hide()
+			stackOfMetaInfo.hide()
 		}
 	}
 
 	override func setup() {
-
-		configureCollectionView()
-
-//		imageView.isUserInteractionEnabled = true // TODO
-
-		if mural.ID == MuralsDatabase.sharedInstance.defaultMural.ID { return }
-//		imageView.image = UIImage(named: mural.imageURLs[0]) // TODO
-
-		if mural.title != nil {
-			titleLabel.text! = mural.title!
-		} else {
-//			titleLabel.text! = "Title of mural"
-			titleLabel.isHidden = true
-		}
-
-		if mural.project != nil {
-			projectLabel.text! = mural.project!
-		} else {
-			projectLabel.isHidden = true
-			projectLabelTitle.isHidden = true
-		}
-
-		artistLabel.text! = mural.artist
-
-		if mural.description != nil {
-			descriptionLabel.text! = mural.description!
-		} else {
-//			descriptionLabel.text! = "Default description"
-			descriptionLabel.isHidden = true
-			descriptionLabelTitle.isHidden = true
-		}
-
-		if mural.year != nil {
-			yearLabel.text! = (String)(mural.year!)
-		} else {
-//			yearLabel.text! = "2020"
-			yearLabel.isHidden = true
-			yearLabelTitle.isHidden = true
-		}
-
-//		locationLabel.text! = (String)(mural.location.0) + ", " + (String)(mural.location.1)
-
-		if mural.locationTitle != nil {
-			locationTitleLabel.text! = mural.locationTitle!
-		} else {
-//			locationTitleLabel.text! = "Default location description"
-			locationTitleLabel.isHidden = true
-			locationTitleLabelTitle.isHidden = true
-		}
-	}
-
-	func configureCollectionView() {
-		collectionView.delegate = self
-		collectionView.dataSource = self
-		collectionView.collectionViewLayout = flowLayout
-
-		collectionView.register(
-            UINib(nibName: MuralImageCollectionViewCell.reuseId, bundle: nil),
-            forCellWithReuseIdentifier: MuralImageCollectionViewCell.reuseId
-		)
+        super.setup()
+        guard mural.ID != MuralsDatabase.sharedInstance.defaultMural.ID else { return }
+        setupCollectionView()
+		setupTitle()
+		setupProject()
+		setupArtist()
+		setupDescription()
+        setupYear()
+		setupLocation()
 	}
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
+    private func setupCollectionView() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.collectionViewLayout = {
+            let layout = UICollectionViewFlowLayout()
+            layout.scrollDirection = .horizontal
+            return layout
+        }()
+
+        collectionView.register(
+            UINib(nibName: MuralImageCollectionViewCell.reuseId, bundle: nil),
+            forCellWithReuseIdentifier: MuralImageCollectionViewCell.reuseId)
+    }
+    
+    private func setupTitle() {
+        if let title = mural.title {
+            titleLabel.text = title
+        } else {
+            titleLabel.hide()
+        }
+    }
+    
+    private func setupProject() {
+        if let project = mural.project {
+            projectLabel.text = project
+        } else {
+            projectLabel.hide()
+            projectLabelTitle.hide()
+        }
+    }
+    
+    private func setupArtist() {
+        artistLabel.text = mural.artist
+    }
+    
+    private func setupDescription() {
+        if let description = mural.description {
+            descriptionLabel.text = description
+        } else {
+            descriptionLabel.isHidden = true
+            descriptionLabelTitle.isHidden = true
+        }
+    }
+    
+    private func setupYear() {
+        if let year = mural.year {
+            yearLabel.text = year.description
+        } else {
+            yearLabel.isHidden = true
+            yearLabelTitle.isHidden = true
+        }
+    }
+    
+    private func setupLocation() {
+        if let locationTitle = mural.locationTitle {
+            locationTitleLabel.text = locationTitle
+        } else {
+            locationTitleLabel.hide()
+            locationTitleLabelTitle.hide()
+        }
     }
 
 }
