@@ -3,6 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -38,44 +39,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVM-so-xTn">
-                                <rect key="frame" x="37.666666666666657" y="176" width="300" height="41.333333333333343"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="37.666666666666657" y="176" width="300" height="55.333333333333343"/>
+                                <color key="backgroundColor" name="button-color"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="17"/>
                                 <state key="normal" title="Map">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" name="button-text-color"/>
                                 </state>
                                 <connections>
                                     <segue destination="Jck-vF-93o" kind="show" id="XaL-xo-DHT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcT-Of-BN5">
-                                <rect key="frame" x="37.666666666666657" y="245.33333333333334" width="300" height="41.333333333333343"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="37.666666666666657" y="259.33333333333331" width="300" height="55"/>
+                                <color key="backgroundColor" name="button-color"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="17"/>
                                 <state key="normal" title="Artists">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" name="button-text-color"/>
                                 </state>
                                 <connections>
                                     <segue destination="Y9U-nF-tCm" kind="show" id="r05-KY-tCB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujQ-Ay-P4S">
-                                <rect key="frame" x="37.666666666666629" y="541.33333333333337" width="300" height="41.333333333333371"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujQ-Ay-P4S">
+                                <rect key="frame" x="37.666666666666657" y="535.33333333333337" width="300" height="55.333333333333371"/>
+                                <color key="backgroundColor" name="button-color"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="17"/>
                                 <state key="normal" title="Contact Us">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" name="button-text-color"/>
                                 </state>
                                 <connections>
                                     <segue destination="BTP-hG-uiI" kind="show" id="7qF-K7-n4R"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEY-y4-rjU">
-                                <rect key="frame" x="37.666666666666657" y="314.66666666666669" width="300" height="41.666666666666686"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="37.666666666666657" y="342.33333333333331" width="300" height="55.333333333333314"/>
+                                <color key="backgroundColor" name="button-color"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="17"/>
                                 <state key="normal" title="Gallery">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" name="button-text-color"/>
                                 </state>
                                 <connections>
                                     <segue destination="DTz-Cn-aK7" kind="show" id="FP4-yh-MnM"/>
@@ -90,7 +91,6 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="L4O-FA-ade"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <accessibility key="accessibilityConfiguration" identifier="MenuViewController"/>
                         <constraints>
                             <constraint firstItem="ujQ-Ay-P4S" firstAttribute="width" secondItem="L4O-FA-ade" secondAttribute="width" multiplier="0.8" id="7aw-Td-Hye"/>
@@ -101,7 +101,7 @@
                             <constraint firstItem="sVM-so-xTn" firstAttribute="top" secondItem="L4O-FA-ade" secondAttribute="top" multiplier="2" id="JfZ-Eb-aRZ"/>
                             <constraint firstItem="sVM-so-xTn" firstAttribute="leading" secondItem="gcT-Of-BN5" secondAttribute="leading" id="MwY-5X-joV"/>
                             <constraint firstItem="YEY-y4-rjU" firstAttribute="top" secondItem="gcT-Of-BN5" secondAttribute="bottom" constant="28" id="OAl-8A-gde"/>
-                            <constraint firstItem="sVM-so-xTn" firstAttribute="height" secondItem="L4O-FA-ade" secondAttribute="height" multiplier="0.06" id="OZJ-4p-7xZ"/>
+                            <constraint firstItem="sVM-so-xTn" firstAttribute="height" secondItem="L4O-FA-ade" secondAttribute="height" multiplier="0.08" id="OZJ-4p-7xZ"/>
                             <constraint firstItem="YEY-y4-rjU" firstAttribute="centerX" secondItem="L4O-FA-ade" secondAttribute="centerX" id="PSE-ka-vMk"/>
                             <constraint firstItem="NX2-qE-WGZ" firstAttribute="centerX" secondItem="L4O-FA-ade" secondAttribute="centerX" id="Qoz-EK-yY4"/>
                             <constraint firstItem="L4O-FA-ade" firstAttribute="bottom" secondItem="NX2-qE-WGZ" secondAttribute="bottom" constant="50" id="Suf-7M-W2G"/>
@@ -139,16 +139,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ea9-rH-vne">
                                 <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="TU9-Be-46U" customClass="ArtistsTableViewCell" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.333333969116211" width="375" height="43.666667938232422"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TU9-Be-46U" id="31q-b1-06u">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="Y9U-nF-tCm" id="cB7-Uo-5st"/>
                                     <outlet property="delegate" destination="Y9U-nF-tCm" id="ROT-W3-sRa"/>
@@ -185,7 +175,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="1022"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2o-iO-WdO">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="928"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="846.33333333333337"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjz-if-icl" userLabel="ArtistName">
                                                 <rect key="frame" x="37.666666666666657" y="168.66666666666666" width="300" height="23.333333333333343"/>
@@ -207,14 +197,14 @@
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVC-9c-PE1">
-                                                <rect key="frame" x="16.000000000000004" y="855.66666666666663" width="56.333333333333343" height="56.333333333333371"/>
+                                                <rect key="frame" x="16.000000000000004" y="774" width="56.333333333333343" height="56.333333333333371"/>
                                                 <state key="normal" title="FB" image="facebook-icon"/>
                                                 <connections>
                                                     <action selector="openFacebook:" destination="Bbe-oB-yzn" eventType="touchUpInside" id="00W-zh-XFy"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKP-jj-teU">
-                                                <rect key="frame" x="88.333333333333329" y="855.66666666666663" width="56.333333333333329" height="56.333333333333371"/>
+                                                <rect key="frame" x="88.333333333333329" y="774" width="56.333333333333329" height="56.333333333333371"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="tKP-jj-teU" secondAttribute="height" multiplier="1:1" id="TS0-Ut-cVI"/>
                                                 </constraints>
@@ -224,8 +214,11 @@
                                                 </connections>
                                             </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jXG-VU-WQP">
-                                                <rect key="frame" x="0.0" y="476.66666666666663" width="375" height="363"/>
+                                                <rect key="frame" x="0.0" y="476.66666666666663" width="375" height="281.33333333333337"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="jXG-VU-WQP" secondAttribute="height" multiplier="4:3" id="hpy-YC-py8"/>
+                                                </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9bb-6v-MIZ">
                                                     <size key="itemSize" width="128" height="128"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -235,7 +228,6 @@
                                                 <cells/>
                                             </collectionView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <bool key="isElement" value="YES"/>
                                         </accessibility>
@@ -264,7 +256,6 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="m2o-iO-WdO" secondAttribute="trailing" id="5UT-dx-SrH"/>
                                     <constraint firstItem="m2o-iO-WdO" firstAttribute="width" secondItem="a08-hK-iwA" secondAttribute="width" id="GR2-89-0yD"/>
@@ -283,7 +274,6 @@
                             <constraint firstItem="a08-hK-iwA" firstAttribute="trailing" secondItem="N0i-1x-nrP" secondAttribute="trailing" id="5nj-AH-n6K"/>
                             <constraint firstItem="a08-hK-iwA" firstAttribute="leading" secondItem="N0i-1x-nrP" secondAttribute="leading" id="9FP-ob-xPs"/>
                             <constraint firstItem="a08-hK-iwA" firstAttribute="bottom" secondItem="N0i-1x-nrP" secondAttribute="bottom" id="9tm-LL-vNG"/>
-                            <constraint firstItem="jXG-VU-WQP" firstAttribute="height" secondItem="3w3-JB-0lr" secondAttribute="height" multiplier="0.33" id="NIX-YN-BSg"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="375" height="1100"/>
@@ -311,12 +301,14 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEy-l0-Vn1">
                                 <rect key="frame" x="37.666666666666657" y="718" width="300" height="44"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="button-color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="cne-f3-PQV"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Go to artist's page"/>
+                                <state key="normal" title="Go to artist's page">
+                                    <color key="titleColor" name="button-text-color"/>
+                                </state>
                                 <connections>
                                     <action selector="goToArtistsPageHandler:" destination="mhd-xf-U7Z" eventType="touchUpInside" id="8qb-PU-x5P"/>
                                 </connections>
@@ -326,16 +318,17 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9L-0Q-nA2" userLabel="Get Directions">
                                 <rect key="frame" x="37.666666666666657" y="666" width="300" height="44"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="button-color"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Get Directions"/>
+                                <state key="normal" title="Get Directions">
+                                    <color key="titleColor" name="button-text-color"/>
+                                </state>
                                 <connections>
                                     <action selector="getDirectionsHandler:" destination="mhd-xf-U7Z" eventType="touchUpInside" id="bpP-6G-3lK"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Od-gV-eF4"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="spu-jC-Fr7" firstAttribute="top" secondItem="1Od-gV-eF4" secondAttribute="top" id="1zn-WX-8hm"/>
                             <constraint firstItem="g9L-0Q-nA2" firstAttribute="centerX" secondItem="1Od-gV-eF4" secondAttribute="centerX" id="Gg8-Id-mF8"/>
@@ -405,7 +398,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Our Support Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXV-5y-8bZ">
                                 <rect key="frame" x="55" y="132" width="265" height="25.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="22"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need to get in touch with the team? We're all ears." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLN-6o-VTH">
@@ -423,13 +416,13 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXR-S0-u3e">
                                                 <rect key="frame" x="0.0" y="0.0" width="49.333333333333336" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="office@tbilisimuralfest.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzM-5B-39p">
                                                 <rect key="frame" x="57.333333333333343" y="0.0" width="215.00000000000003" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -440,13 +433,13 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0U-9h-tbI">
                                                 <rect key="frame" x="0.0" y="0.0" width="27" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+49 176 729 49 709 (Germany)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yt-Vu-PAp">
                                                 <rect key="frame" x="35.000000000000014" y="0.0" width="248.66666666666669" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -457,13 +450,13 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFK-cb-WFq">
                                                 <rect key="frame" x="0.0" y="0.0" width="27" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+995 599 432 082 (Georgia)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnA-tP-emW">
                                                 <rect key="frame" x="34.999999999999986" y="0.0" width="223.66666666666663" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -479,7 +472,6 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hR8-f0-zlN"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hR8-f0-zlN" firstAttribute="bottom" secondItem="1bm-9z-6Nw" secondAttribute="bottom" constant="32" id="1XE-Tk-NbC"/>
                             <constraint firstItem="nKh-EZ-Mk2" firstAttribute="centerY" secondItem="hR8-f0-zlN" secondAttribute="centerY" multiplier="0.95" id="T7e-Tm-yej"/>
@@ -510,20 +502,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6dR-9T-omn">
                                 <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="m1u-WP-MkG" customClass="GalleryTableViewCell" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.333333969116211" width="375" height="43.666667938232422"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m1u-WP-MkG" id="Ln2-sP-kN3">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GM1-UL-mSp"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GM1-UL-mSp" firstAttribute="trailing" secondItem="6dR-9T-omn" secondAttribute="trailing" id="AfV-tO-Xsh"/>
                             <constraint firstItem="GM1-UL-mSp" firstAttribute="bottom" secondItem="6dR-9T-omn" secondAttribute="bottom" id="ZVk-Dh-MC8"/>
@@ -563,6 +544,12 @@
         <image name="facebook-icon" width="256" height="256"/>
         <image name="instagram-black-icon" width="200" height="200"/>
         <image name="logo" width="679.5" height="679.5"/>
+        <namedColor name="button-color">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="button-text-color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

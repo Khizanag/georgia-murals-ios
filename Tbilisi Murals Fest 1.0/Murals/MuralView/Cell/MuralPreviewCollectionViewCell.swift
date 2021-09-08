@@ -12,8 +12,8 @@ class MuralPreviewCollectionViewCell: UICollectionViewCell {
     // MARK: - Outlets
     @IBOutlet var imageView: UIImageView!
     
-    // Properties
-    public static let reuseIdentifier = "MuralImageCollectionViewCell"
+    // MARK: -  Properties
+    public static let reuseIdentifier = "MuralPreviewCollectionViewCell"
     
     // MARK: - Configure
     func configure(with model: Model) {

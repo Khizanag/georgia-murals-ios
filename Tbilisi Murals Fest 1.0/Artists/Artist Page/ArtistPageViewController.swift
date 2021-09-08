@@ -71,6 +71,7 @@ class ArtistPageViewController: UIViewController {
 
 	private func initCircularImage() {
 		profilePhotoView.layer.cornerRadius = profilePhotoView.frame.size.width/2
+        profilePhotoView.clipsToBounds = true
 	}
 
 	private func setupDisplayInfo() {
