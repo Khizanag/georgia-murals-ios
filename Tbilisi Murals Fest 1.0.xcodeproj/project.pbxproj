@@ -230,6 +230,14 @@
 			path = GalleryTableViewCell;
 			sourceTree = "<group>";
 		};
+		FB5D73C526E969B2006A4913 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB0D0D8A25277F440074C3ED /* Artist.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FB8116C626E67E3D009D9AE5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -327,11 +335,11 @@
 		FBC86A512576C03300FBCAAC /* Artists */ = {
 			isa = PBXGroup;
 			children = (
+				FB5D73C526E969B2006A4913 /* Model */,
 				DCEBFA1B26885E8800B05CFC /* ArtistsTableViewCell */,
 				FBC86A4C2576B33C00FBCAAC /* Artist Page */,
 				FB54AFC825229C6E00B37B58 /* ArtistsViewController.swift */,
 				DCEBFA1926885CEA00B05CFC /* ArtistsConstrants.swift */,
-				FB0D0D8A25277F440074C3ED /* Artist.swift */,
 				FBC86A862576EA7B00FBCAAC /* Data */,
 			);
 			path = Artists;

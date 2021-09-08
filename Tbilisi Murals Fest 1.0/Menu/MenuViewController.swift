@@ -12,7 +12,6 @@ class MenuViewController: UIViewController {
 
     // MARK: - Outlets
 	@IBOutlet weak var sponsorsImage: UIImageView!
-	@IBOutlet weak var navigationBar: UINavigationItem!
     
     @IBOutlet weak var mapButton: UIButton!
     @IBOutlet weak var artistsButton: UIButton!
@@ -32,16 +31,29 @@ class MenuViewController: UIViewController {
     private var sponsorsImages = SponsorsManager.getSponsorImageNames().map{ UIImage(named: $0) }
 	private var sponsorIndex = 0
     
-    // MARK: Lifecycle
+    // MARK: - Lifecycle
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
         setup()
 	}
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        setupMenuButtons()
+    }
+    
+    // MARK: - Setup
+    
     private func setup() {
         setupSponsors()
-        setupNavigationBar()
+    }
+    
+    private func setupMenuButtons() {
+        for button in menuButtons {
+            button.rounded(with: 8)
+            button.layer.masksToBounds = true
+        }
     }
     
     private func setupSponsors() {
@@ -54,21 +66,10 @@ class MenuViewController: UIViewController {
             repeats: true
         )
     }
-    
-    private func setupNavigationBar() {
-//        navigationController?.navigationBar.barTintColor = .systemYellow
-    }
 
 	@objc func changeSponsor() {
 		sponsorsImage.image = sponsorsImages[sponsorIndex]
 		sponsorIndex = (sponsorIndex + 1) % sponsorsImages.count
 	}
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        for button in menuButtons {
-            button.layer.cornerRadius = 7.5
-            button.layer.masksToBounds = true
-        }
-    }
+    
 }
