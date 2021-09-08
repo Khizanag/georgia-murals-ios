@@ -3,7 +3,9 @@
     <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -12,7 +14,8 @@
                 <outlet property="artistKeyLabel" destination="1Sa-BO-ggc" id="j8y-Gv-yhH"/>
                 <outlet property="artistStack" destination="nP6-T5-F22" id="fxk-Vu-XRF"/>
                 <outlet property="artistValueLabel" destination="HUX-SR-2zg" id="oHK-c9-81l"/>
-                <outlet property="collectionView" destination="37J-fi-FtE" id="RMe-Ry-oV7"/>
+                <outlet property="collectionView" destination="37J-fi-FtE" id="6ud-7o-ddI"/>
+                <outlet property="collectionViewPageControl" destination="rjz-ij-3Yx" id="B0h-9o-2Gh"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="4hR-ay-D1q"/>
                 <outlet property="descriptionKeyLabel" destination="bTp-rK-gAv" id="J9c-if-JpW"/>
                 <outlet property="descriptionStack" destination="nrw-CW-JEq" id="We3-rf-636"/>
@@ -48,13 +51,13 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcy-cQ-E7V" userLabel="titleKey">
                                             <rect key="frame" x="0.0" y="0.0" width="109.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" name="text-color"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJD-Od-xas" userLabel="titleValue">
                                             <rect key="frame" x="117.5" y="0.0" width="357.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" name="text-color"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -65,13 +68,13 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Project:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gyo-jq-Ztx">
                                             <rect key="frame" x="0.0" y="0.0" width="109.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" name="text-color"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Py-ev-WY4" userLabel="projectLabel">
                                             <rect key="frame" x="117.5" y="0.0" width="357.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" name="text-color"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -85,13 +88,13 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HUX-SR-2zg">
                                             <rect key="frame" x="0.0" y="0.0" width="109.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" name="text-color"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Sa-BO-ggc" userLabel="artistLabel">
                                             <rect key="frame" x="117.5" y="0.0" width="357.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" name="text-color"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -102,13 +105,13 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="topRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4eg-Sa-bVo">
                                             <rect key="frame" x="0.0" y="0.0" width="109.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" name="text-color"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NML-Ry-vYF" userLabel="year">
                                             <rect key="frame" x="117.5" y="0.0" width="357.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" name="text-color"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -119,13 +122,13 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="topRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H8t-Oe-d54">
                                             <rect key="frame" x="0.0" y="0.0" width="109.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" name="text-color"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YoX-jW-czJ" userLabel="address">
                                             <rect key="frame" x="117.5" y="0.0" width="357.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" name="text-color"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -136,13 +139,13 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="topRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uDT-Qr-ViM">
                                             <rect key="frame" x="0.0" y="0.0" width="109.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" name="text-color"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bTp-rK-gAv" userLabel="desc">
                                             <rect key="frame" x="117.5" y="0.0" width="357.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" name="text-color"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -156,7 +159,7 @@
                                 <constraint firstItem="uDT-Qr-ViM" firstAttribute="width" secondItem="Gyo-jq-Ztx" secondAttribute="width" id="kbs-8J-8Bq"/>
                             </constraints>
                         </stackView>
-                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="37J-fi-FtE">
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="37J-fi-FtE" customClass="ScalingCarouselView" customModule="ScalingCarousel">
                             <rect key="frame" x="0.0" y="0.0" width="507" height="380"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -169,12 +172,22 @@
                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </collectionViewFlowLayout>
                         </collectionView>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="rjz-ij-3Yx">
+                            <rect key="frame" x="193" y="348.5" width="121.5" height="27.5"/>
+                            <color key="pageIndicatorTintColor" systemColor="systemGray5Color"/>
+                            <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="muralPageContolValueChanged:" destination="-1" eventType="valueChanged" id="d4n-Xt-sp7"/>
+                            </connections>
+                        </pageControl>
                     </subviews>
                     <constraints>
                         <constraint firstItem="37J-fi-FtE" firstAttribute="top" secondItem="Glh-pR-MFN" secondAttribute="top" id="AFL-at-ALs"/>
                         <constraint firstItem="TZ2-3g-nwM" firstAttribute="top" secondItem="37J-fi-FtE" secondAttribute="bottom" constant="16" id="QIr-Xo-o0x"/>
                         <constraint firstAttribute="bottom" secondItem="TZ2-3g-nwM" secondAttribute="bottom" id="VI0-vZ-biT"/>
                         <constraint firstItem="TZ2-3g-nwM" firstAttribute="leading" secondItem="Glh-pR-MFN" secondAttribute="leading" constant="16" id="WZR-zj-qVm"/>
+                        <constraint firstItem="37J-fi-FtE" firstAttribute="bottom" secondItem="rjz-ij-3Yx" secondAttribute="bottom" constant="4" id="XsG-fa-B7i"/>
+                        <constraint firstItem="rjz-ij-3Yx" firstAttribute="centerX" secondItem="37J-fi-FtE" secondAttribute="centerX" id="bx4-JZ-PBu"/>
                         <constraint firstAttribute="trailing" secondItem="TZ2-3g-nwM" secondAttribute="trailing" constant="16" id="e6q-wW-FHc"/>
                         <constraint firstAttribute="trailing" secondItem="37J-fi-FtE" secondAttribute="trailing" id="gjt-vs-qiC"/>
                         <constraint firstItem="37J-fi-FtE" firstAttribute="leading" secondItem="Glh-pR-MFN" secondAttribute="leading" id="wcc-4J-8la"/>
@@ -182,6 +195,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="background-color"/>
             <constraints>
                 <constraint firstItem="Glh-pR-MFN" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="DXG-va-FPV"/>
                 <constraint firstItem="Glh-pR-MFN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ZwM-EM-0aw"/>
@@ -192,4 +206,15 @@
             <point key="canvasLocation" x="-14.0625" y="273.125"/>
         </view>
     </objects>
+    <resources>
+        <namedColor name="background-color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="text-color">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

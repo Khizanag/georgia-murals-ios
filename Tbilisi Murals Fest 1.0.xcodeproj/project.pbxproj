@@ -33,6 +33,7 @@
 		FB54AFD225229C6F00B37B58 /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB54AFC825229C6E00B37B58 /* ArtistsViewController.swift */; };
 		FB54AFDC25229D5D00B37B58 /* ArtistPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB54AFDB25229D5D00B37B58 /* ArtistPageViewController.swift */; };
 		FB5D73C126E9149C006A4913 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D73C026E9149C006A4913 /* UICollectionViewCell+Extensions.swift */; };
+		FB5D73C326E93455006A4913 /* MuralViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D73C226E93455006A4913 /* MuralViewConstants.swift */; };
 		FB5E29CB2538A9AB009E33CE /* IntroGifResoluted.gif in Resources */ = {isa = PBXBuildFile; fileRef = FB5E29CA2538A9AB009E33CE /* IntroGifResoluted.gif */; };
 		FB6615162578072E00AFACCB /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6615152578072E00AFACCB /* GalleryViewController.swift */; };
 		FB8116C826E67E4E009D9AE5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8116C726E67E4E009D9AE5 /* UIView+Extensions.swift */; };
@@ -98,6 +99,7 @@
 		FB54AFC825229C6E00B37B58 /* ArtistsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistsViewController.swift; sourceTree = "<group>"; };
 		FB54AFDB25229D5D00B37B58 /* ArtistPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistPageViewController.swift; sourceTree = "<group>"; };
 		FB5D73C026E9149C006A4913 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		FB5D73C226E93455006A4913 /* MuralViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralViewConstants.swift; sourceTree = "<group>"; };
 		FB5E29CA2538A9AB009E33CE /* IntroGifResoluted.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IntroGifResoluted.gif; sourceTree = "<group>"; };
 		FB6615152578072E00AFACCB /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		FB8116C726E67E4E009D9AE5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			children = (
 				FB8556C125770D7700D5570D /* MuralView.swift */,
 				FB8556C625770E7E00D5570D /* MuralView.xib */,
+				FB5D73C226E93455006A4913 /* MuralViewConstants.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 				DCEBFA1826885A2E00B05CFC /* MapConstants.swift in Sources */,
 				FB54AFCE25229C6F00B37B58 /* MapViewController.swift in Sources */,
 				FB6615162578072E00AFACCB /* GalleryViewController.swift in Sources */,
+				FB5D73C326E93455006A4913 /* MuralViewConstants.swift in Sources */,
 				FB54AFDC25229D5D00B37B58 /* ArtistPageViewController.swift in Sources */,
 				FB8116CA26E68505009D9AE5 /* ArtistsTableViewCellModel.swift in Sources */,
 				DCEBFA1A26885CEA00B05CFC /* ArtistsConstrants.swift in Sources */,

@@ -36,18 +36,30 @@ class MenuViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
-		sponsorsImage.image = sponsorsImages[sponsorIndex]
-		Timer.scheduledTimer(
-            timeInterval: Constants.numSecondsForEachSponsor,
-			target: self,
-			selector: #selector(self.changeView),
-			userInfo: nil,
-			repeats: true
-		)
+        setup()
 	}
+    
+    private func setup() {
+        setupSponsors()
+        setupNavigationBar()
+    }
+    
+    private func setupSponsors() {
+        sponsorsImage.image = sponsorsImages[sponsorIndex]
+        Timer.scheduledTimer(
+            timeInterval: Constants.numSecondsForEachSponsor,
+            target: self,
+            selector: #selector(self.changeSponsor),
+            userInfo: nil,
+            repeats: true
+        )
+    }
+    
+    private func setupNavigationBar() {
+//        navigationController?.navigationBar.barTintColor = .systemYellow
+    }
 
-	@objc func changeView() {
+	@objc func changeSponsor() {
 		sponsorsImage.image = sponsorsImages[sponsorIndex]
 		sponsorIndex = (sponsorIndex + 1) % sponsorsImages.count
 	}

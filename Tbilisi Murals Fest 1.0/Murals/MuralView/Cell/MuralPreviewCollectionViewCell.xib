@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,9 +22,10 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ap6-aP-hnP">
                                 <rect key="frame" x="0.0" y="0.0" width="346" height="328"/>
+                                <color key="backgroundColor" name="background-color"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="background-color"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ap6-aP-hnP" secondAttribute="bottom" id="Fe3-oc-z6U"/>
                             <constraint firstAttribute="trailing" secondItem="ap6-aP-hnP" secondAttribute="trailing" id="Owk-h8-4Lh"/>
@@ -43,8 +45,14 @@
             <size key="customSize" width="346" height="328"/>
             <connections>
                 <outlet property="imageView" destination="ap6-aP-hnP" id="cQ0-NI-dgh"/>
+                <outlet property="mainView" destination="UDq-jz-gUy" id="suI-gd-2su"/>
             </connections>
             <point key="canvasLocation" x="143.47826086956522" y="231.69642857142856"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <namedColor name="background-color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

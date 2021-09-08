@@ -9,6 +9,7 @@
 
 import UIKit
 import SafariServices
+import ScalingCarousel
 import CoreLocation
 
 class ArtistPageViewController: UIViewController {
@@ -24,33 +25,25 @@ class ArtistPageViewController: UIViewController {
     @IBOutlet weak var instagramButton: UIButton!
     @IBOutlet weak var facebookButton: UIButton!
 
-    @IBOutlet var muralsCollectionView: UICollectionView!
+    @IBOutlet var muralsCollectionView: ScalingCarouselView!
+    @IBOutlet weak var muralsPageControl: UIPageControl!
     
     // MARK: - Properties
     private let muralsDB = MuralsDatabase.sharedInstance
     public var artist: Artist = ArtistsDatabase.defaultArtist
-
-    @IBAction func openInstagram(_ sender: Any) {
-        if let igUsername = artist.socialProfiles[.instagram] {
-            let igUrl = SocialMediaManager.buildInstagramUrl(username: igUsername)
-            let vc = SFSafariViewController(url: URL(string: igUrl)!)
-            present(vc, animated: true)
-        }
-    }
-
-    @IBAction func openFacebook(_ sender: Any) {
-        if let fbUsername = artist.socialProfiles[.facebook] {
-            let fbUrl = SocialMediaManager.buildFacebookUrl(username: fbUsername)
-            let vc = SFSafariViewController(url: URL(string: fbUrl)!)
-            present(vc, animated: true)
-        }
-    }
+    
+    // MARK: - Lifecycle methods
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
         setup()
         filterSocialMediaButtons()
 	}
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        initCircularImage()
+    }
     
     // MARK: - Setup
     private func setup() {
@@ -63,11 +56,6 @@ class ArtistPageViewController: UIViewController {
     private func setupNavigationItem() {
         navigationItem.title = artist.name
     }
-
-	override func viewDidLayoutSubviews() {
-		super.viewDidLayoutSubviews()
-		initCircularImage()
-	}
 
 	private func initCircularImage() {
 		profilePhotoView.layer.cornerRadius = profilePhotoView.frame.size.width/2
@@ -83,16 +71,20 @@ class ArtistPageViewController: UIViewController {
 	private func setupCollectionView() {
         muralsCollectionView.delegate = self
         muralsCollectionView.dataSource = self
-        muralsCollectionView.collectionViewLayout = {
-            let layout = UICollectionViewFlowLayout()
-            // TODO: setup layout
-            return layout
-        }()
-        
+        muralsCollectionView.inset = muralsCollectionView.frame.width / 12
+        setupCollectionViewRegistrations()
+        setupCollectionViewPageControl()
+	}
+    
+    private func setupCollectionViewRegistrations() {
         muralsCollectionView.register(
             UINib(nibName: MuralPreviewCollectionViewCell.reuseIdentifier, bundle: nil),
             forCellWithReuseIdentifier: MuralPreviewCollectionViewCell.reuseIdentifier)
-	}
+    }
+    
+    private func setupCollectionViewPageControl() {
+        muralsPageControl.numberOfPages = artist.murals.count
+    }
 
 	private func setupScrollView() {
 		scrollView.delegate = self
@@ -106,10 +98,45 @@ class ArtistPageViewController: UIViewController {
 			instagramButton.hide()
 		}
 	}
+    
+    // MARK: - IBActions
+    
+    @IBAction func muralsPageControlValueChanged(_ sender: Any) {
+        let indexPath = IndexPath(row: muralsPageControl.currentPage, section: 0)
+        muralsCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        muralsCollectionView.didScroll()
+    }
+    
+    @IBAction func openInstagram(_ sender: Any) {
+        if let igUsername = artist.socialProfiles[.instagram] {
+            let igUrl = SocialMediaManager.buildInstagramUrl(username: igUsername)
+            let vc = SFSafariViewController(url: URL(string: igUrl)!)
+            present(vc, animated: true)
+        }
+    }
+
+    @IBAction func openFacebook(_ sender: Any) {
+        if let fbUsername = artist.socialProfiles[.facebook] {
+            let fbUrl = SocialMediaManager.buildFacebookUrl(username: fbUsername)
+            let vc = SFSafariViewController(url: URL(string: fbUrl)!)
+            present(vc, animated: true)
+        }
+    }
+}
+
+// MARK: - UICollectionViewDelegate
+extension ArtistPageViewController: UICollectionViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        muralsCollectionView.didScroll()
+    }
+
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        guard let centerCellIndex = muralsCollectionView.currentCenterCellIndex else { return }
+        muralsPageControl.currentPage = centerCellIndex.row
+    }
 }
 
 // MARK: - UICollectionViewDataSource
-
 extension ArtistPageViewController: UICollectionViewDataSource {
 
     func numberOfSections(in collectionView: UICollectionView) -> Int { 1 }
@@ -137,36 +164,4 @@ extension ArtistPageViewController: UICollectionViewDataSource {
         }
     }
 
-}
-
-// MARK: - UICollectionViewDelegateFlowLayout
-
-extension ArtistPageViewController: UICollectionViewDelegateFlowLayout {
-
-    func collectionView(
-        _ collectionView: UICollectionView,
-        layout collectionViewLayout: UICollectionViewLayout,
-        sizeForItemAt indexPath: IndexPath
-    ) -> CGSize {
-        return CGSize(
-            width:  collectionView.frame.width,
-            height: collectionView.frame.height
-        )
-    }
-
-    func collectionView(
-        _ collectionView: UICollectionView,
-        layout collectionViewLayout: UICollectionViewLayout,
-        minimumInteritemSpacingForSectionAt section: Int
-    ) -> CGFloat {
-        return Constants.spacing
-    }
-
-    func collectionView(
-        _ collectionView: UICollectionView,
-        layout collectionViewLayout: UICollectionViewLayout,
-        minimumLineSpacingForSectionAt section: Int
-    ) -> CGFloat {
-        return Constants.spacing
-    }
 }

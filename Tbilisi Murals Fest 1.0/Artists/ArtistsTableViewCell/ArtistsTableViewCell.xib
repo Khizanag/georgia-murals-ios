@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,6 +19,7 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f7Q-h2-Sak">
                         <rect key="frame" x="60.5" y="16" width="484" height="484"/>
+                        <color key="backgroundColor" name="background-color"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="f7Q-h2-Sak" secondAttribute="height" multiplier="1:1" id="YXW-sq-IoO"/>
                         </constraints>
@@ -25,11 +27,11 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OiD-Jc-WNs">
                         <rect key="frame" x="16" y="516" width="573" height="115"/>
                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="36"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" name="text-color"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="backgroundColor" name="background-color"/>
                 <constraints>
                     <constraint firstItem="OiD-Jc-WNs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="4Lq-FN-GrE"/>
                     <constraint firstAttribute="bottom" secondItem="OiD-Jc-WNs" secondAttribute="bottom" constant="16" id="5Ym-wp-4jr"/>
@@ -41,7 +43,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" name="background-color"/>
             <connections>
                 <outlet property="nameLabel" destination="OiD-Jc-WNs" id="6m7-Zt-OlY"/>
                 <outlet property="profilePhotoView" destination="f7Q-h2-Sak" id="X4W-ro-xrs"/>
@@ -49,4 +51,12 @@
             <point key="canvasLocation" x="344.20289855072468" y="350.55803571428572"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <namedColor name="background-color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="text-color">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

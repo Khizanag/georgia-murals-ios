@@ -356,13 +356,13 @@
 		1EAE03B524769C34577A673FB2DF6DE0 /* BallSpinFadeIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BallSpinFadeIndicator.swift; path = LoadingButtons/Indicators/BallSpinFadeIndicator.swift; sourceTree = "<group>"; };
 		1EFF38BD87C34D0F895E73B8D176DF29 /* UIImage+ExtendedCacheData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ExtendedCacheData.h"; path = "SDWebImage/Core/UIImage+ExtendedCacheData.h"; sourceTree = "<group>"; };
 		1F8D968EC6DEAC2E60E97754BEDFC6B2 /* SDAnimatedImagePlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImagePlayer.h; path = SDWebImage/Core/SDAnimatedImagePlayer.h; sourceTree = "<group>"; };
-		207E43C7D6DC1DE919A6B160C82118B9 /* libUPCarouselFlowLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUPCarouselFlowLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		207E43C7D6DC1DE919A6B160C82118B9 /* libUPCarouselFlowLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libUPCarouselFlowLayout.a; path = libUPCarouselFlowLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2129B267BC42DB88498167C7D8AD5DAE /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		2146497DAD7837207FA2CE97EFC37FE7 /* ScalePageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScalePageView.swift; path = Lib/SwiftUI/ScalePageView.swift; sourceTree = "<group>"; };
 		216BFC81FC2F047CD834AB701B81C24B /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
 		22AC178CCB83D0EA11838A64624C5192 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 		23EFEEC065196001412A18C6D1FEA1B6 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/Core/SDWebImageDownloader.h; sourceTree = "<group>"; };
-		24E96286E41476A4E7F4D8742B9B16D7 /* libScalingCarousel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libScalingCarousel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		24E96286E41476A4E7F4D8742B9B16D7 /* libScalingCarousel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libScalingCarousel.a; path = libScalingCarousel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		264C34604137F655E87A455E74FAE597 /* SDImageGIFCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageGIFCoder.h; path = SDWebImage/Core/SDImageGIFCoder.h; sourceTree = "<group>"; };
 		270BDFD94530841761E3DE27E09A5C5A /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
 		2738D081ADEAED34A317C42C78CA47B3 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = LoadingButtons/Extensions.swift; sourceTree = "<group>"; };
@@ -409,7 +409,7 @@
 		4AFA51F981C25DD0A84F3760CE3447F0 /* SDDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDDiskCache.m; path = SDWebImage/Core/SDDiskCache.m; sourceTree = "<group>"; };
 		4B77B43F27B4B65DDBFE940ECD6064EE /* UIImage+ExtendedCacheData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ExtendedCacheData.m"; path = "SDWebImage/Core/UIImage+ExtendedCacheData.m"; sourceTree = "<group>"; };
 		4C21CB2C224742F1E538ADF00F8CDF13 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/Core/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
-		4D8F964FEA10FF4ED7C669359A356BC9 /* libCollectionViewPagingLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCollectionViewPagingLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D8F964FEA10FF4ED7C669359A356BC9 /* libCollectionViewPagingLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCollectionViewPagingLayout.a; path = libCollectionViewPagingLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		504A58E7A23890C9F54E5DE63C791146 /* AlamofireImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireImage.debug.xcconfig; sourceTree = "<group>"; };
 		5077B1EA9597FAB678B5C51A3B6C3506 /* SDImageFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageFrame.m; path = SDWebImage/Core/SDImageFrame.m; sourceTree = "<group>"; };
 		50A97996FFBE308DAE6F55D0F599CFF2 /* BallBeatIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BallBeatIndicator.swift; path = LoadingButtons/Indicators/BallBeatIndicator.swift; sourceTree = "<group>"; };
@@ -428,7 +428,7 @@
 		5CB5BCDC00B2865F40B39E2A25BC6B8D /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/Core/SDWebImageOperation.h; sourceTree = "<group>"; };
 		5D4537783B9203BEF9C385EC8C0FC65A /* SDAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImage.h; path = SDWebImage/Core/SDAnimatedImage.h; sourceTree = "<group>"; };
 		5D6141847B3775C14D8A610B28A21B8D /* SDImageTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageTransformer.m; path = SDWebImage/Core/SDImageTransformer.m; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D797E9A5C5782CE845840781FA1CC81 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAlamofire.a; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD344079CB578EF0A1E046741143A83 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		5EFF9E61E08C45A7FAA61D93D34527CB /* ScalingCarousel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScalingCarousel.modulemap; sourceTree = "<group>"; };
 		600AE5C62A9BE6E8E508566562F34907 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/Core/NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -485,7 +485,7 @@
 		8BA0C3758596F62F5EE06B792F33A345 /* SDAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageView.m; path = SDWebImage/Core/SDAnimatedImageView.m; sourceTree = "<group>"; };
 		8D71EA01B099ECF44EEF0C9046DC5A7A /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/Core/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
 		8EC45F60E62AE15E77AC4B3785B3902F /* SDImageAPNGCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAPNGCoder.h; path = SDWebImage/Core/SDImageAPNGCoder.h; sourceTree = "<group>"; };
-		8EE3AFCCD0620656BA168D6B83247E81 /* libMHLoadingButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMHLoadingButton.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE3AFCCD0620656BA168D6B83247E81 /* libMHLoadingButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMHLoadingButton.a; path = libMHLoadingButton.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		905A0AF666E80112F2BE064E676FF506 /* LineSpinFadeLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineSpinFadeLoader.swift; path = LoadingButtons/Indicators/LineSpinFadeLoader.swift; sourceTree = "<group>"; };
 		908A4D661F51FAD378020C4CFA3A4FE7 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/Core/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		9182258B1D912C1EA2C734F43E1F17FD /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
@@ -499,7 +499,7 @@
 		99DD961B580C8D624EE1AFCDEEE6F95E /* StackTransformViewOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StackTransformViewOptions.swift; path = Lib/Stack/StackTransformViewOptions.swift; sourceTree = "<group>"; };
 		9B36693109363969B06373E94737946C /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
 		9B9466F63D1D43082D0C7A00102C1828 /* SDImageCacheConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheConfig.h; path = SDWebImage/Core/SDImageCacheConfig.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F838CC46A7D506012A6ABA3018B4E33 /* ScalingCarouselCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScalingCarouselCell.swift; path = Sources/ScalingCarousel/ScalingCarouselCell.swift; sourceTree = "<group>"; };
 		9F92123F6F41F2E7E823338C693DBA3C /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/Core/SDWebImageDownloader.m; sourceTree = "<group>"; };
 		9FC49271ADC2E3951FFAA5A1D839B096 /* NSImage+Compatibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSImage+Compatibility.m"; path = "SDWebImage/Core/NSImage+Compatibility.m"; sourceTree = "<group>"; };
@@ -523,7 +523,7 @@
 		AFBB7639853331765EAF874F1EF41D31 /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/Core/SDWebImageManager.m; sourceTree = "<group>"; };
 		B0997CA61D84E44233B28270821D9F86 /* SDImageCacheDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheDefine.h; path = SDWebImage/Core/SDImageCacheDefine.h; sourceTree = "<group>"; };
 		B099912946859B5A41A28E62A4FF9696 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		B0B214D775196BA7CA8E17E53048A493 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B214D775196BA7CA8E17E53048A493 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDWebImage.a; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B165CFA3C927FCEBF4E4F4A37ED87A61 /* IndicatorProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorProtocol.swift; path = LoadingButtons/Indicators/IndicatorProtocol.swift; sourceTree = "<group>"; };
 		B1CE6EFC948464F48B5B775087D4E704 /* SDWebImageIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageIndicator.h; path = SDWebImage/Core/SDWebImageIndicator.h; sourceTree = "<group>"; };
 		B41D5EFFF4FFB65EC5F2107569B29788 /* PagingCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingCollectionViewController.swift; path = Lib/SwiftUI/PagingCollectionViewController.swift; sourceTree = "<group>"; };
@@ -543,7 +543,7 @@
 		C5BF4D3226AE9B828CB5911B3E1D2A87 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
 		C695E1BABB12486F795F6C839334A3FC /* SDWebImageDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDefine.h; path = SDWebImage/Core/SDWebImageDefine.h; sourceTree = "<group>"; };
 		C80200F3384C9955B2DD6D7A93063839 /* SDWebImageDownloaderConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderConfig.h; path = SDWebImage/Core/SDWebImageDownloaderConfig.h; sourceTree = "<group>"; };
-		C8498160B5D29EF2745E4D41F2D971B5 /* libAlamofireImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlamofireImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8498160B5D29EF2745E4D41F2D971B5 /* libAlamofireImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAlamofireImage.a; path = libAlamofireImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88D53FF08731C1084E55B3FDD8EE52C /* SDWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWeakProxy.h; path = SDWebImage/Private/SDWeakProxy.h; sourceTree = "<group>"; };
 		C8F1E319FE35BDC908930B585D37095D /* SDWebImageIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageIndicator.m; path = SDWebImage/Core/SDWebImageIndicator.m; sourceTree = "<group>"; };
 		C9513AE13948FAA42D528AF4AAC3C648 /* SDGraphicsImageRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDGraphicsImageRenderer.h; path = SDWebImage/Core/SDGraphicsImageRenderer.h; sourceTree = "<group>"; };
@@ -607,7 +607,7 @@
 		F31E189E3E4B2F05A0EA55EC781393DA /* LoadingButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingButton.swift; path = LoadingButtons/LoadingButton.swift; sourceTree = "<group>"; };
 		F49BA2D9A22D8B42EAD08541780D614E /* SDDisplayLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDDisplayLink.h; path = SDWebImage/Private/SDDisplayLink.h; sourceTree = "<group>"; };
 		F723A03AA13976764F68D5DE8A461DA1 /* MHLoadingButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MHLoadingButton.modulemap; sourceTree = "<group>"; };
-		F7F889F8EEED535A1CBA26BDD32C9DF9 /* libPods-Tbilisi Murals Fest 1.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tbilisi Murals Fest 1.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7F889F8EEED535A1CBA26BDD32C9DF9 /* libPods-Tbilisi Murals Fest 1.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Tbilisi Murals Fest 1.0.a"; path = "libPods-Tbilisi Murals Fest 1.0.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8FE549A4C86B68055DAF1D23B3C6542 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/Core/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		F96F5CD4B5D3D41C9857C5381B2FC39E /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		F9CFDD1C82728030DC3B214AF0FE58AC /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/Core/SDWebImageManager.h; sourceTree = "<group>"; };
@@ -709,6 +709,7 @@
 				CDC950F695AFA5AF1411E124EA5A9D91 /* UIImageView+AlamofireImage.swift */,
 				CF674181514D1A01AA179545573A161C /* Support Files */,
 			);
+			name = AlamofireImage;
 			path = AlamofireImage;
 			sourceTree = "<group>";
 		};
@@ -915,6 +916,7 @@
 				CE5558061EE7022C442C694D24D9E831 /* Validation.swift */,
 				949FC3BBEA1AEA626E2F2777E2A1F4A7 /* Support Files */,
 			);
+			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -926,6 +928,7 @@
 				8782F369BB182DD85444DF54C859C7B2 /* ScalingCarouselView.swift */,
 				F849750491BCD4FBB198B5EE9973EF58 /* Support Files */,
 			);
+			name = ScalingCarousel;
 			path = ScalingCarousel;
 			sourceTree = "<group>";
 		};
@@ -968,6 +971,7 @@
 				33C97FB702C87A842424EF41DBF86F72 /* ViewAnimator.swift */,
 				E1192A2DF5B4B6330D02AA7816E886CB /* Support Files */,
 			);
+			name = CollectionViewPagingLayout;
 			path = CollectionViewPagingLayout;
 			sourceTree = "<group>";
 		};
@@ -992,6 +996,7 @@
 				29802732A4F305EC8719BD40892FA9E8 /* UPCarouselFlowLayout.swift */,
 				36DA314B19E4035FA98D8BE7D40626BF /* Support Files */,
 			);
+			name = UPCarouselFlowLayout;
 			path = UPCarouselFlowLayout;
 			sourceTree = "<group>";
 		};
@@ -1001,6 +1006,7 @@
 				2D380C8BA0DF27DCDECC4DD8B96EF5A4 /* Core */,
 				DB0FFC827511B92F9A5719CE48A3F41C /* Support Files */,
 			);
+			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -1146,6 +1152,7 @@
 				B756C8A86A6A50263E76EDA8077BFABB /* NVActivityIndicatorShape.swift */,
 				6BF534FDDCDEA081A45956BE4E5D9739 /* Support Files */,
 			);
+			name = MHLoadingButton;
 			path = MHLoadingButton;
 			sourceTree = "<group>";
 		};
@@ -1916,7 +1923,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULEMAP_FILE = Headers/Public/Alamofire/Alamofire.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1942,7 +1949,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/AlamofireImage/AlamofireImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULEMAP_FILE = Headers/Public/AlamofireImage/AlamofireImage.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1966,7 +1973,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -1991,7 +1998,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/CollectionViewPagingLayout/CollectionViewPagingLayout-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULEMAP_FILE = Headers/Public/CollectionViewPagingLayout/CollectionViewPagingLayout.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -2016,7 +2023,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MODULEMAP_FILE = Headers/Public/UPCarouselFlowLayout/UPCarouselFlowLayout.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -2063,7 +2070,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/MHLoadingButton/MHLoadingButton-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULEMAP_FILE = Headers/Public/MHLoadingButton/MHLoadingButton.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -2112,7 +2119,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULEMAP_FILE = Headers/Public/Alamofire/Alamofire.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -2137,7 +2144,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/AlamofireImage/AlamofireImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULEMAP_FILE = Headers/Public/AlamofireImage/AlamofireImage.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -2229,7 +2236,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/ScalingCarousel/ScalingCarousel-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULEMAP_FILE = Headers/Public/ScalingCarousel/ScalingCarousel.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -2253,7 +2260,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/UPCarouselFlowLayout/UPCarouselFlowLayout-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MODULEMAP_FILE = Headers/Public/UPCarouselFlowLayout/UPCarouselFlowLayout.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -2341,7 +2348,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/CollectionViewPagingLayout/CollectionViewPagingLayout-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULEMAP_FILE = Headers/Public/CollectionViewPagingLayout/CollectionViewPagingLayout.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -2365,7 +2372,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -2389,7 +2396,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/ScalingCarousel/ScalingCarousel-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULEMAP_FILE = Headers/Public/ScalingCarousel/ScalingCarousel.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -2415,7 +2422,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/MHLoadingButton/MHLoadingButton-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULEMAP_FILE = Headers/Public/MHLoadingButton/MHLoadingButton.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";

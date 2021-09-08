@@ -40,10 +40,10 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVM-so-xTn">
                                 <rect key="frame" x="37.666666666666657" y="176" width="300" height="55.333333333333343"/>
-                                <color key="backgroundColor" name="button-color"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="17"/>
                                 <state key="normal" title="Map">
-                                    <color key="titleColor" name="button-text-color"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="Jck-vF-93o" kind="show" id="XaL-xo-DHT"/>
@@ -51,10 +51,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcT-Of-BN5">
                                 <rect key="frame" x="37.666666666666657" y="259.33333333333331" width="300" height="55"/>
-                                <color key="backgroundColor" name="button-color"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="17"/>
                                 <state key="normal" title="Artists">
-                                    <color key="titleColor" name="button-text-color"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="Y9U-nF-tCm" kind="show" id="r05-KY-tCB"/>
@@ -62,10 +62,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujQ-Ay-P4S">
                                 <rect key="frame" x="37.666666666666657" y="535.33333333333337" width="300" height="55.333333333333371"/>
-                                <color key="backgroundColor" name="button-color"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="17"/>
                                 <state key="normal" title="Contact Us">
-                                    <color key="titleColor" name="button-text-color"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="BTP-hG-uiI" kind="show" id="7qF-K7-n4R"/>
@@ -73,10 +73,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEY-y4-rjU">
                                 <rect key="frame" x="37.666666666666657" y="342.33333333333331" width="300" height="55.333333333333314"/>
-                                <color key="backgroundColor" name="button-color"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="17"/>
                                 <state key="normal" title="Gallery">
-                                    <color key="titleColor" name="button-text-color"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="DTz-Cn-aK7" kind="show" id="FP4-yh-MnM"/>
@@ -91,6 +91,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="L4O-FA-ade"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <accessibility key="accessibilityConfiguration" identifier="MenuViewController"/>
                         <constraints>
                             <constraint firstItem="ujQ-Ay-P4S" firstAttribute="width" secondItem="L4O-FA-ade" secondAttribute="width" multiplier="0.8" id="7aw-Td-Hye"/>
@@ -136,27 +137,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ea9-rH-vne">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8JO-Rd-TEN">
                                 <rect key="frame" x="0.0" y="88" width="375" height="690"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="Y9U-nF-tCm" id="cB7-Uo-5st"/>
-                                    <outlet property="delegate" destination="Y9U-nF-tCm" id="ROT-W3-sRa"/>
-                                </connections>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5ye-ns-ICE"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="background-color"/>
                         <constraints>
-                            <constraint firstItem="Ea9-rH-vne" firstAttribute="leading" secondItem="5ye-ns-ICE" secondAttribute="leading" id="6K7-Ba-UhC"/>
-                            <constraint firstItem="5ye-ns-ICE" firstAttribute="trailing" secondItem="Ea9-rH-vne" secondAttribute="trailing" id="9Vj-i5-eFn"/>
-                            <constraint firstItem="Ea9-rH-vne" firstAttribute="top" secondItem="5ye-ns-ICE" secondAttribute="top" id="HYX-1o-jqB"/>
-                            <constraint firstItem="5ye-ns-ICE" firstAttribute="bottom" secondItem="Ea9-rH-vne" secondAttribute="bottom" id="jOD-mz-dBR"/>
+                            <constraint firstItem="5ye-ns-ICE" firstAttribute="trailing" secondItem="8JO-Rd-TEN" secondAttribute="trailing" id="3NB-yw-UtG"/>
+                            <constraint firstItem="8JO-Rd-TEN" firstAttribute="top" secondItem="5ye-ns-ICE" secondAttribute="top" id="LNq-H0-TbD"/>
+                            <constraint firstItem="8JO-Rd-TEN" firstAttribute="leading" secondItem="5ye-ns-ICE" secondAttribute="leading" id="VaV-qn-cjp"/>
+                            <constraint firstItem="5ye-ns-ICE" firstAttribute="bottom" secondItem="8JO-Rd-TEN" secondAttribute="bottom" id="niC-QD-1eE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="eu2-vl-52P"/>
                     <connections>
-                        <outlet property="tableView" destination="Ea9-rH-vne" id="iqw-lD-myB"/>
+                        <outlet property="tableView" destination="8JO-Rd-TEN" id="3K4-0T-mGi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Exc-FE-Quq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -180,13 +177,13 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjz-if-icl" userLabel="ArtistName">
                                                 <rect key="frame" x="37.666666666666657" y="168.66666666666666" width="300" height="23.333333333333343"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="20"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="text-color"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" minimumZoomScale="4" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="914-qU-21W">
                                                 <rect key="frame" x="37.666666666666657" y="212" width="300" height="248.66666666666663"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                <color key="textColor" systemColor="labelColor"/>
+                                                <color key="textColor" name="text-color"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -198,6 +195,7 @@
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVC-9c-PE1">
                                                 <rect key="frame" x="16.000000000000004" y="774" width="56.333333333333343" height="56.333333333333371"/>
+                                                <color key="tintColor" name="icon-tint-color"/>
                                                 <state key="normal" title="FB" image="facebook-icon"/>
                                                 <connections>
                                                     <action selector="openFacebook:" destination="Bbe-oB-yzn" eventType="touchUpInside" id="00W-zh-XFy"/>
@@ -208,14 +206,15 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="tKP-jj-teU" secondAttribute="height" multiplier="1:1" id="TS0-Ut-cVI"/>
                                                 </constraints>
+                                                <color key="tintColor" name="icon-tint-color"/>
                                                 <state key="normal" title="instagram" image="instagram-black-icon"/>
                                                 <connections>
                                                     <action selector="openInstagram:" destination="Bbe-oB-yzn" eventType="touchUpInside" id="vfE-kC-PSC"/>
                                                 </connections>
                                             </button>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jXG-VU-WQP">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jXG-VU-WQP" customClass="ScalingCarouselView" customModule="ScalingCarousel">
                                                 <rect key="frame" x="0.0" y="476.66666666666663" width="375" height="281.33333333333337"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" name="background-color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="jXG-VU-WQP" secondAttribute="height" multiplier="4:3" id="hpy-YC-py8"/>
                                                 </constraints>
@@ -227,14 +226,24 @@
                                                 </collectionViewFlowLayout>
                                                 <cells/>
                                             </collectionView>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Q9h-XH-04J">
+                                                <rect key="frame" x="127" y="727" width="121" height="27"/>
+                                                <color key="pageIndicatorTintColor" systemColor="systemGray5Color"/>
+                                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="muralsPageControlValueChanged:" destination="Bbe-oB-yzn" eventType="valueChanged" id="E4x-3j-v7A"/>
+                                                </connections>
+                                            </pageControl>
                                         </subviews>
                                         <accessibility key="accessibilityConfiguration">
                                             <bool key="isElement" value="YES"/>
                                         </accessibility>
                                         <constraints>
+                                            <constraint firstItem="jXG-VU-WQP" firstAttribute="bottom" secondItem="Q9h-XH-04J" secondAttribute="bottom" constant="4" id="1en-qN-uOn"/>
                                             <constraint firstItem="DeM-31-F5O" firstAttribute="top" secondItem="m2o-iO-WdO" secondAttribute="top" constant="20" id="4Ea-MR-6OQ"/>
                                             <constraint firstItem="DeM-31-F5O" firstAttribute="width" secondItem="m2o-iO-WdO" secondAttribute="width" multiplier="0.33" id="6Qf-j6-WGL"/>
                                             <constraint firstItem="UVC-9c-PE1" firstAttribute="top" secondItem="jXG-VU-WQP" secondAttribute="bottom" constant="16" id="9WN-Zc-l4d"/>
+                                            <constraint firstItem="Q9h-XH-04J" firstAttribute="centerX" secondItem="jXG-VU-WQP" secondAttribute="centerX" id="BDH-g2-JWn"/>
                                             <constraint firstItem="tKP-jj-teU" firstAttribute="leading" secondItem="UVC-9c-PE1" secondAttribute="trailing" constant="16" id="DxV-Zu-Qth"/>
                                             <constraint firstItem="jXG-VU-WQP" firstAttribute="top" secondItem="914-qU-21W" secondAttribute="bottom" constant="16" id="E5E-id-eMz"/>
                                             <constraint firstItem="jXG-VU-WQP" firstAttribute="leading" secondItem="m2o-iO-WdO" secondAttribute="leading" id="ECk-II-B5M"/>
@@ -269,6 +278,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="N0i-1x-nrP"/>
+                        <color key="backgroundColor" name="background-color"/>
                         <constraints>
                             <constraint firstItem="a08-hK-iwA" firstAttribute="top" secondItem="N0i-1x-nrP" secondAttribute="top" id="4H4-dn-w7i"/>
                             <constraint firstItem="a08-hK-iwA" firstAttribute="trailing" secondItem="N0i-1x-nrP" secondAttribute="trailing" id="5nj-AH-n6K"/>
@@ -282,7 +292,8 @@
                         <outlet property="bioText" destination="914-qU-21W" id="8Tq-tk-qkm"/>
                         <outlet property="facebookButton" destination="UVC-9c-PE1" id="RxX-U5-eEd"/>
                         <outlet property="instagramButton" destination="tKP-jj-teU" id="wt7-EB-3O1"/>
-                        <outlet property="muralsCollectionView" destination="jXG-VU-WQP" id="N45-ws-bco"/>
+                        <outlet property="muralsCollectionView" destination="jXG-VU-WQP" id="S8b-7w-hpE"/>
+                        <outlet property="muralsPageControl" destination="Q9h-XH-04J" id="tqu-iQ-6x0"/>
                         <outlet property="profilePhotoView" destination="DeM-31-F5O" id="MTu-2o-rnj"/>
                         <outlet property="scrollView" destination="a08-hK-iwA" id="ORc-AJ-7aD"/>
                     </connections>
@@ -329,6 +340,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Od-gV-eF4"/>
+                        <color key="backgroundColor" name="background-color"/>
                         <constraints>
                             <constraint firstItem="spu-jC-Fr7" firstAttribute="top" secondItem="1Od-gV-eF4" secondAttribute="top" id="1zn-WX-8hm"/>
                             <constraint firstItem="g9L-0Q-nA2" firstAttribute="centerX" secondItem="1Od-gV-eF4" secondAttribute="centerX" id="Gg8-Id-mF8"/>
@@ -370,7 +382,7 @@
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AnS-Uq-KLy"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="background-color"/>
                         <constraints>
                             <constraint firstItem="haU-Ev-Rc3" firstAttribute="leading" secondItem="AnS-Uq-KLy" secondAttribute="leading" id="DZ9-hZ-k7V"/>
                             <constraint firstItem="haU-Ev-Rc3" firstAttribute="top" secondItem="AnS-Uq-KLy" secondAttribute="top" id="VZe-A2-gu7"/>
@@ -398,7 +410,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Our Support Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXV-5y-8bZ">
                                 <rect key="frame" x="55" y="132" width="265" height="25.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="text-color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need to get in touch with the team? We're all ears." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLN-6o-VTH">
@@ -416,13 +428,13 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXR-S0-u3e">
                                                 <rect key="frame" x="0.0" y="0.0" width="49.333333333333336" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="text-color"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="office@tbilisimuralfest.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzM-5B-39p">
                                                 <rect key="frame" x="57.333333333333343" y="0.0" width="215.00000000000003" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="text-color"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -433,13 +445,13 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0U-9h-tbI">
                                                 <rect key="frame" x="0.0" y="0.0" width="27" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="text-color"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+49 176 729 49 709 (Germany)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yt-Vu-PAp">
                                                 <rect key="frame" x="35.000000000000014" y="0.0" width="248.66666666666669" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="text-color"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -450,13 +462,13 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFK-cb-WFq">
                                                 <rect key="frame" x="0.0" y="0.0" width="27" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="text-color"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+995 599 432 082 (Georgia)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnA-tP-emW">
                                                 <rect key="frame" x="34.999999999999986" y="0.0" width="223.66666666666663" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="text-color"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -472,6 +484,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hR8-f0-zlN"/>
+                        <color key="backgroundColor" name="background-color"/>
                         <constraints>
                             <constraint firstItem="hR8-f0-zlN" firstAttribute="bottom" secondItem="1bm-9z-6Nw" secondAttribute="bottom" constant="32" id="1XE-Tk-NbC"/>
                             <constraint firstItem="nKh-EZ-Mk2" firstAttribute="centerY" secondItem="hR8-f0-zlN" secondAttribute="centerY" multiplier="0.95" id="T7e-Tm-yej"/>
@@ -501,10 +514,12 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6dR-9T-omn">
                                 <rect key="frame" x="0.0" y="88" width="375" height="690"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="background-color"/>
+                                <color key="sectionIndexBackgroundColor" name="background-color"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GM1-UL-mSp"/>
+                        <color key="backgroundColor" name="background-color"/>
                         <constraints>
                             <constraint firstItem="GM1-UL-mSp" firstAttribute="trailing" secondItem="6dR-9T-omn" secondAttribute="trailing" id="AfV-tO-Xsh"/>
                             <constraint firstItem="GM1-UL-mSp" firstAttribute="bottom" secondItem="6dR-9T-omn" secondAttribute="bottom" id="ZVk-Dh-MC8"/>
@@ -541,23 +556,32 @@
         </scene>
     </scenes>
     <resources>
-        <image name="facebook-icon" width="256" height="256"/>
-        <image name="instagram-black-icon" width="200" height="200"/>
-        <image name="logo" width="679.5" height="679.5"/>
+        <image name="facebook-icon" width="512" height="512"/>
+        <image name="instagram-black-icon" width="400" height="400"/>
+        <image name="logo" width="1359" height="1359"/>
+        <namedColor name="background-color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="button-color">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="button-text-color">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="icon-tint-color">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="text-color">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

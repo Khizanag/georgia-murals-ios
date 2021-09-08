@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import ScalingCarousel
 
-class MuralPreviewCollectionViewCell: UICollectionViewCell {
+class MuralPreviewCollectionViewCell: ScalingCarouselCell {
 	
     // MARK: - Outlets
     @IBOutlet var imageView: UIImageView!

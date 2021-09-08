@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import ScalingCarousel
 
 class MuralView: BaseReusableView {
     
     // MARK: - Outlets
-	@IBOutlet weak var collectionView: UICollectionView!
-
+	@IBOutlet weak var collectionView: ScalingCarouselView!
+    @IBOutlet weak var collectionViewPageControl: UIPageControl!
+    
     @IBOutlet weak var titleStack: UIStackView!
     @IBOutlet weak var titleKeyLabel: UILabel!
     @IBOutlet weak var titleValueLabel: UILabel!
@@ -40,6 +42,11 @@ class MuralView: BaseReusableView {
     // MARK: - Properties
 	private var imageIndex: Int = 0
 	private var mural: Mural = MuralsDatabase.sharedInstance.defaultMural
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        collectionView.deviceRotated()
+    }
 
     // MARK: - Setup
 
@@ -58,17 +65,26 @@ class MuralView: BaseReusableView {
     private func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.collectionViewLayout = {
-            let layout = UICollectionViewFlowLayout()
-            // TODO: setup layout
-            return layout
-        }()
-
+        collectionView.inset = collectionView.frame.width / 12
+        setupCollectionViewRegistrations()
+        setupCollectionViewPageControl()
+    }
+    
+    private func setupCollectionViewPageControl() {
+        collectionViewPageControl.numberOfPages = mural.imageURLs.count
+    }
+    
+    private func setupCollectionViewRegistrations() {
         collectionView.register(
             UINib(nibName: MuralPreviewCollectionViewCell.reuseIdentifier, bundle: nil),
             forCellWithReuseIdentifier: MuralPreviewCollectionViewCell.reuseIdentifier)
     }
     
+    @IBAction func muralPageContolValueChanged(_ sender: Any) {
+        let indexPath = IndexPath(row: collectionViewPageControl.currentPage, section: 0)
+        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        collectionView.didScroll()
+    }
     private func setupTitle() {
         if let title = mural.title {
             titleValueLabel.text = title
@@ -120,15 +136,27 @@ class MuralView: BaseReusableView {
 
 }
 
+// MARK: - UICollectionViewDelegate
+
+extension MuralView: UICollectionViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        collectionView.didScroll()
+    }
+
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        guard let centerCellIndex = collectionView.currentCenterCellIndex else { return }
+        collectionViewPageControl.currentPage = centerCellIndex.row
+    }
+}
+
+// MARK: - UICollectionViewDataSource
 
 extension MuralView: UICollectionViewDataSource {
 
-	func numberOfSections(in collectionView: UICollectionView) -> Int {
-		return 1
-	}
+	func numberOfSections(in collectionView: UICollectionView) -> Int { 1 }
 
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return mural.imageURLs.count
+        mural.imageURLs.count
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -139,43 +167,5 @@ extension MuralView: UICollectionViewDataSource {
 		}
 		return cell
 	}
-
-}
-
-extension MuralView: UICollectionViewDelegateFlowLayout {
-
-	func collectionView(
-		_ collectionView: UICollectionView,
-		layout collectionViewLayout: UICollectionViewLayout,
-		sizeForItemAt indexPath: IndexPath
-	) -> CGSize {
-		return CGSize(
-			width:  collectionView.frame.width,
-			height: collectionView.frame.height
-		)
-	}
-
-	func collectionView(
-		_ collectionView: UICollectionView,
-		layout collectionViewLayout: UICollectionViewLayout,
-		minimumInteritemSpacingForSectionAt section: Int
-	) -> CGFloat {
-		return Constants.spacing
-	}
-
-	func collectionView(
-		_ collectionView: UICollectionView,
-		layout collectionViewLayout: UICollectionViewLayout,
-		minimumLineSpacingForSectionAt section: Int
-	) -> CGFloat {
-		return Constants.spacing
-	}
-}
-
-extension MuralView {
-
-	struct Constants {
-		static let itemCountInLine: CGFloat = 2
-		static let spacing: CGFloat = 20
-	}
+    
 }
