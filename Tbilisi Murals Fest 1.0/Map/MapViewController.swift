@@ -28,7 +28,7 @@ class MapViewController: UIViewController {
     }
 
 	func setupAnnotations() {
-		let artists = ArtistsDatabase.sharedInstance.getDataBase()
+		let artists = ArtistsDatabase.sharedInstance.database
 		for (_, artist) in artists {
 			for mural in artist.murals {
 				let location = mural.location

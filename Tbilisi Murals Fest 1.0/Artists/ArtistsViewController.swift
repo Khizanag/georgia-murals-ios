@@ -15,7 +15,7 @@ class ArtistsViewController: UIViewController {
     // MARK: - Outlets
 	@IBOutlet weak var tableView: UITableView!
     
-    // MARK: Lifecycle
+    // MARK: - Lifecycle
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		setup()
@@ -44,7 +44,7 @@ extension ArtistsViewController: UITableViewDelegate, UITableViewDataSource {
 	}
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		ArtistsDatabase.sharedInstance.getArtistsCount()
+		ArtistsDatabase.sharedInstance.count
 	}
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

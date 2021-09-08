@@ -12,10 +12,12 @@ class ArtistsDatabase {
 	static let sharedInstance = ArtistsDatabase()
     static let defaultArtist = Artist(ID: -1, name: "DefaultArtist", profileImageURL: "DefaultArtist", bio: "Default Bio", socialProfiles: [:], murals: [])
     
-	var data: [String : Artist]
-	var dataByID: [Int : Artist]
+    // MARK: - Properties
+	private var data: [String : Artist]
+	private var dataByID: [Int : Artist]
 	private var nextArtistID: Int
-
+    
+    // MARK: - Init
 	private init(){
 		data = [String : Artist]()
 		dataByID = [Int : Artist]()
@@ -48,21 +50,12 @@ class ArtistsDatabase {
 		dataByID[artist.ID] = artist
 	}
 
-	public func getDataBase() -> [String : Artist] {
-		return data
-	}
+    public var database: [String: Artist] { data }
+    public var count: Int { data.count }
 
-	public func getArtist(name: String) -> Artist? {
-		return data[name]
-	}
+	public func getArtist(name: String) -> Artist? { data[name] }
 
-	public func getArtist(ID: Int) -> Artist? {
-		return dataByID[ID]
-	}
-
-	public func getArtistsCount() -> Int {
-		return data.count
-	}
+	public func getArtist(ID: Int) -> Artist? { dataByID[ID] }
 
 	public func getNextArtistID() -> Int {
 		let nextID = nextArtistID

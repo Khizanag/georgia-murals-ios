@@ -11,43 +11,38 @@ import ScalingCarousel
 class MuralView: BaseReusableView {
     
     // MARK: - Outlets
-
-	@IBOutlet weak var stackOfMetaInfo: UIStackView!
-
 	@IBOutlet weak var collectionView: ScalingCarouselView!
-	@IBOutlet weak var titleLabel: UILabel!
 
-	@IBOutlet weak var projectLabel: UILabel!
-	@IBOutlet weak var projectLabelTitle: UILabel!
+    @IBOutlet weak var titleStack: UIStackView!
+    @IBOutlet weak var titleKeyLabel: UILabel!
+    @IBOutlet weak var titleValueLabel: UILabel!
+    
+    @IBOutlet weak var projectStack: UIStackView!
+    @IBOutlet weak var projectKeyLabel: UILabel!
+	@IBOutlet weak var projectValueLabel: UILabel!
 
-	@IBOutlet weak var artistLabel: UILabel!
-	@IBOutlet weak var artistLabelTitle: UILabel!
+    @IBOutlet weak var artistStack: UIStackView!
+    @IBOutlet weak var artistKeyLabel: UILabel!
+	@IBOutlet weak var artistValueLabel: UILabel!
+    
+    @IBOutlet weak var yearStack: UIStackView!
+	@IBOutlet weak var yearKeyLabel: UILabel!
+	@IBOutlet weak var yearValueLabel: UILabel!
+    
+    @IBOutlet weak var locationDescriptionStack: UIStackView!
+	@IBOutlet weak var locationDescriptionKeyLabel: UILabel!
+	@IBOutlet weak var locationDescriptionValueLabel: UILabel!
+    
+    @IBOutlet weak var descriptionStack: UIStackView!
+    @IBOutlet weak var descriptionKeyLabel: UILabel!
+    @IBOutlet weak var descriptionValueLabel: UILabel!
 
-	@IBOutlet weak var descriptionLabel: UILabel!
-	@IBOutlet weak var descriptionLabelTitle: UILabel!
-
-	@IBOutlet weak var yearLabel: UILabel!
-	@IBOutlet weak var yearLabelTitle: UILabel!
-
-	@IBOutlet weak var locationTitleLabel: UILabel!
-	@IBOutlet weak var locationTitleLabelTitle: UILabel!
 
     // MARK: - Properties
 	private var imageIndex: Int = 0
 	private var mural: Mural = MuralsDatabase.sharedInstance.defaultMural
 
     // MARK: - Setup
-    
-	public func setup(showMetaInfo: Bool) {
-		guard mural.ID != MuralsDatabase.sharedInstance.defaultMural.ID else { return }
-
-		if showMetaInfo {
-			setup()
-		} else {
-			titleLabel.hide()
-			stackOfMetaInfo.hide()
-		}
-	}
 
 	override func setup() {
         super.setup()
@@ -77,54 +72,50 @@ class MuralView: BaseReusableView {
     
     private func setupTitle() {
         if let title = mural.title {
-            titleLabel.text = title
+            titleValueLabel.text = title
         } else {
-            titleLabel.hide()
+            titleStack.hide()
         }
     }
     
     private func setupProject() {
         if let project = mural.project {
-            projectLabel.text = project
+            projectKeyLabel.text = project
         } else {
-            projectLabel.hide()
-            projectLabelTitle.hide()
+            projectStack.hide()
         }
     }
     
-    private func setupArtist() {
-        artistLabel.text = mural.artist
+    private func setupArtist() { // TODO: convert artist to nilable
+        artistKeyLabel.text = mural.artist
     }
     
     private func setupDescription() {
         if let description = mural.description {
-            descriptionLabel.text = description
+            descriptionKeyLabel.text = description
         } else {
-            descriptionLabel.isHidden = true
-            descriptionLabelTitle.isHidden = true
+            descriptionStack.hide()
         }
     }
     
     private func setupYear() {
         if let year = mural.year {
-            yearLabel.text = year.description
+            yearKeyLabel.text = year.description
         } else {
-            yearLabel.isHidden = true
-            yearLabelTitle.isHidden = true
+            yearStack.hide()
         }
     }
     
     private func setupLocation() {
         if let locationTitle = mural.locationTitle {
-            locationTitleLabel.text = locationTitle
+            locationDescriptionKeyLabel.text = locationTitle
         } else {
-            locationTitleLabel.hide()
-            locationTitleLabelTitle.hide()
+            locationDescriptionStack.hide()
         }
     }
     
     public func configure(with model: Mural) {
-        self.mural = model
+        mural = model
         setup()
     }
 

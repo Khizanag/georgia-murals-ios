@@ -416,11 +416,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need to get in touch with the team? We're all ears." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLN-6o-VTH">
                                 <rect key="frame" x="0.0" y="198" width="375" height="16.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nKh-EZ-Mk2">
-                                <rect key="frame" x="0.0" y="321.66666666666669" width="375" height="95"/>
+                                <rect key="frame" x="0.0" y="364" width="375" height="95"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hnv-X3-S2N">
                                         <rect key="frame" x="51.333333333333343" y="0.0" width="272.33333333333326" height="21"/>
@@ -487,7 +487,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hR8-f0-zlN" firstAttribute="bottom" secondItem="1bm-9z-6Nw" secondAttribute="bottom" constant="32" id="1XE-Tk-NbC"/>
-                            <constraint firstItem="nKh-EZ-Mk2" firstAttribute="top" secondItem="eLN-6o-VTH" secondAttribute="bottom" multiplier="1.5" id="TFC-Nj-em8"/>
+                            <constraint firstItem="nKh-EZ-Mk2" firstAttribute="centerY" secondItem="hR8-f0-zlN" secondAttribute="centerY" multiplier="0.95" id="T7e-Tm-yej"/>
                             <constraint firstItem="hR8-f0-zlN" firstAttribute="trailing" secondItem="nKh-EZ-Mk2" secondAttribute="trailing" id="Utu-fn-KMO"/>
                             <constraint firstItem="eLN-6o-VTH" firstAttribute="centerX" secondItem="hR8-f0-zlN" secondAttribute="centerX" id="bFT-1J-0EM"/>
                             <constraint firstItem="qXV-5y-8bZ" firstAttribute="centerX" secondItem="hR8-f0-zlN" secondAttribute="centerX" id="e2s-mV-zz0"/>
@@ -573,6 +573,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

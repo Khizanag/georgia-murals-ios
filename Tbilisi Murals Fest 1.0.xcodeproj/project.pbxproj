@@ -326,8 +326,7 @@
 				FB54AFC825229C6E00B37B58 /* ArtistsViewController.swift */,
 				DCEBFA1926885CEA00B05CFC /* ArtistsConstrants.swift */,
 				FB0D0D8A25277F440074C3ED /* Artist.swift */,
-				FB0D0D8E2527B9C90074C3ED /* ArtistsDataBase.swift */,
-				FBC86A862576EA7B00FBCAAC /* Each Artist Info Page */,
+				FBC86A862576EA7B00FBCAAC /* Data */,
 			);
 			path = Artists;
 			sourceTree = "<group>";
@@ -343,9 +342,10 @@
 			path = Murals;
 			sourceTree = "<group>";
 		};
-		FBC86A862576EA7B00FBCAAC /* Each Artist Info Page */ = {
+		FBC86A862576EA7B00FBCAAC /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				FB0D0D8E2527B9C90074C3ED /* ArtistsDataBase.swift */,
 				FBC86A832576EA7800FBCAAC /* Artez.swift */,
 				FBC86A622576E9C700FBCAAC /* CaseMaclaim.swift */,
 				FBC86A5F2576E9B300FBCAAC /* CollinVanderSlujis.swift */,
@@ -364,7 +364,7 @@
 				FBC86A682576E9EC00FBCAAC /* QUINTE55ENZ.swift */,
 				FBC86A5C2576E70300FBCAAC /* Snyder.swift */,
 			);
-			path = "Each Artist Info Page";
+			path = Data;
 			sourceTree = "<group>";
 		};
 		FBF1782625788CBA00D9D647 /* Intros */ = {
@@ -624,6 +624,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -685,6 +686,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -713,8 +715,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = U384JB987W;
 				INFOPLIST_FILE = "Tbilisi Murals Fest 1.0/Info.plist";
@@ -725,7 +727,7 @@
 				MARKETING_VERSION = 3.3.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "MuralsFestival.Tbilisi-Murals-Fest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Besik Maziashvili Old Murals Profile";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -737,8 +739,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = U384JB987W;
 				INFOPLIST_FILE = "Tbilisi Murals Fest 1.0/Info.plist";
@@ -749,7 +751,7 @@
 				MARKETING_VERSION = 3.3.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "MuralsFestival.Tbilisi-Murals-Fest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Besik Maziashvili Old Murals Profile";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
