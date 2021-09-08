@@ -9,8 +9,8 @@ import UIKit
 
 extension ArtistsViewController {
     struct Constants {
-        struct Sizes {
-            static let cellHeight: CGFloat = UIScreen.main.bounds.width  * 0.75 + 16 + 16 + 16 + 48 // top margin, image, margin, label, margin
+        struct Size {
+            static let cellHeight: CGFloat = UIScreen.main.bounds.width  * 0.8 + 16 + 16 + 16 + 48 // top margin, image, margin, label, margin
         }
     }
 }

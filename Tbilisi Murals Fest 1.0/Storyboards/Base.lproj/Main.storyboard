@@ -57,7 +57,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Y9U-nF-tCm" kind="show" id="r05-KY-tCB"/>
+                                    <segue destination="nD0-8h-bHw" kind="show" id="Jtc-Vv-THo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujQ-Ay-P4S">
@@ -128,37 +128,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdj-St-ixS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="821.60000000000002" y="129.98500749625188"/>
-        </scene>
-        <!--Artists-->
-        <scene sceneID="23h-Oh-Iah">
-            <objects>
-                <viewController title="Artists" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y9U-nF-tCm" customClass="ArtistsViewController" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rvz-c7-mdE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8JO-Rd-TEN">
-                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="5ye-ns-ICE"/>
-                        <color key="backgroundColor" name="background-color"/>
-                        <constraints>
-                            <constraint firstItem="5ye-ns-ICE" firstAttribute="trailing" secondItem="8JO-Rd-TEN" secondAttribute="trailing" id="3NB-yw-UtG"/>
-                            <constraint firstItem="8JO-Rd-TEN" firstAttribute="top" secondItem="5ye-ns-ICE" secondAttribute="top" id="LNq-H0-TbD"/>
-                            <constraint firstItem="8JO-Rd-TEN" firstAttribute="leading" secondItem="5ye-ns-ICE" secondAttribute="leading" id="VaV-qn-cjp"/>
-                            <constraint firstItem="5ye-ns-ICE" firstAttribute="bottom" secondItem="8JO-Rd-TEN" secondAttribute="bottom" id="niC-QD-1eE"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Artists" id="eu2-vl-52P"/>
-                    <connections>
-                        <outlet property="tableView" destination="8JO-Rd-TEN" id="3K4-0T-mGi"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Exc-FE-Quq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2831.1999999999998" y="499.50738916256159"/>
         </scene>
         <!--Artist Page View Controller-->
         <scene sceneID="RvK-3g-MbS">
@@ -554,6 +523,37 @@
             </objects>
             <point key="canvasLocation" x="-468" y="969.45812807881782"/>
         </scene>
+        <!--Artists-->
+        <scene sceneID="GYg-XC-7as">
+            <objects>
+                <viewController id="nD0-8h-bHw" customClass="ArtistsViewController" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ozo-sW-Gc9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M3S-wh-c9I">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" name="background-color"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sLp-jD-Q88"/>
+                        <color key="backgroundColor" name="background-color"/>
+                        <constraints>
+                            <constraint firstItem="M3S-wh-c9I" firstAttribute="leading" secondItem="sLp-jD-Q88" secondAttribute="leading" id="45q-hj-IYQ"/>
+                            <constraint firstItem="sLp-jD-Q88" firstAttribute="bottom" secondItem="M3S-wh-c9I" secondAttribute="bottom" id="GLl-gN-jAc"/>
+                            <constraint firstItem="sLp-jD-Q88" firstAttribute="trailing" secondItem="M3S-wh-c9I" secondAttribute="trailing" id="o98-ak-UJP"/>
+                            <constraint firstItem="M3S-wh-c9I" firstAttribute="top" secondItem="sLp-jD-Q88" secondAttribute="top" id="uId-Is-1rW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Artists" id="tHp-wW-nxn"/>
+                    <connections>
+                        <outlet property="tableView" destination="M3S-wh-c9I" id="2BH-RO-Se8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ip-lg-zkA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2767" y="367"/>
+        </scene>
     </scenes>
     <resources>
         <image name="facebook-icon" width="512" height="512"/>
@@ -574,9 +574,6 @@
         <namedColor name="text-color">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

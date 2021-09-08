@@ -9,7 +9,7 @@ import Foundation
 
 class ArtistsDatabase {
 
-	static let sharedInstance = ArtistsDatabase()
+	static let shared = ArtistsDatabase()
     static let defaultArtist = Artist(ID: -1, name: "DefaultArtist", profileImageURL: "DefaultArtist", bio: "Default Bio", socialProfiles: [:], murals: [])
     
     // MARK: - Properties

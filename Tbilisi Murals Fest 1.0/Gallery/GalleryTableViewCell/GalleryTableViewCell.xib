@@ -19,9 +19,9 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aei-hD-fgB">
                         <rect key="frame" x="0.0" y="16" width="439" height="313"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
                 </subviews>
-                <color key="backgroundColor" name="background-color"/>
                 <constraints>
                     <constraint firstItem="Aei-hD-fgB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cGL-Om-pNX"/>
                     <constraint firstItem="Aei-hD-fgB" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="dwj-fp-Nwr"/>
@@ -31,6 +31,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="background-color"/>
             <connections>
                 <outlet property="muralMainImage" destination="Aei-hD-fgB" id="HWZ-05-EwF"/>
             </connections>

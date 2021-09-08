@@ -34,6 +34,8 @@
 		FB54AFDC25229D5D00B37B58 /* ArtistPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB54AFDB25229D5D00B37B58 /* ArtistPageViewController.swift */; };
 		FB5D73C126E9149C006A4913 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D73C026E9149C006A4913 /* UICollectionViewCell+Extensions.swift */; };
 		FB5D73C326E93455006A4913 /* MuralViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D73C226E93455006A4913 /* MuralViewConstants.swift */; };
+		FB5D73C926E96E64006A4913 /* ArtistsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D73C726E96E64006A4913 /* ArtistsCollectionViewCell.swift */; };
+		FB5D73CA26E96E64006A4913 /* ArtistsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB5D73C826E96E64006A4913 /* ArtistsCollectionViewCell.xib */; };
 		FB5E29CB2538A9AB009E33CE /* IntroGifResoluted.gif in Resources */ = {isa = PBXBuildFile; fileRef = FB5E29CA2538A9AB009E33CE /* IntroGifResoluted.gif */; };
 		FB6615162578072E00AFACCB /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6615152578072E00AFACCB /* GalleryViewController.swift */; };
 		FB8116C826E67E4E009D9AE5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8116C726E67E4E009D9AE5 /* UIView+Extensions.swift */; };
@@ -100,6 +102,8 @@
 		FB54AFDB25229D5D00B37B58 /* ArtistPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistPageViewController.swift; sourceTree = "<group>"; };
 		FB5D73C026E9149C006A4913 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		FB5D73C226E93455006A4913 /* MuralViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralViewConstants.swift; sourceTree = "<group>"; };
+		FB5D73C726E96E64006A4913 /* ArtistsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsCollectionViewCell.swift; sourceTree = "<group>"; };
+		FB5D73C826E96E64006A4913 /* ArtistsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistsCollectionViewCell.xib; sourceTree = "<group>"; };
 		FB5E29CA2538A9AB009E33CE /* IntroGifResoluted.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IntroGifResoluted.gif; sourceTree = "<group>"; };
 		FB6615152578072E00AFACCB /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		FB8116C726E67E4E009D9AE5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -238,6 +242,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FB5D73C626E96E42006A4913 /* ArtistsCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FB5D73C726E96E64006A4913 /* ArtistsCollectionViewCell.swift */,
+				FB5D73C826E96E64006A4913 /* ArtistsCollectionViewCell.xib */,
+			);
+			path = ArtistsCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		FB8116C626E67E3D009D9AE5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,12 +348,12 @@
 		FBC86A512576C03300FBCAAC /* Artists */ = {
 			isa = PBXGroup;
 			children = (
-				FB5D73C526E969B2006A4913 /* Model */,
-				DCEBFA1B26885E8800B05CFC /* ArtistsTableViewCell */,
 				FBC86A4C2576B33C00FBCAAC /* Artist Page */,
-				FB54AFC825229C6E00B37B58 /* ArtistsViewController.swift */,
 				DCEBFA1926885CEA00B05CFC /* ArtistsConstrants.swift */,
+				FB54AFC825229C6E00B37B58 /* ArtistsViewController.swift */,
 				FBC86A862576EA7B00FBCAAC /* Data */,
+				FB5D73C526E969B2006A4913 /* Model */,
+				FBEFFEE726E97A1400C23951 /* View */,
 			);
 			path = Artists;
 			sourceTree = "<group>";
@@ -379,6 +392,15 @@
 				FBC86A5C2576E70300FBCAAC /* Snyder.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		FBEFFEE726E97A1400C23951 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB5D73C626E96E42006A4913 /* ArtistsCollectionViewCell */,
+				DCEBFA1B26885E8800B05CFC /* ArtistsTableViewCell */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FBF1782625788CBA00D9D647 /* Intros */ = {
@@ -495,6 +517,7 @@
 				FB5E29CB2538A9AB009E33CE /* IntroGifResoluted.gif in Resources */,
 				FB8556C725770E7E00D5570D /* MuralView.xib in Resources */,
 				FBF7299F252299DA00E12D44 /* Main.storyboard in Resources */,
+				FB5D73CA26E96E64006A4913 /* ArtistsCollectionViewCell.xib in Resources */,
 				FB54AFB325229AFF00B37B58 /* intro3.gif in Resources */,
 				FB54AFBB25229AFF00B37B58 /* bg.gif in Resources */,
 			);
@@ -545,6 +568,7 @@
 				FB8556C225770D7700D5570D /* MuralView.swift in Sources */,
 				FBF7299A252299DA00E12D44 /* SceneDelegate.swift in Sources */,
 				FBC86A842576EA7800FBCAAC /* Artez.swift in Sources */,
+				FB5D73C926E96E64006A4913 /* ArtistsCollectionViewCell.swift in Sources */,
 				DCEBFA2A268873D800B05CFC /* MenuConstants.swift in Sources */,
 				FB8116CE26E68CAC009D9AE5 /* MuralPreviewCollectionViewCellModel.swift in Sources */,
 				FB83B6CB25D4A1CF00F67922 /* Constants.swift in Sources */,

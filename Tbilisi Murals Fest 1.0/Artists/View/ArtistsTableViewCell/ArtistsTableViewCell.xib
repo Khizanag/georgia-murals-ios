@@ -31,7 +31,6 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" name="background-color"/>
                 <constraints>
                     <constraint firstItem="OiD-Jc-WNs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="4Lq-FN-GrE"/>
                     <constraint firstAttribute="bottom" secondItem="OiD-Jc-WNs" secondAttribute="bottom" constant="16" id="5Ym-wp-4jr"/>

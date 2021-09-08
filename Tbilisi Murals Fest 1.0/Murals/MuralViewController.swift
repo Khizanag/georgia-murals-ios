@@ -20,7 +20,7 @@ class MuralViewController: UIViewController, CLLocationManagerDelegate {
 
     // MARK: - Properties
 	private let muralsDB = MuralsDatabase.sharedInstance
-	private let artistsDB = ArtistsDatabase.sharedInstance
+	private let artistsDB = ArtistsDatabase.shared
 	private let locationManager = CLLocationManager()
 	public var mural: Mural = MuralsDatabase.sharedInstance.defaultMural
 
@@ -82,7 +82,7 @@ class MuralViewController: UIViewController, CLLocationManagerDelegate {
 	@IBAction func goToArtistsPageHandler(_ sender: Any) {
 		let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         if let bioVC = storyBoard.instantiateViewController(withIdentifier: ArtistPageViewController.identifier) as? ArtistPageViewController {
-			bioVC.artist = ArtistsDatabase.sharedInstance.getArtist(name: mural.artist)!
+			bioVC.artist = ArtistsDatabase.shared.getArtist(name: mural.artist)!
 			navigationController?.pushViewController(bioVC, animated: true)
 		}
 	}

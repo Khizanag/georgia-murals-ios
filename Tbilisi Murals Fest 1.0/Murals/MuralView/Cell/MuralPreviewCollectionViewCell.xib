@@ -25,7 +25,6 @@
                                 <color key="backgroundColor" name="background-color"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" name="background-color"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ap6-aP-hnP" secondAttribute="bottom" id="Fe3-oc-z6U"/>
                             <constraint firstAttribute="trailing" secondItem="ap6-aP-hnP" secondAttribute="trailing" id="Owk-h8-4Lh"/>
