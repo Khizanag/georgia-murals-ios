@@ -157,7 +157,7 @@
                                 <constraint firstItem="uDT-Qr-ViM" firstAttribute="width" secondItem="Gyo-jq-Ztx" secondAttribute="width" id="kbs-8J-8Bq"/>
                             </constraints>
                         </stackView>
-                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="37J-fi-FtE">
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="37J-fi-FtE">
                             <rect key="frame" x="0.0" y="0.0" width="507" height="380"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>

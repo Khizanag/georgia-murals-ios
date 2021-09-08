@@ -185,7 +185,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="1022"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2o-iO-WdO">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="915"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="928"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjz-if-icl" userLabel="ArtistName">
                                                 <rect key="frame" x="37.666666666666657" y="168.66666666666666" width="300" height="23.333333333333343"/>
@@ -207,31 +207,14 @@
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVC-9c-PE1">
-                                                <rect key="frame" x="16.000000000000004" y="842.66666666666663" width="56.333333333333343" height="56.333333333333371"/>
+                                                <rect key="frame" x="16.000000000000004" y="855.66666666666663" width="56.333333333333343" height="56.333333333333371"/>
                                                 <state key="normal" title="FB" image="facebook-icon"/>
                                                 <connections>
                                                     <action selector="openFacebook:" destination="Bbe-oB-yzn" eventType="touchUpInside" id="00W-zh-XFy"/>
                                                 </connections>
                                             </button>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hmo-P8-AcO">
-                                                <rect key="frame" x="0.0" y="476.66666666666663" width="375" height="350"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="350" id="fkE-Ct-HrO"/>
-                                                </constraints>
-                                                <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="uId-Nl-9JP" customClass="GalleryTableViewCell" customModule="Tbilisi_Murals_Fest_1_0" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="24.333333969116211" width="375" height="43.666667938232422"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uId-Nl-9JP" id="obD-up-lR8">
-                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                        </tableViewCellContentView>
-                                                    </tableViewCell>
-                                                </prototypes>
-                                            </tableView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKP-jj-teU">
-                                                <rect key="frame" x="88.333333333333329" y="842.66666666666663" width="56.333333333333329" height="56.333333333333371"/>
+                                                <rect key="frame" x="88.333333333333329" y="855.66666666666663" width="56.333333333333329" height="56.333333333333371"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="tKP-jj-teU" secondAttribute="height" multiplier="1:1" id="TS0-Ut-cVI"/>
                                                 </constraints>
@@ -240,6 +223,17 @@
                                                     <action selector="openInstagram:" destination="Bbe-oB-yzn" eventType="touchUpInside" id="vfE-kC-PSC"/>
                                                 </connections>
                                             </button>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jXG-VU-WQP">
+                                                <rect key="frame" x="0.0" y="476.66666666666663" width="375" height="363"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9bb-6v-MIZ">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells/>
+                                            </collectionView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration">
@@ -248,24 +242,24 @@
                                         <constraints>
                                             <constraint firstItem="DeM-31-F5O" firstAttribute="top" secondItem="m2o-iO-WdO" secondAttribute="top" constant="20" id="4Ea-MR-6OQ"/>
                                             <constraint firstItem="DeM-31-F5O" firstAttribute="width" secondItem="m2o-iO-WdO" secondAttribute="width" multiplier="0.33" id="6Qf-j6-WGL"/>
+                                            <constraint firstItem="UVC-9c-PE1" firstAttribute="top" secondItem="jXG-VU-WQP" secondAttribute="bottom" constant="16" id="9WN-Zc-l4d"/>
                                             <constraint firstItem="tKP-jj-teU" firstAttribute="leading" secondItem="UVC-9c-PE1" secondAttribute="trailing" constant="16" id="DxV-Zu-Qth"/>
+                                            <constraint firstItem="jXG-VU-WQP" firstAttribute="top" secondItem="914-qU-21W" secondAttribute="bottom" constant="16" id="E5E-id-eMz"/>
+                                            <constraint firstItem="jXG-VU-WQP" firstAttribute="leading" secondItem="m2o-iO-WdO" secondAttribute="leading" id="ECk-II-B5M"/>
                                             <constraint firstAttribute="bottom" secondItem="UVC-9c-PE1" secondAttribute="bottom" constant="16" id="EVR-9I-B0T"/>
-                                            <constraint firstItem="Hmo-P8-AcO" firstAttribute="top" secondItem="914-qU-21W" secondAttribute="bottom" constant="16" id="G4D-Qw-ffq"/>
+                                            <constraint firstItem="tKP-jj-teU" firstAttribute="top" secondItem="jXG-VU-WQP" secondAttribute="bottom" constant="16" id="I6G-cY-bR0"/>
                                             <constraint firstItem="914-qU-21W" firstAttribute="width" secondItem="m2o-iO-WdO" secondAttribute="width" multiplier="0.8" id="MMS-jM-FiI"/>
                                             <constraint firstItem="jjz-if-icl" firstAttribute="top" secondItem="DeM-31-F5O" secondAttribute="bottom" constant="25" id="Mjm-Y3-IPZ"/>
                                             <constraint firstItem="tKP-jj-teU" firstAttribute="width" secondItem="m2o-iO-WdO" secondAttribute="width" multiplier="0.15" id="NXu-y5-Rt5"/>
                                             <constraint firstItem="UVC-9c-PE1" firstAttribute="width" secondItem="tKP-jj-teU" secondAttribute="width" id="P7h-FY-elK"/>
                                             <constraint firstItem="DeM-31-F5O" firstAttribute="centerX" secondItem="m2o-iO-WdO" secondAttribute="centerX" id="QLh-dL-Zeo"/>
                                             <constraint firstAttribute="bottom" secondItem="tKP-jj-teU" secondAttribute="bottom" constant="16" id="Rvr-A6-ele"/>
-                                            <constraint firstItem="tKP-jj-teU" firstAttribute="top" secondItem="Hmo-P8-AcO" secondAttribute="bottom" constant="16" id="Vav-Xk-tpw"/>
-                                            <constraint firstItem="Hmo-P8-AcO" firstAttribute="width" secondItem="m2o-iO-WdO" secondAttribute="width" id="Wa6-dC-9vB"/>
                                             <constraint firstItem="jjz-if-icl" firstAttribute="centerX" secondItem="m2o-iO-WdO" secondAttribute="centerX" id="a9c-v9-hbP"/>
                                             <constraint firstItem="jjz-if-icl" firstAttribute="width" secondItem="m2o-iO-WdO" secondAttribute="width" multiplier="0.8" id="fFO-v8-z4R"/>
                                             <constraint firstItem="914-qU-21W" firstAttribute="centerX" secondItem="m2o-iO-WdO" secondAttribute="centerX" id="fdi-2j-qKr"/>
                                             <constraint firstItem="UVC-9c-PE1" firstAttribute="leading" secondItem="m2o-iO-WdO" secondAttribute="leading" constant="16" id="fkr-kN-E0T"/>
                                             <constraint firstItem="914-qU-21W" firstAttribute="top" secondItem="jjz-if-icl" secondAttribute="bottom" constant="20" id="hYw-7c-C1q"/>
-                                            <constraint firstItem="Hmo-P8-AcO" firstAttribute="centerX" secondItem="m2o-iO-WdO" secondAttribute="centerX" id="lnV-mU-a5F"/>
-                                            <constraint firstItem="UVC-9c-PE1" firstAttribute="top" secondItem="Hmo-P8-AcO" secondAttribute="bottom" constant="16" id="rx7-e4-qCF"/>
+                                            <constraint firstAttribute="trailing" secondItem="jXG-VU-WQP" secondAttribute="trailing" id="rnF-XT-91I"/>
                                             <constraint firstItem="UVC-9c-PE1" firstAttribute="height" secondItem="tKP-jj-teU" secondAttribute="height" id="xnw-Vq-BhA"/>
                                         </constraints>
                                     </view>
@@ -289,17 +283,18 @@
                             <constraint firstItem="a08-hK-iwA" firstAttribute="trailing" secondItem="N0i-1x-nrP" secondAttribute="trailing" id="5nj-AH-n6K"/>
                             <constraint firstItem="a08-hK-iwA" firstAttribute="leading" secondItem="N0i-1x-nrP" secondAttribute="leading" id="9FP-ob-xPs"/>
                             <constraint firstItem="a08-hK-iwA" firstAttribute="bottom" secondItem="N0i-1x-nrP" secondAttribute="bottom" id="9tm-LL-vNG"/>
+                            <constraint firstItem="jXG-VU-WQP" firstAttribute="height" secondItem="3w3-JB-0lr" secondAttribute="height" multiplier="0.33" id="NIX-YN-BSg"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="375" height="1100"/>
                     <connections>
                         <outlet property="artistNameLabel" destination="jjz-if-icl" id="ru7-wY-cx9"/>
                         <outlet property="bioText" destination="914-qU-21W" id="8Tq-tk-qkm"/>
-                        <outlet property="circulaImage" destination="DeM-31-F5O" id="MTu-2o-rnj"/>
                         <outlet property="facebookButton" destination="UVC-9c-PE1" id="RxX-U5-eEd"/>
                         <outlet property="instagramButton" destination="tKP-jj-teU" id="wt7-EB-3O1"/>
+                        <outlet property="muralsCollectionView" destination="jXG-VU-WQP" id="N45-ws-bco"/>
+                        <outlet property="profilePhotoView" destination="DeM-31-F5O" id="MTu-2o-rnj"/>
                         <outlet property="scrollView" destination="a08-hK-iwA" id="ORc-AJ-7aD"/>
-                        <outlet property="tableView" destination="Hmo-P8-AcO" id="kDj-Cx-oFP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r8i-Sv-Sfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -410,7 +405,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Our Support Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXV-5y-8bZ">
                                 <rect key="frame" x="55" y="132" width="265" height="25.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need to get in touch with the team? We're all ears." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLN-6o-VTH">
@@ -428,13 +423,13 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXR-S0-u3e">
                                                 <rect key="frame" x="0.0" y="0.0" width="49.333333333333336" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="office@tbilisimuralfest.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzM-5B-39p">
                                                 <rect key="frame" x="57.333333333333343" y="0.0" width="215.00000000000003" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -445,13 +440,13 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0U-9h-tbI">
                                                 <rect key="frame" x="0.0" y="0.0" width="27" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+49 176 729 49 709 (Germany)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yt-Vu-PAp">
                                                 <rect key="frame" x="35.000000000000014" y="0.0" width="248.66666666666669" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -462,13 +457,13 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFK-cb-WFq">
                                                 <rect key="frame" x="0.0" y="0.0" width="27" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+995 599 432 082 (Georgia)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnA-tP-emW">
                                                 <rect key="frame" x="34.999999999999986" y="0.0" width="223.66666666666663" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>

@@ -29,6 +29,8 @@ class MuralViewController: UIViewController, CLLocationManagerDelegate {
 		setup()
 	}
     
+    // MARK: - Setup
+    
     private func setup() {
         setupLocationManager()
         setupMuralView()
@@ -64,11 +66,11 @@ class MuralViewController: UIViewController, CLLocationManagerDelegate {
 	}
 
 	private func initGetDirectionsButton() {
-		getDirectionsButton.layer.cornerRadius = getDirectionsButton.bounds.size.width / 40
+		getDirectionsButton.rounded(with: 10)
 	}
 
 	private func initGoToArtistPageButton() {
-		goToArtistPageButton.layer.cornerRadius = goToArtistPageButton.bounds.size.width / 40
+		goToArtistPageButton.rounded(with: 10)
 	}
 
 	@IBAction private func getDirectionsHandler(_ sender: Any) {

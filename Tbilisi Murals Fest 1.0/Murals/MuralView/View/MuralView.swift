@@ -6,12 +6,11 @@
 //
 
 import UIKit
-import ScalingCarousel
 
 class MuralView: BaseReusableView {
     
     // MARK: - Outlets
-	@IBOutlet weak var collectionView: ScalingCarouselView!
+	@IBOutlet weak var collectionView: UICollectionView!
 
     @IBOutlet weak var titleStack: UIStackView!
     @IBOutlet weak var titleKeyLabel: UILabel!
@@ -61,13 +60,13 @@ class MuralView: BaseReusableView {
         collectionView.dataSource = self
         collectionView.collectionViewLayout = {
             let layout = UICollectionViewFlowLayout()
-            layout.scrollDirection = .horizontal
+            // TODO: setup layout
             return layout
         }()
 
         collectionView.register(
-            UINib(nibName: MuralImageCollectionViewCell.reuseIdentifier, bundle: nil),
-            forCellWithReuseIdentifier: MuralImageCollectionViewCell.reuseIdentifier)
+            UINib(nibName: MuralPreviewCollectionViewCell.reuseIdentifier, bundle: nil),
+            forCellWithReuseIdentifier: MuralPreviewCollectionViewCell.reuseIdentifier)
     }
     
     private func setupTitle() {
@@ -133,8 +132,8 @@ extension MuralView: UICollectionViewDataSource {
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MuralImageCollectionViewCell.reuseIdentifier, for: indexPath)
-        if let cell = cell as? MuralImageCollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MuralPreviewCollectionViewCell.reuseIdentifier, for: indexPath)
+        if let cell = cell as? MuralPreviewCollectionViewCell {
             cell.configure(with: .init(image: UIImage(named: mural.imageURLs[indexPath.row])!))
 			return cell
 		}

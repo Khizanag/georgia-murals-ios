@@ -1,14 +1,13 @@
 //
-//  MuralImageCollectionViewCell.swift
+//  MuralPreviewCollectionViewCell.swift
 //  Tbilisi Murals Fest 1.0
 //
 //  Created by Giga Khizanishvili on 14.12.20.
 //
 
 import UIKit
-import ScalingCarousel
 
-class MuralImageCollectionViewCell: ScalingCarouselCell {
+class MuralPreviewCollectionViewCell: UICollectionViewCell {
 	
     // MARK: - Outlets
     @IBOutlet var imageView: UIImageView!

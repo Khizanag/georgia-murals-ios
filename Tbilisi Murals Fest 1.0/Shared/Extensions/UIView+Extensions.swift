@@ -15,4 +15,8 @@ extension UIView {
     func hide() {
         isHidden = true
     }
+    
+    func rounded(with radius: CGFloat) {
+        layer.cornerRadius = radius
+    }
 }

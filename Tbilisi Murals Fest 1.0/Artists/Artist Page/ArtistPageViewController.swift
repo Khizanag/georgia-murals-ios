@@ -15,15 +15,18 @@ class ArtistPageViewController: UIViewController {
 
     public static let identifier = "ArtistPageViewController"
 
+    // MARK: - Outlets
     @IBOutlet weak var bioText: UITextView!
-    @IBOutlet weak var circulaImage: UIImageView!
+    @IBOutlet weak var profilePhotoView: UIImageView!
     @IBOutlet weak var artistNameLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
 
     @IBOutlet weak var instagramButton: UIButton!
     @IBOutlet weak var facebookButton: UIButton!
 
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet var muralsCollectionView: UICollectionView!
+    
+    // MARK: - Properties
     private let muralsDB = MuralsDatabase.sharedInstance
     public var artist: Artist = ArtistsDatabase.defaultArtist
 
@@ -49,10 +52,11 @@ class ArtistPageViewController: UIViewController {
         filterSocialMediaButtons()
 	}
     
+    // MARK: - Setup
     private func setup() {
         setupScrollView()
         setupDisplayInfo()
-        setupTableView()
+        setupCollectionView()
         setupNavigationItem()
     }
     
@@ -66,22 +70,27 @@ class ArtistPageViewController: UIViewController {
 	}
 
 	private func initCircularImage() {
-		circulaImage.layer.cornerRadius = circulaImage.frame.size.width/2
-		circulaImage.clipsToBounds = true
+		profilePhotoView.layer.cornerRadius = profilePhotoView.frame.size.width/2
 	}
 
 	private func setupDisplayInfo() {
 		artistNameLabel.text = artist.name
-		circulaImage.image = UIImage(named: artist.profileImageURL)
+		profilePhotoView.image = UIImage(named: artist.profileImageURL)
 		bioText.text = artist.bio
 	}
 
-	private func setupTableView() {
-		tableView.delegate = self
-		tableView.dataSource = self
-        tableView.register(
-            UINib(nibName: GalleryTableViewCell.reuseId, bundle: nil),
-            forCellReuseIdentifier: GalleryTableViewCell.reuseId)
+	private func setupCollectionView() {
+        muralsCollectionView.delegate = self
+        muralsCollectionView.dataSource = self
+        muralsCollectionView.collectionViewLayout = {
+            let layout = UICollectionViewFlowLayout()
+            // TODO: setup layout
+            return layout
+        }()
+        
+        muralsCollectionView.register(
+            UINib(nibName: MuralPreviewCollectionViewCell.reuseIdentifier, bundle: nil),
+            forCellWithReuseIdentifier: MuralPreviewCollectionViewCell.reuseIdentifier)
 	}
 
 	private func setupScrollView() {
@@ -98,32 +107,65 @@ class ArtistPageViewController: UIViewController {
 	}
 }
 
+// MARK: - UICollectionViewDataSource
 
-extension ArtistPageViewController: UITableViewDelegate, UITableViewDataSource {
+extension ArtistPageViewController: UICollectionViewDataSource {
 
-	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return Constants.cellHeight
-	}
+    func numberOfSections(in collectionView: UICollectionView) -> Int { 1 }
 
-	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return artist.murals.count
-	}
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        artist.murals.count
+    }
 
-	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: GalleryTableViewCell.reuseId, for: indexPath) as? GalleryTableViewCell {
-			let mural = artist.murals[indexPath.row]
-			cell.muralMainImage.image = UIImage(named: mural.imageURLs[0])
-			return cell
-		}
-        
-        return UITableViewCell()
-	}
-
-	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MuralPreviewCollectionViewCell.reuseIdentifier, for: indexPath)
+        if let cell = cell as? MuralPreviewCollectionViewCell {
+            if let firstImage = UIImage(named: artist.murals[indexPath.row].imageURLs[0]) {
+                cell.configure(with: .init(image: firstImage))
+                return cell
+            }
+        }
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         if let muralVC = storyBoard.instantiateViewController(withIdentifier: MuralViewController.identifier) as? MuralViewController {
-			muralVC.mural = artist.murals[indexPath.row]
-			navigationController?.pushViewController(muralVC, animated: true)
-		}
-	}
+            muralVC.mural = artist.murals[indexPath.row]
+            navigationController?.pushViewController(muralVC, animated: true)
+        }
+    }
+
+}
+
+// MARK: - UICollectionViewDelegateFlowLayout
+
+extension ArtistPageViewController: UICollectionViewDelegateFlowLayout {
+
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        sizeForItemAt indexPath: IndexPath
+    ) -> CGSize {
+        return CGSize(
+            width:  collectionView.frame.width,
+            height: collectionView.frame.height
+        )
+    }
+
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        minimumInteritemSpacingForSectionAt section: Int
+    ) -> CGFloat {
+        return Constants.spacing
+    }
+
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        minimumLineSpacingForSectionAt section: Int
+    ) -> CGFloat {
+        return Constants.spacing
+    }
 }

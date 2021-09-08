@@ -21,8 +21,8 @@
 		DCEBFA2A268873D800B05CFC /* MenuConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFA29268873D800B05CFC /* MenuConstants.swift */; };
 		FB0D0D8B25277F440074C3ED /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D0D8A25277F440074C3ED /* Artist.swift */; };
 		FB0D0D8F2527B9C90074C3ED /* ArtistsDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0D0D8E2527B9C90074C3ED /* ArtistsDataBase.swift */; };
-		FB15C64525871AA2009EEA69 /* MuralImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15C64325871AA2009EEA69 /* MuralImageCollectionViewCell.swift */; };
-		FB15C64625871AA2009EEA69 /* MuralImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB15C64425871AA2009EEA69 /* MuralImageCollectionViewCell.xib */; };
+		FB15C64525871AA2009EEA69 /* MuralPreviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15C64325871AA2009EEA69 /* MuralPreviewCollectionViewCell.swift */; };
+		FB15C64625871AA2009EEA69 /* MuralPreviewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB15C64425871AA2009EEA69 /* MuralPreviewCollectionViewCell.xib */; };
 		FB4CB93D258D5D16000A126A /* Matthias Mross.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4CB93C258D5D16000A126A /* Matthias Mross.swift */; };
 		FB4CB940258D5DF4000A126A /* Irakli Qadeishvili & Zviad Esartia.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4CB93F258D5DF4000A126A /* Irakli Qadeishvili & Zviad Esartia.swift */; };
 		FB54AFB325229AFF00B37B58 /* intro3.gif in Resources */ = {isa = PBXBuildFile; fileRef = FB54AFA425229AFE00B37B58 /* intro3.gif */; };
@@ -32,11 +32,12 @@
 		FB54AFD125229C6F00B37B58 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB54AFC725229C6E00B37B58 /* MenuViewController.swift */; };
 		FB54AFD225229C6F00B37B58 /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB54AFC825229C6E00B37B58 /* ArtistsViewController.swift */; };
 		FB54AFDC25229D5D00B37B58 /* ArtistPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB54AFDB25229D5D00B37B58 /* ArtistPageViewController.swift */; };
+		FB5D73C126E9149C006A4913 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D73C026E9149C006A4913 /* UICollectionViewCell+Extensions.swift */; };
 		FB5E29CB2538A9AB009E33CE /* IntroGifResoluted.gif in Resources */ = {isa = PBXBuildFile; fileRef = FB5E29CA2538A9AB009E33CE /* IntroGifResoluted.gif */; };
 		FB6615162578072E00AFACCB /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6615152578072E00AFACCB /* GalleryViewController.swift */; };
 		FB8116C826E67E4E009D9AE5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8116C726E67E4E009D9AE5 /* UIView+Extensions.swift */; };
 		FB8116CA26E68505009D9AE5 /* ArtistsTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8116C926E68505009D9AE5 /* ArtistsTableViewCellModel.swift */; };
-		FB8116CE26E68CAC009D9AE5 /* MuralImageCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8116CD26E68CAC009D9AE5 /* MuralImageCollectionViewCellModel.swift */; };
+		FB8116CE26E68CAC009D9AE5 /* MuralPreviewCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8116CD26E68CAC009D9AE5 /* MuralPreviewCollectionViewCellModel.swift */; };
 		FB83B6CB25D4A1CF00F67922 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB83B6CA25D4A1CF00F67922 /* Constants.swift */; };
 		FB8556BE2577080400D5570D /* MuralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8556BD2577080400D5570D /* MuralViewController.swift */; };
 		FB8556C225770D7700D5570D /* MuralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8556C125770D7700D5570D /* MuralView.swift */; };
@@ -85,8 +86,8 @@
 		DCEBFA29268873D800B05CFC /* MenuConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuConstants.swift; sourceTree = "<group>"; };
 		FB0D0D8A25277F440074C3ED /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		FB0D0D8E2527B9C90074C3ED /* ArtistsDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsDataBase.swift; sourceTree = "<group>"; };
-		FB15C64325871AA2009EEA69 /* MuralImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralImageCollectionViewCell.swift; sourceTree = "<group>"; };
-		FB15C64425871AA2009EEA69 /* MuralImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MuralImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		FB15C64325871AA2009EEA69 /* MuralPreviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralPreviewCollectionViewCell.swift; sourceTree = "<group>"; };
+		FB15C64425871AA2009EEA69 /* MuralPreviewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MuralPreviewCollectionViewCell.xib; sourceTree = "<group>"; };
 		FB4CB93C258D5D16000A126A /* Matthias Mross.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Matthias Mross.swift"; sourceTree = "<group>"; };
 		FB4CB93F258D5DF4000A126A /* Irakli Qadeishvili & Zviad Esartia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Irakli Qadeishvili & Zviad Esartia.swift"; sourceTree = "<group>"; };
 		FB54AFA425229AFE00B37B58 /* intro3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = intro3.gif; sourceTree = "<group>"; };
@@ -96,11 +97,12 @@
 		FB54AFC725229C6E00B37B58 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		FB54AFC825229C6E00B37B58 /* ArtistsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistsViewController.swift; sourceTree = "<group>"; };
 		FB54AFDB25229D5D00B37B58 /* ArtistPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistPageViewController.swift; sourceTree = "<group>"; };
+		FB5D73C026E9149C006A4913 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		FB5E29CA2538A9AB009E33CE /* IntroGifResoluted.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = IntroGifResoluted.gif; sourceTree = "<group>"; };
 		FB6615152578072E00AFACCB /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		FB8116C726E67E4E009D9AE5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		FB8116C926E68505009D9AE5 /* ArtistsTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsTableViewCellModel.swift; sourceTree = "<group>"; };
-		FB8116CD26E68CAC009D9AE5 /* MuralImageCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralImageCollectionViewCellModel.swift; sourceTree = "<group>"; };
+		FB8116CD26E68CAC009D9AE5 /* MuralPreviewCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralPreviewCollectionViewCellModel.swift; sourceTree = "<group>"; };
 		FB83B6CA25D4A1CF00F67922 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FB8556BD2577080400D5570D /* MuralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralViewController.swift; sourceTree = "<group>"; };
 		FB8556C125770D7700D5570D /* MuralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuralView.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				FB8116C726E67E4E009D9AE5 /* UIView+Extensions.swift */,
+				FB5D73C026E9149C006A4913 /* UICollectionViewCell+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -246,9 +249,9 @@
 		FB8116CC26E68C05009D9AE5 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				FB15C64325871AA2009EEA69 /* MuralImageCollectionViewCell.swift */,
-				FB8116CD26E68CAC009D9AE5 /* MuralImageCollectionViewCellModel.swift */,
-				FB15C64425871AA2009EEA69 /* MuralImageCollectionViewCell.xib */,
+				FB15C64325871AA2009EEA69 /* MuralPreviewCollectionViewCell.swift */,
+				FB8116CD26E68CAC009D9AE5 /* MuralPreviewCollectionViewCellModel.swift */,
+				FB15C64425871AA2009EEA69 /* MuralPreviewCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -476,7 +479,7 @@
 				FBF729A7252299DD00E12D44 /* LaunchScreen.storyboard in Resources */,
 				FBF729A4252299DD00E12D44 /* Assets.xcassets in Resources */,
 				DCEBFA2826886E8000B05CFC /* GalleryTableViewCell.xib in Resources */,
-				FB15C64625871AA2009EEA69 /* MuralImageCollectionViewCell.xib in Resources */,
+				FB15C64625871AA2009EEA69 /* MuralPreviewCollectionViewCell.xib in Resources */,
 				DCEBFA23268860F500B05CFC /* ArtistsTableViewCell.xib in Resources */,
 				FB5E29CB2538A9AB009E33CE /* IntroGifResoluted.gif in Resources */,
 				FB8556C725770E7E00D5570D /* MuralView.xib in Resources */,
@@ -532,7 +535,7 @@
 				FBF7299A252299DA00E12D44 /* SceneDelegate.swift in Sources */,
 				FBC86A842576EA7800FBCAAC /* Artez.swift in Sources */,
 				DCEBFA2A268873D800B05CFC /* MenuConstants.swift in Sources */,
-				FB8116CE26E68CAC009D9AE5 /* MuralImageCollectionViewCellModel.swift in Sources */,
+				FB8116CE26E68CAC009D9AE5 /* MuralPreviewCollectionViewCellModel.swift in Sources */,
 				FB83B6CB25D4A1CF00F67922 /* Constants.swift in Sources */,
 				FBC86A662576E9D800FBCAAC /* Musya.swift in Sources */,
 				FB54AFD225229C6F00B37B58 /* ArtistsViewController.swift in Sources */,
@@ -542,7 +545,7 @@
 				DCEBFA162688591D00B05CFC /* ArtistPageConstants.swift in Sources */,
 				FB0D0D8F2527B9C90074C3ED /* ArtistsDataBase.swift in Sources */,
 				FBC86A812576EA6D00FBCAAC /* Dante.swift in Sources */,
-				FB15C64525871AA2009EEA69 /* MuralImageCollectionViewCell.swift in Sources */,
+				FB15C64525871AA2009EEA69 /* MuralPreviewCollectionViewCell.swift in Sources */,
 				DCEBFA22268860F500B05CFC /* ArtistsTableViewCell.swift in Sources */,
 				FB54AFC125229B2100B37B58 /* swift=gif.swift in Sources */,
 				FBC86A632576E9C700FBCAAC /* CaseMaclaim.swift in Sources */,
@@ -551,6 +554,7 @@
 				FB0D0D8B25277F440074C3ED /* Artist.swift in Sources */,
 				FBC86A692576E9EC00FBCAAC /* QUINTE55ENZ.swift in Sources */,
 				FBC86A572576C18400FBCAAC /* MuralsDatabase.swift in Sources */,
+				FB5D73C126E9149C006A4913 /* UICollectionViewCell+Extensions.swift in Sources */,
 				FB4CB940258D5DF4000A126A /* Irakli Qadeishvili & Zviad Esartia.swift in Sources */,
 				FBC86A6F2576EA0900FBCAAC /* Kera.swift in Sources */,
 				FBC86A7E2576EA5E00FBCAAC /* Ino.swift in Sources */,

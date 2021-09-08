@@ -10,5 +10,7 @@ import UIKit
 extension ArtistPageViewController {
     struct Constants {
         static let cellHeight: CGFloat = 350
+        static let itemCountInLine: CGFloat = 2
+        static let spacing: CGFloat = 20
     }
 }
