@@ -19,10 +19,10 @@ class MuralViewController: UIViewController, CLLocationManagerDelegate {
 	@IBOutlet var goToArtistPageButton: UIButton!
 
     // MARK: - Properties
-	private let muralsDB = MuralsDatabase.sharedInstance
+	private let muralsDB = MuralsDatabase.shared
 	private let artistsDB = ArtistsDatabase.shared
 	private let locationManager = CLLocationManager()
-	public var mural: Mural = MuralsDatabase.sharedInstance.defaultMural
+	public var mural: Mural = MuralsDatabase.shared.defaultMural
 
 	override func viewDidLoad() {
 		super.viewDidLoad()

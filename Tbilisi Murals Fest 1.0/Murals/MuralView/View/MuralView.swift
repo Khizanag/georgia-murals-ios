@@ -39,20 +39,20 @@ class MuralView: BaseReusableView {
     @IBOutlet weak var descriptionValueLabel: UILabel!
 
 
-    // MARK: - Properties
+    // MARK: - Properties -
 	private var imageIndex: Int = 0
-	private var mural: Mural = MuralsDatabase.sharedInstance.defaultMural
+	private var mural: Mural = MuralsDatabase.shared.defaultMural
     
     override func layoutSubviews() {
         super.layoutSubviews()
         collectionView.deviceRotated()
     }
 
-    // MARK: - Setup
+    // MARK: - Setup -
 
 	override func setup() {
         super.setup()
-        guard mural.ID != MuralsDatabase.sharedInstance.defaultMural.ID else { return }
+        guard mural.ID != MuralsDatabase.shared.defaultMural.ID else { return }
         setupCollectionView()
 		setupTitle()
 		setupProject()
@@ -136,7 +136,7 @@ class MuralView: BaseReusableView {
 
 }
 
-// MARK: - UICollectionViewDelegate
+// MARK: - UICollectionViewDelegate -
 
 extension MuralView: UICollectionViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -149,7 +149,7 @@ extension MuralView: UICollectionViewDelegate {
     }
 }
 
-// MARK: - UICollectionViewDataSource
+// MARK: - UICollectionViewDataSource -
 
 extension MuralView: UICollectionViewDataSource {
 
@@ -167,5 +167,19 @@ extension MuralView: UICollectionViewDataSource {
 		}
 		return cell
 	}
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let panZoomImageView = PanZoomImageView(named: mural.imageURLs[indexPath.row])
+        panZoomImageView.backgroundColor = UIColor(named: "background-color")
+        panZoomImageView.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(panZoomImageView)
+        
+        NSLayoutConstraint.activate([
+            panZoomImageView.widthAnchor.constraint(equalTo: widthAnchor),
+            panZoomImageView.heightAnchor.constraint(equalTo:heightAnchor),
+            panZoomImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            panZoomImageView.centerYAnchor.constraint(equalTo: centerYAnchor)
+        ])
+    }
     
 }

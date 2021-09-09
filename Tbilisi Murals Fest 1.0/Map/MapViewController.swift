@@ -59,7 +59,7 @@ extension MapViewController: MKMapViewDelegate {
         if let muralVC = storyBoard.instantiateViewController(withIdentifier: MuralViewController.identifier) as? MuralViewController {
 			let muralIDStr = mapView.selectedAnnotations[0].title!!
 			let muralID: Int = (Int)(muralIDStr)! // TODO may be error here
-			muralVC.mural = MuralsDatabase.sharedInstance.getMural(ID: muralID)
+			muralVC.mural = MuralsDatabase.shared.getMural(ID: muralID)
 			self.navigationController?.pushViewController(muralVC, animated: true)
 			mapView.deselectAnnotation(view.annotation, animated: true)
 		}

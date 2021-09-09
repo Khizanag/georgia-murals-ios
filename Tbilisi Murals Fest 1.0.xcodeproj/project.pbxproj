@@ -63,6 +63,7 @@
 		FBC86A7E2576EA5E00FBCAAC /* Ino.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A7D2576EA5E00FBCAAC /* Ino.swift */; };
 		FBC86A812576EA6D00FBCAAC /* Dante.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A802576EA6D00FBCAAC /* Dante.swift */; };
 		FBC86A842576EA7800FBCAAC /* Artez.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC86A832576EA7800FBCAAC /* Artez.swift */; };
+		FBEFFF2B26EAA6BE00C23951 /* PanZoomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEFFF2A26EAA6BE00C23951 /* PanZoomImageView.swift */; };
 		FBF1782325788C1700D9D647 /* TODO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF1782225788C1700D9D647 /* TODO.swift */; };
 		FBF72998252299DA00E12D44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF72997252299DA00E12D44 /* AppDelegate.swift */; };
 		FBF7299A252299DA00E12D44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF72999252299DA00E12D44 /* SceneDelegate.swift */; };
@@ -131,6 +132,7 @@
 		FBC86A7D2576EA5E00FBCAAC /* Ino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ino.swift; sourceTree = "<group>"; };
 		FBC86A802576EA6D00FBCAAC /* Dante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dante.swift; sourceTree = "<group>"; };
 		FBC86A832576EA7800FBCAAC /* Artez.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artez.swift; sourceTree = "<group>"; };
+		FBEFFF2A26EAA6BE00C23951 /* PanZoomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanZoomImageView.swift; sourceTree = "<group>"; };
 		FBF1782225788C1700D9D647 /* TODO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODO.swift; sourceTree = "<group>"; };
 		FBF72994252299DA00E12D44 /* Tbilisi Murals Fest 1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tbilisi Murals Fest 1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF72997252299DA00E12D44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 		FB83B6C925D4A1BF00F67922 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				FBEFFF2926EAA6AB00C23951 /* Components */,
 				FB8116C626E67E3D009D9AE5 /* Extensions */,
 				FBC86A4B2576B31800FBCAAC /* Additional Files */,
 				FB98FF77257726A400C3F7D6 /* Tools */,
@@ -401,6 +404,14 @@
 				DCEBFA1B26885E8800B05CFC /* ArtistsTableViewCell */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FBEFFF2926EAA6AB00C23951 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FBEFFF2A26EAA6BE00C23951 /* PanZoomImageView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		FBF1782625788CBA00D9D647 /* Intros */ = {
@@ -562,6 +573,7 @@
 				FBC86A752576EA3000FBCAAC /* LukaJaparidzeAndV45.swift in Sources */,
 				FB98FF792577313700C3F7D6 /* BaseReusableView.swift in Sources */,
 				DC54BE622687F252006A2493 /* SponsorsManager.swift in Sources */,
+				FBEFFF2B26EAA6BE00C23951 /* PanZoomImageView.swift in Sources */,
 				FBF72998252299DA00E12D44 /* AppDelegate.swift in Sources */,
 				DCEBFA2726886E8000B05CFC /* GalleryTableViewCell.swift in Sources */,
 				FBC86A782576EA3D00FBCAAC /* NoahAndAphe.swift in Sources */,

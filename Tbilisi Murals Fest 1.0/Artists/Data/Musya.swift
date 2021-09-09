@@ -12,7 +12,7 @@ import Foundation
 extension ArtistsDatabase {
 
 	func loadMusyaInfo() {
-		let muralsDB = MuralsDatabase.sharedInstance
+		let muralsDB = MuralsDatabase.shared
 
 		let artist = Artist(
 			ID: getNextArtistID(),

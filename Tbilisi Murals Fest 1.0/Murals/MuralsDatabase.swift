@@ -9,7 +9,7 @@ import Foundation
 
 class MuralsDatabase {
 
-	static let sharedInstance = MuralsDatabase()
+	static let shared = MuralsDatabase()
 
 	private var nextMuralID: Int
 	private var muralsOf: [String : [Mural]]

@@ -14,7 +14,7 @@ class GalleryViewController: UIViewController {
     
     // MARK: Properties
     public static let identifier = "GalleryViewController"
-	private let muralsDB = MuralsDatabase.sharedInstance
+	private let muralsDB = MuralsDatabase.shared
 
 	override func viewDidLoad() {
 		super.viewDidLoad()

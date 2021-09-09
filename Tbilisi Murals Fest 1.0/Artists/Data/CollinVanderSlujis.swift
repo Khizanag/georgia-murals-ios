@@ -12,7 +12,7 @@ import Foundation
 extension ArtistsDatabase {
 
 	func loadCollinVanderSlujisInfo() {
-		let muralsDB = MuralsDatabase.sharedInstance
+		let muralsDB = MuralsDatabase.shared
 
 		let artist = Artist(
 			ID: getNextArtistID(),
@@ -39,8 +39,8 @@ extension MuralsDatabase {
 				ID: getNextMuralID(),
 				title: "The Tbilisi Legend",
 				imageURLs: [
+                    "Collin Vander Slujis - 2019 - 3",
 					"Collin Vander Slujis - 2019 - 1",
-					"Collin Vander Slujis - 2019 - 3",
 					"Collin Vander Slujis - 2019 - 4",
 				],
 				artist: "Collin Vander Slujis",

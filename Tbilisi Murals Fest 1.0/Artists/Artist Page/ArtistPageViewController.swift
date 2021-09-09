@@ -29,7 +29,7 @@ class ArtistPageViewController: UIViewController {
     @IBOutlet weak var muralsPageControl: UIPageControl!
     
     // MARK: - Properties
-    private let muralsDB = MuralsDatabase.sharedInstance
+    private let muralsDB = MuralsDatabase.shared
     public var artist: Artist = ArtistsDatabase.defaultArtist
     
     // MARK: - Lifecycle methods
