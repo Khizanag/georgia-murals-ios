@@ -39,8 +39,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVM-so-xTn">
-                                <rect key="frame" x="37.666666666666657" y="176" width="300" height="55.333333333333343"/>
+                                <rect key="frame" x="37.666666666666657" y="176" width="300" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="dGx-FB-IBX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="17"/>
                                 <state key="normal" title="Map">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -50,7 +53,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcT-Of-BN5">
-                                <rect key="frame" x="37.666666666666657" y="259.33333333333331" width="300" height="55"/>
+                                <rect key="frame" x="37.666666666666657" y="248" width="300" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="17"/>
                                 <state key="normal" title="Artists">
@@ -61,7 +64,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujQ-Ay-P4S">
-                                <rect key="frame" x="37.666666666666657" y="535.33333333333337" width="300" height="55.333333333333371"/>
+                                <rect key="frame" x="37.666666666666657" y="541" width="300" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="17"/>
                                 <state key="normal" title="Contact Us">
@@ -72,7 +75,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEY-y4-rjU">
-                                <rect key="frame" x="37.666666666666657" y="342.33333333333331" width="300" height="55.333333333333314"/>
+                                <rect key="frame" x="37.666666666666657" y="320" width="300" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="17"/>
                                 <state key="normal" title="Gallery">
@@ -102,7 +105,6 @@
                             <constraint firstItem="sVM-so-xTn" firstAttribute="top" secondItem="L4O-FA-ade" secondAttribute="top" multiplier="2" id="JfZ-Eb-aRZ"/>
                             <constraint firstItem="sVM-so-xTn" firstAttribute="leading" secondItem="gcT-Of-BN5" secondAttribute="leading" id="MwY-5X-joV"/>
                             <constraint firstItem="YEY-y4-rjU" firstAttribute="top" secondItem="gcT-Of-BN5" secondAttribute="bottom" constant="28" id="OAl-8A-gde"/>
-                            <constraint firstItem="sVM-so-xTn" firstAttribute="height" secondItem="L4O-FA-ade" secondAttribute="height" multiplier="0.08" id="OZJ-4p-7xZ"/>
                             <constraint firstItem="YEY-y4-rjU" firstAttribute="centerX" secondItem="L4O-FA-ade" secondAttribute="centerX" id="PSE-ka-vMk"/>
                             <constraint firstItem="NX2-qE-WGZ" firstAttribute="centerX" secondItem="L4O-FA-ade" secondAttribute="centerX" id="Qoz-EK-yY4"/>
                             <constraint firstItem="L4O-FA-ade" firstAttribute="bottom" secondItem="NX2-qE-WGZ" secondAttribute="bottom" constant="50" id="Suf-7M-W2G"/>
