@@ -33,7 +33,6 @@ extension ArtistsDatabase {
 
 extension MuralsDatabase {
 
-
 	func addArtezMurals() {
 		self.addMural(
 			Mural(
