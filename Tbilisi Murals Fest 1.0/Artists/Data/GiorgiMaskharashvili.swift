@@ -17,7 +17,7 @@ extension ArtistsDatabase {
 		let artist = Artist(
 			ID: getNextArtistID(),
 			name: "Giorgi Maskharashvili",
-			profileImageURL: "Giorgi Maskharashvili",
+			profileImageName: "Giorgi Maskharashvili",
 			bio: "Giorgi Maskharashvili was born in Tbilisi in 1977. He first studied at the Tbilisi Academy of Arts, Faculty of Easel Graphics, and then at the Film Directing Faculty of the Georgian State University of Theater and Film. Works as a film and television actor, director and artist",
 			socialProfiles: [
                 .instagram: "maskhari",

@@ -17,7 +17,7 @@ extension ArtistsDatabase {
 		let artist = Artist(
 			ID: getNextArtistID(),
 			name: "Q U I N T E 5 5 E N Z",
-			profileImageURL: "Q U I N T E 5 5 E N Z",
+			profileImageName: "Q U I N T E 5 5 E N Z",
 			bio: "Together, the Hanover and Berlin-based artists Thomas Granseuer and Tomislav Topic constitute Quintessenz. Starting out as students at the University of applied Science and Arts in Hildesheim, they developed a unique an unmistakeable signature style. With roots in both grafitti-culture and chromatics, Quintessenz combine painting, moving image, and installation. Space is the fundamental inspiration for Quintessenz. Their work not only uses shapes and patterns found in architecture, it interferes with its environment, changing the spectators perception (of space). Quintessenz use old factory buildings as their canvases, with their murals covering entire facades. In every medium they use, both in public spaces and galleries, their abstract work shares one thing in common: their art makes/creates space for its color. To Quintessenz, color is more than form. It is the content itself.",
 			socialProfiles: [
                 .facebook : "QuintessenzCreation",

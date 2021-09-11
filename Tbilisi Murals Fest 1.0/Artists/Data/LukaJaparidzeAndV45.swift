@@ -17,7 +17,7 @@ extension ArtistsDatabase {
 		let artist = Artist(
 			ID: getNextArtistID(),
 			name: "Luka Japaridze & V45",
-			profileImageURL: "Luka Japaridze & V45",
+			profileImageName: "Luka Japaridze & V45",
 			bio: "Contemporary painter and street artist Luka japaridze was born December 21 1993 in Tbilisi. From 2012 he studing in “Tbilisi state academy of arts",
 			socialProfiles: [
                 .facebook: "lukajaparidzeart",

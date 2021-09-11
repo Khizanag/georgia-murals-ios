@@ -17,7 +17,7 @@ extension ArtistsDatabase {
 		let artist = Artist(
 			ID: getNextArtistID(),
 			name: "SNYDER",
-			profileImageURL: "Snyder",
+			profileImageName: "Snyder",
 			bio: "A quarter of a century ago, Berlin-based SNYDER started his graffiti career. Besides his installations of letterform sculptures in public space and stencil-based figurations his works on trains primarily inform his creations. He uses the context, approach and technical craftsmanship of graffiti to develop a veil in which he wraps walls, railway traffic signs and the very trains. These objects of order, expressions of rules and definitions that regulate our everyday life and provide security stand opposed to the desire for freedom and impetuousness that we draw strength from. They get occupied by the artist in an interplay of order and arbitrariness, of regimentation and freedom that reveals the fascination that SNYDER in his youth found in graffiti writing.",
 			socialProfiles: [
                 .instagram: "snyder_berlin"

@@ -10,7 +10,7 @@ import Foundation
 class ArtistsDatabase {
 
 	static let shared = ArtistsDatabase()
-    static let defaultArtist = Artist(ID: -1, name: "DefaultArtist", profileImageURL: "DefaultArtist", bio: "Default Bio", socialProfiles: [:], murals: [])
+    static let defaultArtist = Artist(ID: -1, name: "DefaultArtist", profileImageName: "DefaultArtist", bio: "Default Bio", socialProfiles: [:], murals: [])
     
     // MARK: - Properties
 	private var data: [String : Artist]

@@ -17,7 +17,7 @@ extension ArtistsDatabase {
 		let artist = Artist(
 			ID: getNextArtistID(),
 			name: "HRVB",
-			profileImageURL: "HRVB",
+			profileImageName: "HRVB",
 			bio: "Freelance graphiti artist and illustrator located in Berlin since 2009. member of The Weird - crew of talented artist all over Germany and Austria.",
 			socialProfiles: [
                 .facebook : "hrvb123",

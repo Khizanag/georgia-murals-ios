@@ -17,7 +17,7 @@ extension ArtistsDatabase {
 		let artist = Artist(
 			ID: getNextArtistID(),
 			name: "Musya",
-			profileImageURL: "Musya",
+			profileImageName: "Musya",
 			bio: "Born and raised in Georgia, a former Soviet Union country in the far east of Europe. At the age of 16, moved to capital city of Georgia, Tbilisi. Currently25 years old and is based in Tbilisi. She has chosen her occupation since childhood. She always knew that She would do nothing, but only art. Afterwards, while studying at Art Academy she decided to study Graphical Design and elaborated her knowledge in this field. Nowadays she is working as an Art Director in one of the most successful advertising companies in Georgia and also, is pursuing some side projects commercial and non-commercial. She is using different techniques for working, such as painting digital illustrations, hand-painting, wall painting, streetart and stencil; She is also occupied with creating some handicrafts and jewelry.",
 			socialProfiles: [
                 .facebook : "musyasart",

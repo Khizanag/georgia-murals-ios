@@ -17,7 +17,7 @@ extension ArtistsDatabase {
 		let artist = Artist(
 			ID: getNextArtistID(),
 			name: "Dante",
-			profileImageURL: "Dante",
+			profileImageName: "Dante",
 			bio: "Born in 1987. Started to paint at an early age. His original source of inspiration was fauna. Drawing animals from book illustrations at first, he soon became a frequent guest of Tbilisi Zoo. In 2004 he enrolled in Tbilisi Academy of Arts, working towards a degree in interior design. From that time he actively started to work on murals. His first personal exhibition “All that Jazz” was opened during Tbilisi Jazz Festival in 2014. Young Lions Georgia gold winner in 2017. Today he’s an art director at JWT Metro.",
 			socialProfiles: [
                 .instagram : "dante.mdante",

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "hrvb.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

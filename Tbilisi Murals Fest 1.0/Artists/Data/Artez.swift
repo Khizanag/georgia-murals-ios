@@ -17,7 +17,7 @@ extension ArtistsDatabase {
 		let artist = Artist(
 			ID: getNextArtistID(),
 			name: "Artez",
-			profileImageURL: "Artez",
+			profileImageName: "Artez",
 			bio: "Artez is a Serbian artist whose style is defined as a mixing photorealism with illustration. He draws inspiration for his works, besides location, from the things and persons that are present in his everyday life. He usually has a photo of something that inspires him as a starting point, but during the painting process he improvises a lot, mostly because he likes to get inspiration from the site itself. For years he was trying to find the best way to express himself and transfer ideas from his head to the flat surface – wall. Along the way, he has been working with 2D and 3D letters, different types and styles of characters, photorealism, and in the end he got stuck with the mix of “little bit from everything”.",
 			socialProfiles: [
                 .facebook  : "ArtezStreetArt",

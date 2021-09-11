@@ -19,7 +19,7 @@ extension MapViewController {
         
         static let latitudinalMeters = 15_000.0
         static let longitudinalMeters = 15_000.0
-        static let defaultLatitude = 41.716667
-        static let defaultLongitude = 44.783333
+        static let defaultLatitude = 41.716_667
+        static let defaultLongitude = 44.799_999 
     }
 }

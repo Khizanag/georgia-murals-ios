@@ -17,7 +17,7 @@ extension ArtistsDatabase {
 		let artist = Artist(
 			ID: getNextArtistID(),
 			name: "INO",
-			profileImageURL: "Ino",
+			profileImageName: "Ino",
 			bio: "Best known for his outstanding figurative murals created on a large scale, INO is one of the most internationally recognized Greek street artist. Although he began his career as a graffiti artist in the early 2000s by producing letters and bombing, over the years he has developed his distinctive style characterized by fragmented forms, photorealistic elements and grayscale color palette with touches of light blue. His eye-catching, stylized and clever pieces often deal with social and political themes that affect the average man and woman, creating a dialogue between the viewer and the art.",
 			socialProfiles: [
                 .facebook : "inoexpo",

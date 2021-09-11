@@ -50,7 +50,8 @@ extension ArtistsViewController: UITableViewDelegate, UITableViewDataSource {
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: ArtistsTableViewCell.reuseIdentifier, for: indexPath) as? ArtistsTableViewCell {
             if let artist = ArtistsDatabase.shared.getArtist(ID: indexPath.row) {
-                cell.configure(with: .init(profilePhoto: UIImage(named: artist.profileImageURL)!, name: artist.name))
+				print("***** \(artist.name)")
+                cell.configure(with: .init(profilePhoto: UIImage(named: artist.profileImageName)!, name: artist.name))
                 return cell
             }
         }

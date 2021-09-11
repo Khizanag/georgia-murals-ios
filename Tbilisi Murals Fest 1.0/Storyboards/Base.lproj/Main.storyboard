@@ -379,19 +379,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Our Support Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXV-5y-8bZ">
-                                <rect key="frame" x="55" y="132" width="265" height="25.666666666666657"/>
+                                <rect key="frame" x="55" y="176" width="265" height="25.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="22"/>
                                 <color key="textColor" name="text-color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need to get in touch with the team? We're all ears." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLN-6o-VTH">
-                                <rect key="frame" x="0.0" y="198" width="375" height="16.333333333333343"/>
+                                <rect key="frame" x="0.0" y="264" width="375" height="16.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="14"/>
                                 <color key="textColor" systemColor="systemGray2Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nKh-EZ-Mk2">
-                                <rect key="frame" x="0.0" y="364" width="375" height="95"/>
+                                <rect key="frame" x="0.0" y="401" width="375" height="21"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hnv-X3-S2N">
                                         <rect key="frame" x="51.333333333333343" y="0.0" width="272.33333333333326" height="21"/>
@@ -404,40 +404,6 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="office@tbilisimuralfest.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzM-5B-39p">
                                                 <rect key="frame" x="57.333333333333343" y="0.0" width="215.00000000000003" height="21"/>
-                                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <color key="textColor" name="text-color"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iqP-eE-LbS">
-                                        <rect key="frame" x="45.666666666666657" y="37" width="283.66666666666674" height="21"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0U-9h-tbI">
-                                                <rect key="frame" x="0.0" y="0.0" width="27" height="21"/>
-                                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <color key="textColor" name="text-color"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+49 176 729 49 709 (Germany)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yt-Vu-PAp">
-                                                <rect key="frame" x="35.000000000000014" y="0.0" width="248.66666666666669" height="21"/>
-                                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <color key="textColor" name="text-color"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pHM-9G-bTE">
-                                        <rect key="frame" x="58.333333333333343" y="74" width="258.66666666666663" height="21"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFK-cb-WFq">
-                                                <rect key="frame" x="0.0" y="0.0" width="27" height="21"/>
-                                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
-                                                <color key="textColor" name="text-color"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+995 599 432 082 (Georgia)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnA-tP-emW">
-                                                <rect key="frame" x="34.999999999999986" y="0.0" width="223.66666666666663" height="21"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy" pointSize="18"/>
                                                 <color key="textColor" name="text-color"/>
                                                 <nil key="highlightedColor"/>
@@ -463,7 +429,7 @@
                             <constraint firstItem="eLN-6o-VTH" firstAttribute="centerX" secondItem="hR8-f0-zlN" secondAttribute="centerX" id="bFT-1J-0EM"/>
                             <constraint firstItem="qXV-5y-8bZ" firstAttribute="centerX" secondItem="hR8-f0-zlN" secondAttribute="centerX" id="e2s-mV-zz0"/>
                             <constraint firstItem="eLN-6o-VTH" firstAttribute="width" secondItem="hR8-f0-zlN" secondAttribute="width" id="gAz-Zf-1ro"/>
-                            <constraint firstItem="qXV-5y-8bZ" firstAttribute="top" secondItem="hR8-f0-zlN" secondAttribute="top" multiplier="1.5" id="kHt-Ib-jHM"/>
+                            <constraint firstItem="qXV-5y-8bZ" firstAttribute="top" secondItem="hR8-f0-zlN" secondAttribute="top" multiplier="2" id="kHt-Ib-jHM"/>
                             <constraint firstItem="1bm-9z-6Nw" firstAttribute="centerX" secondItem="hR8-f0-zlN" secondAttribute="centerX" id="mMh-YS-4ra"/>
                             <constraint firstItem="eLN-6o-VTH" firstAttribute="top" secondItem="qXV-5y-8bZ" secondAttribute="top" multiplier="1.5" id="oYR-3s-IsQ"/>
                             <constraint firstItem="nKh-EZ-Mk2" firstAttribute="leading" secondItem="hR8-f0-zlN" secondAttribute="leading" id="uG9-bw-8lm"/>

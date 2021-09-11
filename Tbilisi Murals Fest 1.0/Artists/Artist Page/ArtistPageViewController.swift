@@ -64,7 +64,7 @@ class ArtistPageViewController: UIViewController {
 
 	private func setupDisplayInfo() {
 		artistNameLabel.text = artist.name
-		profilePhotoView.image = UIImage(named: artist.profileImageURL)
+		profilePhotoView.image = UIImage(named: artist.profileImageName)
 		bioText.text = artist.bio
 	}
 

@@ -17,7 +17,7 @@ extension ArtistsDatabase {
 		let artist = Artist(
 			ID: getNextArtistID(),
 			name: "Collin Vander Slujis",
-			profileImageURL: "Collin Vander Slujis",
+			profileImageName: "Collin Vander Slujis",
 			bio: "Works and lives in Maastricht, The Netherlands. The work from Collin van der Sluijs has been publicated in magazines, books, and shown in galleries and project-spaces or walls in The Netherlands, Germany, France, England, Belgium, The U.S.A, Luxemburg, Italy, United Kingdom, Spain",
 			socialProfiles: [
                 .facebook : "collinvandersluijs",
